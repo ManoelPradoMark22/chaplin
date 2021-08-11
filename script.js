@@ -148,12 +148,13 @@ document.getElementById('catLanches').innerHTML = catLanches.map(prod =>
     `<div>
       <div id="${prod.id}" class="row tabone" data-aos="fade-right" style="${prod.display}">
         <div class="image" data-aos="fade-left">
-            <img src="${prod.img}" alt="${prod.name}" onclick={console.log("cliquei")}>
+            <img src="${prod.img}" alt="${prod.name}">
         </div>
 
         <div class="content">
             <div class="info">
                 <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+                <text class="priceCatalog">${prod.price}</text>
                 <p>${prod.description}</p>
             </div>
         </div>
