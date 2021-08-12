@@ -179,6 +179,46 @@ var catPizzas = [
     img: "https://coolicias.ao/wp-content/uploads/2020/01/Receita-de-Pizza-de-liquidificador-Diferente-Pode-Adicionar-Calabresa.jpg",
     display: "display:none"
   },
+  {
+    id: 'tab2-3',
+    number: 3,
+    name:"Caipira",
+    description: "Queijo, frango desfiado, milho, tomate, cebola.",
+    img: "https://mezzani.com.br/wp-content/uploads/2019/08/pizza-com-pedacos-de-carne-de-frango-tomate-milho-e-queijo_116500-20-1.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab2-4',
+    number: 4,
+    name:"Portuguesa",
+    description: "Queijo, presunto, ovo, tomate, azeitona, cebola.",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234517260_114414477600099_3761092935236468369_n.jpg?_nc_cat=100&ccb=1-4&_nc_sid=730e14&_nc_ohc=JuFKK7Mhw1YAX_9LxjG&_nc_ht=scontent.fvdc3-1.fna&oh=b0a22d5d2d1183ad63dfedbe3643c9a8&oe=6139F718",
+    display: "display:none"
+  },
+  {
+    id: 'tab2-5',
+    number: 5,
+    name:"Frango Catupiry",
+    description: "Queijo, frango, catupiry.",
+    img: "https://padarianutrivida.com.br/web/image/product.template/3463/image_1024?unique=d167039",
+    display: "display:none"
+  },
+  {
+    id: 'tab2-6',
+    number: 6,
+    name:"Carne Seca",
+    description: "Carne seca, muçarela, azeitona, cebola.",
+    img: "https://www.redelevepizza.com.br/assets/imagens/pizzas/022/carne-seca-assada.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab2-7',
+    number: 7,
+    name:"Atum",
+    description: "Atum, muçarela, azeitona, cebola.",
+    img: "https://maniadeesfiha.com.br/wp-content/uploads/2019/03/0910201210466229235099.jpg",
+    display: "display:none"
+  },
 ]
 
 document.getElementById('catPizzas').innerHTML = catPizzas.map(prod => 
