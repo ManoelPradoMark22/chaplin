@@ -113,20 +113,16 @@
 
 <div id="tab2" class="row city" data-aos="fade-right" style="display:none">
 
-    <div class="image" data-aos="fade-left">
-        <img src="images/menu2.jpg" alt="">
+    <div class="scroll" style="overflow-y: auto; cursor: grabbing;">
+        <div style="display: flex;width: max-content;">
+            <ul class="listInside">
+                <li class="btnInside active" onclick="openItensTwo('tab2-1')">Tradicional</li>
+                <li class="btnInside" onclick="openItensTwo('tab2-2')">Calabresa</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="content">
-        <div class="info">
-            <h3> <span>01.</span> we serve best food in the country </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
-        </div>
-        <div class="info">
-            <h3> <span>02.</span> we serve best food in the country </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
-        </div>
-    </div>
+    <div id="catPizzas" class="box"></div>
 
 </div>
 
@@ -403,13 +399,22 @@
 </script>
 
 <script>
-    function openItensOne(cityName) {
+    function openItensOne(prodName) {
       var i;
       var x = document.getElementsByClassName("tabone");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
-      document.getElementById(cityName).style.display = "flex";  
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensTwo(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabtwo");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
     }
 </script>
 

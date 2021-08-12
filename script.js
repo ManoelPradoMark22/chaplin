@@ -161,3 +161,39 @@ document.getElementById('catLanches').innerHTML = catLanches.map(prod =>
       </div>
     </div>`
 ).join('')
+
+var catPizzas = [
+  {
+    id: 'tab2-1',
+    number: 1,
+    name:"Tradicional",
+    description: "Queijo, presunto, milho, tomate.",
+    img: "https://img.riomarevoce.com/fortalezashopping/2020/06/pizza_mussarela_vignoli_expresso_riomar_fortaleza.jpg",
+    display: "display:flex"
+  },
+  {
+    id: 'tab2-2',
+    number: 2,
+    name:"Calabresa",
+    description: "Queijo, calabresa, cebola.",
+    img: "https://coolicias.ao/wp-content/uploads/2020/01/Receita-de-Pizza-de-liquidificador-Diferente-Pode-Adicionar-Calabresa.jpg",
+    display: "display:none"
+  },
+]
+
+document.getElementById('catPizzas').innerHTML = catPizzas.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabtwo" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
