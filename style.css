@@ -644,5 +644,23 @@ header #menu-bar{
 
 /*swiper horizontal*/
 .scroll::-webkit-scrollbar {
-  width: 0px;
+  /*width: 0px;*/
+  height:0.3rem;
+}
+.scroll::-webkit-scrollbar-track{
+  background:rgba(0,0,0,.1);
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background:var(--yellow);
+}
+.scroll::-webkit-scrollbar-thumb:hover{
+  background:#fac420;
+}
+
+@media (min-width: 992px) {
+  .scroll::-webkit-scrollbar {
+    /*width: 0px;*/
+    height:0.5rem;
+  }
 }
