@@ -162,6 +162,8 @@ document.getElementById('catLanches').innerHTML = catLanches.map(prod =>
     </div>`
 ).join('')
 
+
+/*PIZZAS */
 var catPizzas = [
   {
     id: 'tab2-1',
@@ -231,6 +233,91 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
       <div class="content">
           <div class="info">
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
+
+/*PORCOES*/
+var catPorcoes = [
+  {
+    id: 'tab3-1',
+    number: 1,
+    name:"Frango e Batata com Cheddar e Bacon",
+    description: "sdk dask dajks k",
+    price:"R$28,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:flex"
+  },
+  {
+    id: 'tab3-2',
+    number: 2,
+    name:"Frango",
+    description: "sdk dask dajks k",
+    price:"R$16,00",
+    img: "https://amp.receitadevovo.com.br/wp-content/uploads/2020/10/empanados-de-frango.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab3-3',
+    number: 3,
+    name:"Batata com Cheddar e Bacon",
+    description: "sdk dask dajks k",
+    price:"R$12,00",
+    img: "https://coolicias.ao/wp-content/uploads/2019/11/Receita-de-Batata-frita-com-queijo-e-recheio-de-bacon-TudoGostoso-1200x900.jpeg",
+    display: "display:none"
+  },
+  {
+    id: 'tab3-4',
+    number: 4,
+    name:"Batata com Cheddar",
+    description: "sdk dask dajks k",
+    price:"R$10,00",
+    img: "https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/5f04bee3-e350-4217-b28c-2b7dac1e00a3/5f04bee3-5a2c-480c-9d82-2b7dac1e00a3.png",
+    display: "display:none"
+  },
+  {
+    id: 'tab3-5',
+    number: 5,
+    name:"Batata com Bacon",
+    description: "sdk dask dajks k",
+    price:"R$10,00",
+    img: "https://1.bp.blogspot.com/--4fFFHJly2Y/WW9O_eVKROI/AAAAAAAA3zg/RqFPla1YTnw8-kDPRUoM53wpguklpM-dACLcBGAs/s640/wendys-bacon-queso-fries-01.JPG",
+    display: "display:none"
+  },
+  {
+    id: 'tab3-6',
+    number: 6,
+    name:"Batata Frita",
+    description: "sdk dask dajks k",
+    price:"R$8,00",
+    img: "https://pilotandofogao.com.br/wp-content/uploads/2019/01/Batata-Frita-Crocante.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab3-7',
+    number: 7,
+    name:"Frango a passarinho",
+    description: "sdk dask dajks k",
+    price:"R$22,00",
+    img: "https://www.supermercadosmundial.com.br/content/816x480/gHYV58ha9m9KxcCN.png",
+    display: "display:none"
+  }
+]
+
+document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabthree" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
           </div>
       </div>
