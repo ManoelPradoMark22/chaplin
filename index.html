@@ -177,6 +177,26 @@
 
 </div>
 
+<div id="tab5" class="row city" data-aos="fade-right" style="display:none">
+
+    <div class="scroll" style="overflow-y: auto;">
+        <div style="display: flex;width: max-content;">
+            <ul class="listInside">
+                <li class="btnInside active" onclick="openItensFive('tab5-1')">Coxinha</li>
+                <li class="btnInside" onclick="openItensFive('tab5-2')">Risoles Carne</li>
+                <li class="btnInside" onclick="openItensFive('tab5-3')">Risoles Pizza</li>
+                <li class="btnInside" onclick="openItensFive('tab5-4')">Enroladinho Salsicha</li>
+                <li class="btnInside" onclick="openItensFive('tab5-5')">E. Queijo&Presunto</li>
+                <li class="btnInside" onclick="openItensFive('tab5-6')">Kibe</li>
+                <li class="btnInside" onclick="openItensFive('tab5-7')">Steak Frango</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="catSalgFritos" class="box"></div>
+
+</div>
+
 </section>
 
 <!-- popular section starts  -->
@@ -442,6 +462,15 @@
     function openItensFour(prodName) {
       var i;
       var x = document.getElementsByClassName("tabfour");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensFive(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabfive");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }

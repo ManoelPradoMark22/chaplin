@@ -436,3 +436,88 @@ document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/*SALGADOS FRITOS*/
+var catSalgFritos = [
+  {
+    id: 'tab5-1',
+    number: "01",
+    name:"Coxinha",
+    description: "sdk dask dajks k",
+    price:"R$3,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:flex"
+  },
+  {
+    id: 'tab5-2',
+    number: "02",
+    name:"Risoles de Carne",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab5-3',
+    number: "03",
+    name:"Risoles de Pizza",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab5-4',
+    number: "04",
+    name:"Enroladinho de Salsicha",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab5-5',
+    number: "05",
+    name:"Enroladinho de queijo e presunto",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab5-6',
+    number: "06",
+    name:"Kibe",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab5-7',
+    number: "07",
+    name:"Steak de Frango",
+    description: "sdk dask dajks k",
+    price:"R$3,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+]
+
+document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabfive" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
