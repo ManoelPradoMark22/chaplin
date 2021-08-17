@@ -156,20 +156,24 @@
 
 <div id="tab4" class="row city" data-aos="fade-right" style="display:none">
 
-    <div class="image" data-aos="fade-left">
-        <img src="images/menu4.jpg" alt="">
+    <div class="scroll" style="overflow-y: auto;">
+        <div style="display: flex;width: max-content;">
+            <ul class="listInside">
+                <li class="btnInside active" onclick="openItensFour('tab4-1')">Esfirra de Frango</li>
+                <li class="btnInside" onclick="openItensFour('tab4-2')">E. carne</li>
+                <li class="btnInside" onclick="openItensFour('tab4-3')">E. queijo&presunto</li>
+                <li class="btnInside" onclick="openItensFour('tab4-4')">E. Frango&Catupiry</li>
+                <li class="btnInside" onclick="openItensFour('tab4-5')">E. Frango&Cheddar</li>
+                <li class="btnInside" onclick="openItensFour('tab4-6')">E. Calabresa&Queijo</li>
+                <li class="btnInside" onclick="openItensFour('tab4-7')">E. Calabresa&Queijo&Cheddar</li>
+                <li class="btnInside" onclick="openItensFour('tab4-8')">Hamburgão</li>
+                <li class="btnInside" onclick="openItensFour('tab4-9')">Bauru</li>
+                <li class="btnInside" onclick="openItensFour('tab4-10')">Enroladinho Salsicha</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="content">
-        <div class="info">
-            <h3> <span>01.</span> we serve best food in the country </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
-        </div>
-        <div class="info">
-            <h3> <span>02.</span> we serve best food in the country </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
-        </div>
-    </div>
+    <div id="catSalgAssados" class="box"></div>
 
 </div>
 
@@ -429,6 +433,15 @@
     function openItensThree(prodName) {
       var i;
       var x = document.getElementsByClassName("tabthree");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensFour(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabfour");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }

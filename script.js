@@ -324,3 +324,115 @@ document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/*SALGADOS ASSADOS*/
+var catSalgAssados = [
+  {
+    id: 'tab4-1',
+    number: "01",
+    name:"Esfirra de frango",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:flex"
+  },
+  {
+    id: 'tab4-2',
+    number: "02",
+    name:"Esfirra de carne",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-3',
+    number: "03",
+    name:"Esfirra de queijo e presunto",
+    description: "sdk dask dajks k",
+    price:"R$3,50",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-4',
+    number: "04",
+    name:"Esfirra de frango com catupiry",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-5',
+    number: "05",
+    name:"Esfirra de frango com cheddar",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-6',
+    number: "06",
+    name:"Esfirra de calabresa com queijo",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-7',
+    number: "07",
+    name:"Esfirra de calabresa com queijo e cheddar",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-8',
+    number: "08",
+    name:"Hamburgão",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-9',
+    number: "09",
+    name:"Bauru",
+    description: "sdk dask dajks k",
+    price:"R$4,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+  {
+    id: 'tab4-10',
+    number: "10",
+    name:"Enroladinho de Salsicha",
+    description: "sdk dask dajks k",
+    price:"R$3,00",
+    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    display: "display:none"
+  },
+]
+
+document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabfour" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
