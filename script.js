@@ -333,7 +333,7 @@ var catSalgAssados = [
     name:"Esfirra de frango",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://www.kideliciasalgados.com.br/wp-content/uploads/2019/11/esfiha_frango_brocolis_kidelicia.png",
     display: "display:flex"
   },
   {
@@ -342,7 +342,7 @@ var catSalgAssados = [
     name:"Esfirra de carne",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://amordereceita.com.br/wp-content/uploads/2021/04/Esfira_de_Carne_fechada.jpg",
     display: "display:none"
   },
   {
@@ -351,7 +351,7 @@ var catSalgAssados = [
     name:"Esfirra de queijo e presunto",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://img.cybercook.com.br/imagens/receitas/289/esfiha-de-presunto-e-cream-cheese.jpg",
     display: "display:none"
   },
   {
@@ -360,7 +360,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com catupiry",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://lh3.googleusercontent.com/proxy/Z5u3HuL9Lv2IkuXxExJAVr4R2DvVD5UXZU4ni0zjgYVZpBmid0TnlzEgI2dtwUekfClLaTxthE-MaqnWqImnpzQ3xu0W3C7hq-9V1f1t5GjQ53A_hw",
     display: "display:none"
   },
   {
@@ -369,7 +369,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com cheddar",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://lh3.googleusercontent.com/proxy/7g-NNEh-deKE7qQNDLFmFImFGXdkip2gMvgv8rZCB805AkqT4W4H9so-JUMBgLAoJswvl7mxigbfGYSdjX1AN90_6UZLgrCG98SRYVepn23xTbArXLybAy-3MHVdTm4HYZ992oNF6vP8TguJjgda5JD5LXma",
     display: "display:none"
   },
   {
@@ -378,7 +378,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://levitazero.com.br/shop/wp-content/uploads/2019/02/Produto-Esfiha-Calabresa-190210a.jpg",
     display: "display:none"
   },
   {
@@ -387,7 +387,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo e cheddar",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://570341-1841894-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/11/esfirra-de-calabresa.jpg",
     display: "display:none"
   },
   {
@@ -396,7 +396,7 @@ var catSalgAssados = [
     name:"Hamburgão",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://i.ytimg.com/vi/ZErHTOws2AU/maxresdefault.jpg",
     display: "display:none"
   },
   {
@@ -405,7 +405,7 @@ var catSalgAssados = [
     name:"Bauru",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://obasuperatacado-img.azureedge.net/product/7681-bauru-assado-frango-kg-prom-g.jpg",
     display: "display:none"
   },
   {
@@ -414,7 +414,7 @@ var catSalgAssados = [
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://bellamassa.com.br/wp-content/uploads/2018/12/enroladinho-salsicha-post.jpg",
     display: "display:none"
   },
 ]
@@ -445,7 +445,7 @@ var catSalgFritos = [
     name:"Coxinha",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://s2.glbimg.com/3yEPNnGtV9kKZHFEXD8zoz7CZAI=/0x0:1280x854/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/k/C/CyeFFuSSKLrOop79XWoQ/coxinha.jpeg",
     display: "display:flex"
   },
   {
@@ -454,7 +454,7 @@ var catSalgFritos = [
     name:"Risoles de Carne",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://meucadernodereceitas.xyz/wp-content/uploads/2021/03/Risoles-de-Carne-Moida-Meu-Caderno-de-Receitas.png",
     display: "display:none"
   },
   {
@@ -463,7 +463,7 @@ var catSalgFritos = [
     name:"Risoles de Pizza",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/219957861_116279110746969_4943552752224603272_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=OopR2_sAgFsAX9ZZDuF&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=73b3bad7ece85f3693537e65d52cf38d&oe=61410408",
     display: "display:none"
   },
   {
@@ -472,7 +472,7 @@ var catSalgFritos = [
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://xtudoreceitas.com/wp-content/uploads/Enroladinho-de-Salsicha-Frito-480x270.jpg",
     display: "display:none"
   },
   {
@@ -481,7 +481,7 @@ var catSalgFritos = [
     name:"Enroladinho de queijo e presunto",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://aquelareceita.com.br/wp-content/uploads/2020/10/Enroladinho-de-Presunto-e-Queijo-Sem-Massa.00_03_33_06.Still002FB.png",
     display: "display:none"
   },
   {
@@ -490,7 +490,7 @@ var catSalgFritos = [
     name:"Kibe",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://pratofundo.com/wp-content/uploads/fly-images/4975/kibe2017-015-500x500-c.jpg",
     display: "display:none"
   },
   {
@@ -499,7 +499,7 @@ var catSalgFritos = [
     name:"Steak de Frango",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://www.lar.ind.br/wp-content/uploads/2020/12/Steak.png",
     display: "display:none"
   },
 ]
