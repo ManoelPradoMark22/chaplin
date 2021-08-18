@@ -32,11 +32,13 @@
     <nav class="navbar">
         <ul>
             <li><a class="active" href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#menu">menu</a></li>
-            <li><a href="#popular">popular</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#order">order</a></li>
+            <li><a href="#about">ab.</a></li>
+            <li><a href="#lanchonete">Lanchonete</a></li>
+            <li><a href="#pizzaria">Pizzaria</a></li>
+            <li><a href="#sorveteria">Sorveteria</a></li>
+            <li><a href="#popular">pop.</a></li>
+            <li><a href="#gallery">gal.</a></li>
+            <li><a href="#order">ord.</a></li>
         </ul>
     </nav>
 
@@ -79,33 +81,33 @@
 
 <!-- about section ends -->
 
-<section class="menu" id="menu">
+<section class="menu" id="lanchonete">
 
 <h1 class="heading"> nosso delicioso <span>menu</span> </h1>
-
+<br>
+<br>
+<h3 class="heading" data-aos="fade-down"><span><i class="fas fa-hamburger"></i></span>Lanchonete<span><i class="fas fa-hamburger"></i></span></h3>
+<br>
 <ul class="list" data-aos="fade-down">
-    <li class="btn active" onclick="openCity('tab1')">Lanches</li>
-    <li class="btn" onclick="openCity('tab2')">Pizzas</li>
-    <li class="btn" onclick="openCity('tab3')">Porções</li>
-    <li class="btn" onclick="openCity('tab4')">Salgados Assados</li>
-    <li class="btn" onclick="openCity('tab5')">Salgados Fritos</li>
-    <li class="btn" onclick="openCity('tab6')">Açaís</li>
-    <li class="btn" onclick="openCity('tab7')">MilkShake/Sorvete</li>
+    <li class="btn active" onclick="openLanchonete('1tab1')">Lanches</li>
+    <li class="btn" onclick="openLanchonete('1tab2')">Porções</li>
+    <li class="btn" onclick="openLanchonete('1tab3')">Salgados Assados</li>
+    <li class="btn" onclick="openLanchonete('1tab4')">Salgados Fritos</li>
 </ul>
 
-<div id="tab1" class="row city" data-aos="fade-right">
+<div id="1tab1" class="row tabLanchonete" data-aos="fade-right">
 
     <div class="scroll" style="overflow-y: auto;">
         <div style="display: flex;width: max-content;">
             <ul class="listInside">
-                <li class="btnInside active" onclick="openItensOne('tab1-1')">X-Tudo</li>
-                <li class="btnInside" onclick="openItensOne('tab1-2')">X-Calabresa</li>
-                <li class="btnInside" onclick="openItensOne('tab1-3')">X-Egg</li>
-                <li class="btnInside" onclick="openItensOne('tab1-4')">Americano</li>
-                <li class="btnInside" onclick="openItensOne('tab1-5')">X-Salada</li>
-                <li class="btnInside" onclick="openItensOne('tab1-6')">X-Frango</li>
-                <li class="btnInside" onclick="openItensOne('tab1-7')">X-Burguer</li>
-                <li class="btnInside" onclick="openItensOne('tab1-8')">Mistão</li>
+                <li class="btnInside active" onclick="openItensLanches('1tab1.1')">X-Tudo</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.2')">X-Calabresa</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.3')">X-Egg</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.4')">Americano</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.5')">X-Salada</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.6')">X-Frango</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.7')">X-Burguer</li>
+                <li class="btnInside" onclick="openItensLanches('1tab1.8')">Mistão</li>
             </ul>
         </div>
     </div>
@@ -114,38 +116,18 @@
 
 </div>
 
-<div id="tab2" class="row city" data-aos="fade-right" style="display:none">
+<div id="1tab2" class="row tabLanchonete" data-aos="fade-right" style="display:none">
 
     <div class="scroll" style="overflow-y: auto;">
         <div style="display: flex;width: max-content;">
             <ul class="listInside">
-                <li class="btnInside active" onclick="openItensTwo('tab2-1')">Tradicional</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-2')">Calabresa</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-3')">Caipira</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-4')">Portuguesa</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-5')">Frango Catupiry</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-6')">Carne Seca</li>
-                <li class="btnInside" onclick="openItensTwo('tab2-7')">Atum</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="catPizzas" class="box"></div>
-
-</div>
-
-<div id="tab3" class="row city" data-aos="fade-right" style="display:none">
-
-    <div class="scroll" style="overflow-y: auto;">
-        <div style="display: flex;width: max-content;">
-            <ul class="listInside">
-                <li class="btnInside active" onclick="openItensThree('tab3-1')">Completão</li>
-                <li class="btnInside" onclick="openItensThree('tab3-2')">Frango</li>
-                <li class="btnInside" onclick="openItensThree('tab3-3')">Batata Completa</li>
-                <li class="btnInside" onclick="openItensThree('tab3-4')">Batata&Cheddar</li>
-                <li class="btnInside" onclick="openItensThree('tab3-5')">Batata&Bacon</li>
-                <li class="btnInside" onclick="openItensThree('tab3-6')">Batata Frita</li>
-                <li class="btnInside" onclick="openItensThree('tab3-7')">Frango a passarinho</li>
+                <li class="btnInside active" onclick="openItensPorcoes('1tab2.1')">Completão</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.2')">Frango</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.3')">Batata Completa</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.4')">Batata&Cheddar</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.5')">Batata&Bacon</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.6')">Batata Frita</li>
+                <li class="btnInside" onclick="openItensPorcoes('1tab2.7')">Frango a passarinho</li>
             </ul>
         </div>
     </div>
@@ -154,21 +136,21 @@
 
 </div>
 
-<div id="tab4" class="row city" data-aos="fade-right" style="display:none">
+<div id="1tab3" class="row tabLanchonete" data-aos="fade-right" style="display:none">
 
     <div class="scroll" style="overflow-y: auto;">
         <div style="display: flex;width: max-content;">
             <ul class="listInside">
-                <li class="btnInside active" onclick="openItensFour('tab4-1')">Esfirra de Frango</li>
-                <li class="btnInside" onclick="openItensFour('tab4-2')">E. carne</li>
-                <li class="btnInside" onclick="openItensFour('tab4-3')">E. queijo&presunto</li>
-                <li class="btnInside" onclick="openItensFour('tab4-4')">E. Frango&Catupiry</li>
-                <li class="btnInside" onclick="openItensFour('tab4-5')">E. Frango&Cheddar</li>
-                <li class="btnInside" onclick="openItensFour('tab4-6')">E. Calabresa&Queijo</li>
-                <li class="btnInside" onclick="openItensFour('tab4-7')">E. Calabresa&Queijo&Cheddar</li>
-                <li class="btnInside" onclick="openItensFour('tab4-8')">Hamburgão</li>
-                <li class="btnInside" onclick="openItensFour('tab4-9')">Bauru</li>
-                <li class="btnInside" onclick="openItensFour('tab4-10')">Enroladinho Salsicha</li>
+                <li class="btnInside active" onclick="openItensSalgadosAssados('1tab3.1')">Esfirra de Frango</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.2')">E. carne</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.3')">E. queijo&presunto</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.4')">E. Frango&Catupiry</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.5')">E. Frango&Cheddar</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.6')">E. Calabresa&Queijo</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.7')">E. Calabresa&Queijo&Cheddar</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.8')">Hamburgão</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.9')">Bauru</li>
+                <li class="btnInside" onclick="openItensSalgadosAssados('1tab3.10')">Enroladinho Salsicha</li>
             </ul>
         </div>
     </div>
@@ -177,18 +159,18 @@
 
 </div>
 
-<div id="tab5" class="row city" data-aos="fade-right" style="display:none">
+<div id="1tab4" class="row tabLanchonete" data-aos="fade-right" style="display:none">
 
     <div class="scroll" style="overflow-y: auto;">
         <div style="display: flex;width: max-content;">
             <ul class="listInside">
-                <li class="btnInside active" onclick="openItensFive('tab5-1')">Coxinha</li>
-                <li class="btnInside" onclick="openItensFive('tab5-2')">Risoles Carne</li>
-                <li class="btnInside" onclick="openItensFive('tab5-3')">Risoles Pizza</li>
-                <li class="btnInside" onclick="openItensFive('tab5-4')">Enroladinho Salsicha</li>
-                <li class="btnInside" onclick="openItensFive('tab5-5')">E. Queijo&Presunto</li>
-                <li class="btnInside" onclick="openItensFive('tab5-6')">Kibe</li>
-                <li class="btnInside" onclick="openItensFive('tab5-7')">Steak Frango</li>
+                <li class="btnInside active" onclick="openItensSalgadosFritos('1tab4.1')">Coxinha</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.2')">Risoles Carne</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.3')">Risoles Pizza</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.4')">Enroladinho Salsicha</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.5')">E. Queijo&Presunto</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.6')">Kibe</li>
+                <li class="btnInside" onclick="openItensSalgadosFritos('1tab4.7')">Steak Frango</li>
             </ul>
         </div>
     </div>
@@ -197,6 +179,64 @@
 
 </div>
 
+<hr class="hrCustom">
+
+</section>
+
+<!--*************************-->
+
+<section class="menu" id="pizzaria">
+    <h3 class="heading" data-aos="fade-down"><span><i class="fas fa-pizza-slice" style="transform: rotate(-90deg);"></i></span>Pizzaria<span><i class="fas fa-pizza-slice"></i></span></h3>
+    <br>
+    <div class="row city" data-aos="fade-right">
+        <div class="scroll" style="overflow-y: auto;">
+            <div style="display: flex;width: max-content;">
+                <ul class="listInside">
+                    <li class="btnInside active" onclick="openItensPizzas('2tab1.1')">Tradicional</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.2')">Calabresa</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.3')">Caipira</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.4')">Portuguesa</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.5')">Frango Catupiry</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.6')">Carne Seca</li>
+                    <li class="btnInside" onclick="openItensPizzas('2tab1.7')">Atum</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="catPizzas" class="box"></div>
+    </div>
+    <hr class="hrCustom">
+</section>
+
+<!--*************************-->
+
+<section class="menu" id="sorveteria">
+    <h3 class="heading" data-aos="fade-down"><span><i class="fas fa-ice-cream" style="transform: rotate(-30deg);"></i></span>Sorveteria<span><i class="fas fa-ice-cream" style="transform: rotate(30deg);"></i></span></h3>
+    <br>
+    <ul class="list" data-aos="fade-down">
+        <li class="btn active" onclick="openSorveteria('3tab1')">Açaís</li>
+        <li class="btn" onclick="openSorveteria('3tab2')">MilkShakes</li>
+        <li class="btn" onclick="openSorveteria('3tab3')">Sorvetes</li>
+    </ul>
+
+    <div id="3tab1" class="row tabSorveteria" data-aos="fade-right">
+
+        <div class="scroll" style="overflow-y: auto;">
+            <div style="display: flex;width: max-content;">
+                <ul class="listInside">
+                    <li class="btnInside active" onclick="openItensAcais('3tab1.1')">PP</li>
+                    <li class="btnInside" onclick="openItensAcais('3tab1.2')">P</li>
+                    <li class="btnInside" onclick="openItensAcais('3tab1.3')">M</li>
+                    <li class="btnInside" onclick="openItensAcais('3tab1.4')">G</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="catAcais" class="box"></div>
+    
+    </div>
+
+    <!--<hr class="hrCustom">-->
 </section>
 
 <!-- popular section starts  -->
@@ -366,7 +406,9 @@
             <h3>quick links </h3>
             <a href="#">home</a>
             <a href="#">about</a>
-            <a href="#">menu</a>
+            <a href="#">lanchonete</a>
+            <a href="#">pizzaria</a>
+            <a href="#">sorveteria</a>
             <a href="#">popular</a>
             <a href="#">gallery</a>
             <a href="#">order</a>
@@ -421,9 +463,9 @@
 </script>
 
 <script>
-    function openCity(cityName) {
+    function openLanchonete(cityName) {
       var i;
-      var x = document.getElementsByClassName("city");
+      var x = document.getElementsByClassName("tabLanchonete");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
@@ -432,45 +474,63 @@
 </script>
 
 <script>
-    function openItensOne(prodName) {
+    function openItensLanches(prodName) {
       var i;
-      var x = document.getElementsByClassName("tabone");
+      var x = document.getElementsByClassName("tabLanches");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
       document.getElementById(prodName).style.display = "flex";  
     }
 
-    function openItensTwo(prodName) {
+    function openItensPorcoes(prodName) {
       var i;
-      var x = document.getElementsByClassName("tabtwo");
+      var x = document.getElementsByClassName("tabPorcoes");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
       document.getElementById(prodName).style.display = "flex";  
     }
 
-    function openItensThree(prodName) {
+    function openItensSalgadosAssados(prodName) {
       var i;
-      var x = document.getElementsByClassName("tabthree");
+      var x = document.getElementsByClassName("tabSalgAssados");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
       document.getElementById(prodName).style.display = "flex";  
     }
 
-    function openItensFour(prodName) {
+    function openItensSalgadosFritos(prodName) {
       var i;
-      var x = document.getElementsByClassName("tabfour");
+      var x = document.getElementsByClassName("tabSalgFritos");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
       document.getElementById(prodName).style.display = "flex";  
     }
 
-    function openItensFive(prodName) {
+    function openItensPizzas(prodName) {
       var i;
-      var x = document.getElementsByClassName("tabfive");
+      var x = document.getElementsByClassName("tabPizzas");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openSorveteria(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabSorveteria");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensAcais(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabAcais");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }

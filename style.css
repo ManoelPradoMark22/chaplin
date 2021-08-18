@@ -49,6 +49,11 @@ section{
   padding-top: 8.5rem;
 }
 
+.hrCustom {
+  margin-top: 85px;
+  border-top: 10px dotted var(--yellow);
+}
+
 .btn{
   font-size: 1.7rem;
   padding:.7rem 4rem;
