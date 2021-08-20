@@ -630,3 +630,88 @@ document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/*SORVETES*/
+var catSorvetes = [
+  {
+    id: '3tab3.1',
+    number: 1,
+    name:"Bola de sorvete",
+    description: "Delicioso sorvete SUUUUPER cremoso!!",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    display: "display:flex"
+  },
+  {
+    id: '3tab3.2',
+    number: 2,
+    name:"Sorvete na casquinha",
+    description: "1 bola na casquinha desse sorvete maravilhoso e cremoso.",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236452689_117352143972999_4656178210832626560_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=uiJ1a-I5BlQAX-XAv9x&_nc_ht=scontent.fvdc3-1.fna&oh=d073d85b37cbbb1e0c44880be1938f55&oe=61458A57",
+    display: "display:none"
+  },
+  {
+    id: '3tab3.3',
+    number: 3,
+    name:"Sorvete no cascão",
+    description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
+    price:"R$2,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239928710_117352087306338_3799823051884595966_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=c1k7Ox3VesgAX_69boW&_nc_ht=scontent.fvdc3-1.fna&oh=b074f43a25ef47fc64eb05bfe5c41772&oe=61445AB1",
+    display: "display:none"
+  },
+  {
+    id: '3tab3.4',
+    number: 4,
+    name:"Picolé cremoso",
+    description: "Picolé super cremoso!",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239936010_117352233972990_454351185082107640_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=4FFonRsFZP8AX-Jrlwt&_nc_ht=scontent.fvdc3-1.fna&oh=afaab0a74271d13a9f009f24446e29d2&oe=6146C7B7",
+    display: "display:none"
+  },
+  {
+    id: '3tab3.5',
+    number: 5,
+    name:"Picolé cristalizado",
+    description: "Picolé cristalizado super refrescante!",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233041204_117352190639661_4044371983558569854_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=VNufUH7TTCAAX9KYpdB&_nc_ht=scontent.fvdc3-1.fna&oh=eb18d0e77352241e369be2d3df5e7c5d&oe=61473D1D",
+    display: "display:none"
+  },
+  {
+    id: '3tab3.6',
+    number: 6,
+    name:"Picolé SKIMO",
+    description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
+    price:"R$2,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233643579_117352293972984_4682700727986961552_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=6X9dB2EaAxkAX8jLD3z&_nc_ht=scontent.fvdc3-1.fna&oh=07bd68b253caad1dd1c654ff208bec4e&oe=61444790",
+    display: "display:none"
+  },
+  {
+    id: '3tab3.7',
+    number: 7,
+    name:"Cremosinho",
+    description: "Sorvete no saquinho super cremoso!",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233498861_117354517306095_6543384273992456851_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=d1xLOw1hQ6AAX--I_qI&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=0281ffd07444aa8d3a81f741ebf83e79&oe=6143CDAF",
+    display: "display:none"
+  }
+]
+
+document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabSorvetes" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')

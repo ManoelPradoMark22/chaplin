@@ -266,6 +266,28 @@
     
     </div>
 
+    <div id="3tab3" class="row tabSorveteria" data-aos="fade-right" style="display:none">
+
+        <div class="scroll" style="overflow-y: auto;">
+            <div style="display: flex;width: max-content;">
+                <ul class="listInside">
+                    <li class="btnInside active" onclick="openItensSorvetes('3tab3.1')">Bola</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.2')">Casquinha</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.3')">Cascão</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.4')">Picolé cremoso</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.5')">Picolé cristalizado</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.6')">Picolé casquinha</li>
+                    <li class="btnInside" onclick="openItensSorvetes('3tab3.7')">Cremosinho</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="break"></div>
+    
+        <div id="catSorvetes" class="box"></div>
+    
+    </div>
+
     <!--<hr class="hrCustom" data-aos="fade-right">-->
 </section>
 
@@ -570,6 +592,15 @@
     function openItensMilkShakes(prodName) {
       var i;
       var x = document.getElementsByClassName("tabMilkShakes");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensSorvetes(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabSorvetes");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
