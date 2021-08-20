@@ -532,7 +532,7 @@ var catAcais = [
     name:"Açaí PP (250ml)",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
     price:"R$5,00",
-    img: "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2140192:1590239263/Pit-Stop.jpg?f=default&$p$f=543206a",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF",
     display: "display:flex"
   },
   {
@@ -541,7 +541,7 @@ var catAcais = [
     name:"Açaí P (300ml)",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
     price:"R$7,00",
-    img: "https://media-cdn.tripadvisor.com/media/photo-s/19/72/b6/df/acai.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59",
     display: "display:none"
   },
   {
@@ -550,7 +550,7 @@ var catAcais = [
     name:"Açaí M (400ml)",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
     price:"R$10,00",
-    img: "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2140192:1590239263/Pit-Stop.jpg?f=default&$p$f=543206a",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE",
     display: "display:none"
   },
   {
@@ -559,7 +559,7 @@ var catAcais = [
     name:"Açaí G (500ml)",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
     price:"R$12,00",
-    img: "https://media-cdn.tripadvisor.com/media/photo-s/19/72/b6/df/acai.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5",
     display: "display:none"
   }
 ]
