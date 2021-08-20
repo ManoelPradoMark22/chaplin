@@ -171,7 +171,7 @@ var catPorcoes = [
     name:"Frango e Batata com Cheddar e Bacon",
     description: "sdk dask dajks k",
     price:"R$28,00",
-    img: "https://help.grandchef.com.br/wp-content/uploads/2021/04/frango-no-balde.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232378070_117300867311460_8194682613149046208_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=ixoJgvgSW70AX-1xGqQ&_nc_ht=scontent.fvdc3-1.fna&oh=52d2a9bbabc6d8a7181a0f31b0032db9&oe=61445C42",
     display: "display:flex"
   },
   {
@@ -180,7 +180,7 @@ var catPorcoes = [
     name:"Frango",
     description: "sdk dask dajks k",
     price:"R$16,00",
-    img: "https://amp.receitadevovo.com.br/wp-content/uploads/2020/10/empanados-de-frango.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233132893_117300823978131_1758347187518323947_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=CH7hBQ0g4EcAX88zRX-&_nc_ht=scontent.fvdc3-1.fna&oh=8da4b24a9bfd3c199c9e62ccfb91153c&oe=6143B978",
     display: "display:none"
   },
   {
@@ -189,7 +189,7 @@ var catPorcoes = [
     name:"Batata com Cheddar e Bacon",
     description: "sdk dask dajks k",
     price:"R$12,00",
-    img: "https://coolicias.ao/wp-content/uploads/2019/11/Receita-de-Batata-frita-com-queijo-e-recheio-de-bacon-TudoGostoso-1200x900.jpeg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233262635_117300590644821_1719707751774929036_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=LDqN8H8hDqUAX-2SH27&_nc_ht=scontent.fvdc3-1.fna&oh=c01ecfa5d908c705083ec0e07d46ca59&oe=6146847A",
     display: "display:none"
   },
   {
@@ -198,7 +198,7 @@ var catPorcoes = [
     name:"Batata com Cheddar",
     description: "sdk dask dajks k",
     price:"R$10,00",
-    img: "https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/5f04bee3-e350-4217-b28c-2b7dac1e00a3/5f04bee3-5a2c-480c-9d82-2b7dac1e00a3.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/235171800_117300657311481_5551938420942140045_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=AFZVaMHcRJgAX-Q5qZv&_nc_ht=scontent.fvdc3-1.fna&oh=05859381de2d1145ade4c3ac966257b7&oe=61451EC7",
     display: "display:none"
   },
   {
@@ -207,7 +207,7 @@ var catPorcoes = [
     name:"Batata com Bacon",
     description: "sdk dask dajks k",
     price:"R$10,00",
-    img: "https://1.bp.blogspot.com/--4fFFHJly2Y/WW9O_eVKROI/AAAAAAAA3zg/RqFPla1YTnw8-kDPRUoM53wpguklpM-dACLcBGAs/s640/wendys-bacon-queso-fries-01.JPG",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232289142_117300527311494_5517302782081115995_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=QsHbFpqIH3wAX8qi2j-&_nc_ht=scontent.fvdc3-1.fna&oh=445c55f187d587312318f9e9b5b1db5d&oe=6144527B",
     display: "display:none"
   },
   {
@@ -216,7 +216,7 @@ var catPorcoes = [
     name:"Batata Frita",
     description: "sdk dask dajks k",
     price:"R$8,00",
-    img: "https://pilotandofogao.com.br/wp-content/uploads/2019/01/Batata-Frita-Crocante.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232130364_117300710644809_8564924637729767580_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=P7-5UDBKbacAX-oWHrw&_nc_ht=scontent.fvdc3-1.fna&oh=fbf30fa4a64e73bc38be16e68a8e565e&oe=6144797A",
     display: "display:none"
   },
   {
@@ -225,7 +225,7 @@ var catPorcoes = [
     name:"Frango a passarinho",
     description: "sdk dask dajks k",
     price:"R$22,00",
-    img: "https://www.supermercadosmundial.com.br/content/816x480/gHYV58ha9m9KxcCN.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240055901_117300777311469_2843962142386130061_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=OGap_RCubbIAX_uVR6S&_nc_ht=scontent.fvdc3-1.fna&oh=7b3c64b01446393bf21ed9547c899cd4&oe=614381B7",
     display: "display:none"
   }
 ]
@@ -256,7 +256,7 @@ var catSalgAssados = [
     name:"Esfirra de frango",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://www.kideliciasalgados.com.br/wp-content/uploads/2019/11/esfiha_frango_brocolis_kidelicia.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240394056_117294680645412_5292669921026068825_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=8Znl397nYd4AX8MScoH&_nc_ht=scontent.fvdc3-1.fna&oh=8fae60372c32847c4cdffc3dfc57af8b&oe=6145D041",
     display: "display:flex"
   },
   {
@@ -265,7 +265,7 @@ var catSalgAssados = [
     name:"Esfirra de carne",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://amordereceita.com.br/wp-content/uploads/2021/04/Esfira_de_Carne_fechada.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236299548_117294447312102_4444898762647027655_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=qhEC9qKeHdAAX-Os1Li&_nc_ht=scontent.fvdc3-1.fna&oh=64495db032c5ffcf2a4d64592433bd2e&oe=61448CDC",
     display: "display:none"
   },
   {
@@ -274,7 +274,7 @@ var catSalgAssados = [
     name:"Esfirra de queijo e presunto",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://img.cybercook.com.br/imagens/receitas/289/esfiha-de-presunto-e-cream-cheese.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236337351_117294380645442_94699090341248678_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=ChCE8FHxdYwAX80PdjC&_nc_ht=scontent.fvdc3-1.fna&oh=ad413928efe6b5ded03ef7f4243aa1c4&oe=614394F9",
     display: "display:none"
   },
   {
@@ -283,7 +283,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com catupiry",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://lh3.googleusercontent.com/proxy/Z5u3HuL9Lv2IkuXxExJAVr4R2DvVD5UXZU4ni0zjgYVZpBmid0TnlzEgI2dtwUekfClLaTxthE-MaqnWqImnpzQ3xu0W3C7hq-9V1f1t5GjQ53A_hw",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232227148_117294503978763_3382087541275160377_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=WCSHBNHi5bgAX8p_Aqs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=d116ba20554ada90a55dc1b13ea0af23&oe=6146D1B2",
     display: "display:none"
   },
   {
@@ -292,7 +292,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com cheddar",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://lh3.googleusercontent.com/proxy/7g-NNEh-deKE7qQNDLFmFImFGXdkip2gMvgv8rZCB805AkqT4W4H9so-JUMBgLAoJswvl7mxigbfGYSdjX1AN90_6UZLgrCG98SRYVepn23xTbArXLybAy-3MHVdTm4HYZ992oNF6vP8TguJjgda5JD5LXma",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233370570_117294630645417_4916506231140999812_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=dfOzeNE4JGUAX-8Aho8&_nc_ht=scontent.fvdc3-1.fna&oh=4d7b2f40cd6cc4989ebab2690744b4e6&oe=614584BB",
     display: "display:none"
   },
   {
@@ -301,7 +301,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://levitazero.com.br/shop/wp-content/uploads/2019/02/Produto-Esfiha-Calabresa-190210a.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238534998_117294877312059_1264715566418216028_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgmASK5gL4MAX97I7Uj&_nc_ht=scontent.fvdc3-1.fna&oh=63857559794810ce6d848952fc33a11d&oe=6145939B",
     display: "display:none"
   },
   {
@@ -310,7 +310,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo e cheddar",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://570341-1841894-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/11/esfirra-de-calabresa.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232329304_117294750645405_1026935317479180654_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=VnKNQLsBBnAAX9Q_bLL&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=469efdb52c2f1dd90c2ef333cd4b0f7f&oe=614563FA",
     display: "display:none"
   },
   {
@@ -319,7 +319,7 @@ var catSalgAssados = [
     name:"Hamburgão",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://i.ytimg.com/vi/ZErHTOws2AU/maxresdefault.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/225534944_117294817312065_5737254042580129881_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=XK7lGA9uXygAX_lWhc9&_nc_ht=scontent.fvdc3-1.fna&oh=fcbd8837822269d5ba19ac836bbb66a0&oe=61461806",
     display: "display:none"
   },
   {
@@ -328,7 +328,7 @@ var catSalgAssados = [
     name:"Bauru",
     description: "sdk dask dajks k",
     price:"R$4,00",
-    img: "https://obasuperatacado-img.azureedge.net/product/7681-bauru-assado-frango-kg-prom-g.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240078676_117294217312125_9141162846575852765_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Q98xPl8Huk4AX8a3nns&_nc_ht=scontent.fvdc3-1.fna&oh=8f3ef5c590b2b440dfe777c8bd63a75d&oe=6145FEB6",
     display: "display:none"
   },
   {
@@ -337,7 +337,7 @@ var catSalgAssados = [
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://bellamassa.com.br/wp-content/uploads/2018/12/enroladinho-salsicha-post.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
     display: "display:none"
   },
 ]
@@ -368,7 +368,7 @@ var catSalgFritos = [
     name:"Coxinha",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://s2.glbimg.com/3yEPNnGtV9kKZHFEXD8zoz7CZAI=/0x0:1280x854/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/k/C/CyeFFuSSKLrOop79XWoQ/coxinha.jpeg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240158547_117296533978560_7889505186724044514_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=Ygcq-KnrRYwAX8xQuUS&_nc_ht=scontent.fvdc3-1.fna&oh=19f207c7be4c71740bc783d59853608b&oe=61458D04",
     display: "display:flex"
   },
   {
@@ -377,7 +377,7 @@ var catSalgFritos = [
     name:"Risoles de Carne",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://meucadernodereceitas.xyz/wp-content/uploads/2021/03/Risoles-de-Carne-Moida-Meu-Caderno-de-Receitas.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/231438220_117296480645232_7767201498510745427_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zFP3GEsepV8AX_o5xGk&_nc_ht=scontent.fvdc3-1.fna&oh=86686739578b31fdbec896535a200dbf&oe=614471B8",
     display: "display:none"
   },
   {
@@ -386,7 +386,7 @@ var catSalgFritos = [
     name:"Risoles de Pizza",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/219957861_116279110746969_4943552752224603272_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=OopR2_sAgFsAX9ZZDuF&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=73b3bad7ece85f3693537e65d52cf38d&oe=61410408",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233106344_117296717311875_8271198056886297579_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=GgTv6fqXhdMAX8b_vNY&_nc_ht=scontent.fvdc3-1.fna&oh=398d80f62d5c7cd3050b71c77ea51be1&oe=614446A2",
     display: "display:none"
   },
   {
@@ -395,7 +395,7 @@ var catSalgFritos = [
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://xtudoreceitas.com/wp-content/uploads/Enroladinho-de-Salsicha-Frito-480x270.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228301159_117296790645201_8092389903944790366_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=h6dCiKoczyIAX8Xyp5D&_nc_ht=scontent.fvdc3-1.fna&oh=2617f5a7765bf057519005f3fb5b3063&oe=61434A31",
     display: "display:none"
   },
   {
@@ -404,7 +404,7 @@ var catSalgFritos = [
     name:"Enroladinho de queijo e presunto",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://aquelareceita.com.br/wp-content/uploads/2020/10/Enroladinho-de-Presunto-e-Queijo-Sem-Massa.00_03_33_06.Still002FB.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239197237_117296650645215_3964218506547131055_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=_O5akTc2frUAX9VOavC&_nc_ht=scontent.fvdc3-1.fna&oh=c23611c981c8823bf39dc819f20fcef1&oe=614602BF",
     display: "display:none"
   },
   {
@@ -413,7 +413,7 @@ var catSalgFritos = [
     name:"Kibe",
     description: "sdk dask dajks k",
     price:"R$3,50",
-    img: "https://pratofundo.com/wp-content/uploads/fly-images/4975/kibe2017-015-500x500-c.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240097809_117296597311887_5222320388318549415_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=EVG-axz_iToAX8MJt_r&_nc_oc=AQkBb7LqS69WOLFlKa5pVy_BKBcxFy7CgxoT6PQFMzWsbU7Eq0Y2NA9XxreWQuNk_is&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=5f315cf8eba1360a04f53700a698c7d9&oe=614565F6",
     display: "display:none"
   },
   {
@@ -422,7 +422,7 @@ var catSalgFritos = [
     name:"Steak de Frango",
     description: "sdk dask dajks k",
     price:"R$3,00",
-    img: "https://www.lar.ind.br/wp-content/uploads/2020/12/Steak.png",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233330204_117296840645196_8355075857624459406_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=ibsb68IlwCYAX-AZtst&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=3877ac7dedb802d985c0e7fa3c339755&oe=6145E112",
     display: "display:none"
   },
 ]
