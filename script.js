@@ -75,7 +75,7 @@ var catLanches = [
     id: '1tab1.1',
     number: 1,
     name:"X-Tudo",
-    description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho, molho.",
+    description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
     price:"R$13,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228982349_116403880734492_7546688830169748149_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=OBhionX2qt4AX9zMz5f&_nc_ht=scontent.fvdc3-1.fna&oh=9375b31d749fba0f55e98f9d4e661443&oe=6142FCE3",
     display: "display:flex"
@@ -84,7 +84,7 @@ var catLanches = [
     id: '1tab1.2',
     number: 2,
     name:"X-Calabresa",
-    description: "Hambúrguer, calabresa, queijo, cebola, alface, tomate, molho.",
+    description: "Hambúrguer, calabresa, queijo, cebola, alface, tomate e molho.",
     price:"R$10,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229922661_116404507401096_5192594160246130830_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=AUUV8wHMT3kAX_Rsqav&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=78c289de1b6b8bff68917bf6fdda3285&oe=61403A89",
     display: "display:none"
@@ -93,7 +93,7 @@ var catLanches = [
     id: '1tab1.3',
     number: 3,
     name:"X-Egg",
-    description: "Hambúrguer, ovo, queijo, alface, tomate, molho.",
+    description: "Hambúrguer, ovo, queijo, alface, tomate e molho.",
     price:"R$9,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/p526x296/234648403_116404864067727_4274334103086826176_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=xiunFLgqfhIAX8_vunB&_nc_ht=scontent.fvdc3-1.fna&oh=ae00da9ad7acea9d30e249dcec2bf741&oe=61439B9F",
     display: "display:none"
@@ -102,7 +102,7 @@ var catLanches = [
     id: '1tab1.4',
     number: 4,
     name:"Americano",
-    description: "Queijo, presunto, ovo, alface, tomate.",
+    description: "Queijo, presunto, ovo, alface e tomate.",
     price:"R$7,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233427102_116405447401002_3188619586584457176_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=Z43iCrs4kiQAX9W-SSv&_nc_ht=scontent.fvdc3-1.fna&oh=4d0435308c02a6a87ba0422f19c5c24a&oe=61427025",
     display: "display:none"
@@ -111,7 +111,7 @@ var catLanches = [
     id: '1tab1.5',
     number: 5,
     name:"X-Salada",
-    description: "Hambúrguer, alface, tomate, milho.",
+    description: "Hambúrguer, alface, tomate e milho.",
     price:"R$7,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229709333_116403054067908_1695209198032983876_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=4ekORxcHkf4AX8EfbUx&_nc_ht=scontent.fvdc3-1.fna&oh=0fc96348b594cb173199eb089e19ad28&oe=6142D6E7",
     display: "display:none"
@@ -120,7 +120,7 @@ var catLanches = [
     id: '1tab1.6',
     number: 6,
     name:"X-Frango",
-    description: "Peito de frango, queijo, alface, tomate, molho.",
+    description: "Peito de frango, queijo, alface, tomate e molho.",
     price:"R$7,00",
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/s640x640/230485402_116604577381089_5371820810698774108_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=JH1mpGV1Q5oAX_H2eKr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=c7ddd4cda85f2c097049626d1fdfe56b&oe=6140C3B1",
     display: "display:none"
@@ -129,7 +129,7 @@ var catLanches = [
     id: '1tab1.7',
     number: 7,
     name:"X-Burguer",
-    description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho, molho.",
+    description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
     price:"R$6,00",
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/239448457_116605857380961_5138412958336672385_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=U5BKHUpdNroAX_Y_LOr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=318bddf52d420bd29ecb9bdb3aa5ef9d&oe=614332D0",
     display: "display:none"
@@ -138,7 +138,7 @@ var catLanches = [
     id: '1tab1.8',
     number: 8,
     name:"Mistão",
-    description: "Hambúrguer, queijo, molho.",
+    description: "Hambúrguer, queijo e molho.",
     price:"R$5,00",
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/235818218_116606420714238_3907036065709012017_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=3IehahWSg8QAX-IfhLY&_nc_ht=scontent.fvdc6-1.fna&oh=9449fa67d6c9548653493cce22ea87dd&oe=61439773",
     display: "display:none"
@@ -452,7 +452,7 @@ var catPizzas = [
     id: '2tab1.1',
     number: 1,
     name:"Tradicional",
-    description: "Queijo, presunto, milho, tomate.",
+    description: "Queijo, presunto, milho e tomate.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240106277_117293040645576_4924976795352147143_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=jo539THf4NwAX_1fT0l&_nc_ht=scontent.fvdc3-1.fna&oh=2954dc5b83f4e5d45c216670a825654b&oe=6143CE31",
     display: "display:flex"
   },
@@ -460,7 +460,7 @@ var catPizzas = [
     id: '2tab1.2',
     number: 2,
     name:"Calabresa",
-    description: "Queijo, calabresa, cebola.",
+    description: "Queijo, calabresa e cebola.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233625245_117292540645626_3782401061590880459_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=KY3wEdhSD1MAX_WKIA5&_nc_ht=scontent.fvdc3-1.fna&oh=237c81b2c01923d56d475261071e8999&oe=61459EC1",
     display: "display:none"
   },
@@ -468,7 +468,7 @@ var catPizzas = [
     id: '2tab1.3',
     number: 3,
     name:"Caipira",
-    description: "Queijo, frango desfiado, milho, tomate, cebola.",
+    description: "Queijo, frango desfiado, milho, tomate e cebola.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237965232_117292373978976_748908005551020441_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=cwueK9p2owoAX-kpArW&_nc_ht=scontent.fvdc3-1.fna&oh=6713790a6d58fa5e04bde691a457e47a&oe=61436D81",
     display: "display:none"
   },
@@ -476,7 +476,7 @@ var catPizzas = [
     id: '2tab1.4',
     number: 4,
     name:"Portuguesa",
-    description: "Queijo, presunto, ovo, tomate, azeitona, cebola.",
+    description: "Queijo, presunto, ovo, tomate, azeitona e cebola.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240113265_117292950645585_8766229871408610626_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=eIq4O1cu6ioAX9pdDrY&_nc_ht=scontent.fvdc3-1.fna&oh=f8660a2654cca0b0d11ce65149d21070&oe=614379CA",
     display: "display:none"
   },
@@ -484,7 +484,7 @@ var catPizzas = [
     id: '2tab1.5',
     number: 5,
     name:"Frango Catupiry",
-    description: "Queijo, frango, catupiry.",
+    description: "Queijo, frango e catupiry.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117292870645593_1533618693700679347_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=c6wYHPHHg_4AX9AXq9I&_nc_ht=scontent.fvdc3-1.fna&oh=3f0a840d81feb6dffdbd69c8f679a5d2&oe=61445D0A",
     display: "display:none"
   },
@@ -492,7 +492,7 @@ var catPizzas = [
     id: '2tab1.6',
     number: 6,
     name:"Carne Seca",
-    description: "Carne seca, muçarela, azeitona, cebola.",
+    description: "Carne seca, muçarela, azeitona e cebola.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233552856_117292757312271_2132117680449860470_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7NJrtEhJl0YAX9pS_yo&_nc_ht=scontent.fvdc3-1.fna&oh=9d703af7a689d407b6f9056723ff108a&oe=6147199F",
     display: "display:none"
   },
@@ -500,7 +500,7 @@ var catPizzas = [
     id: '2tab1.7',
     number: 7,
     name:"Atum",
-    description: "Atum, muçarela, azeitona, cebola.",
+    description: "Atum, muçarela, azeitona e cebola.",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233649511_117292293978984_5101822464847389961_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=PZMmYfK_j9AAX_pg-JA&_nc_ht=scontent.fvdc3-1.fna&oh=dd38717079ae4376dca1ad5f9ccea219&oe=614420FD",
     display: "display:none"
   },

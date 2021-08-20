@@ -8,8 +8,8 @@
   box-sizing: border-box;
   text-decoration: none;
   outline: none; border:none;
-  text-transform: capitalize;
   transition:all .2s linear;
+  /*text-transform: capitalize;*/
 }
 
 h1, h3{
