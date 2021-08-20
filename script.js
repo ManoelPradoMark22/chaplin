@@ -574,6 +574,56 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
       <div class="content">
           <div class="info">
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
+
+/*MILKSHAKES*/
+ var catMilkShakes = [
+  {
+    id: '3tab2.1',
+    number: 1,
+    name:"Milk-shake P (300ml)",
+    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
+    price:"R$5,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59",
+    display: "display:flex"
+  },
+  {
+    id: '3tab2.2',
+    number: 2,
+    name:"Milk-shake M (400ml)",
+    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
+    price:"R$7,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE",
+    display: "display:none"
+  },
+  {
+    id: '3tab2.3',
+    number: 3,
+    name:"Milk-shake G (500ml)",
+    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
+    price:"R$9,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5",
+    display: "display:none"
+  }
+]
+
+document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabMilkShakes" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
           </div>
       </div>
