@@ -453,7 +453,7 @@ var catPizzas = [
     number: 1,
     name:"Tradicional",
     description: "Queijo, presunto, milho, tomate.",
-    img: "https://img.riomarevoce.com/fortalezashopping/2020/06/pizza_mussarela_vignoli_expresso_riomar_fortaleza.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240106277_117293040645576_4924976795352147143_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=jo539THf4NwAX_1fT0l&_nc_ht=scontent.fvdc3-1.fna&oh=2954dc5b83f4e5d45c216670a825654b&oe=6143CE31",
     display: "display:flex"
   },
   {
@@ -461,7 +461,7 @@ var catPizzas = [
     number: 2,
     name:"Calabresa",
     description: "Queijo, calabresa, cebola.",
-    img: "https://coolicias.ao/wp-content/uploads/2020/01/Receita-de-Pizza-de-liquidificador-Diferente-Pode-Adicionar-Calabresa.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233625245_117292540645626_3782401061590880459_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=KY3wEdhSD1MAX_WKIA5&_nc_ht=scontent.fvdc3-1.fna&oh=237c81b2c01923d56d475261071e8999&oe=61459EC1",
     display: "display:none"
   },
   {
@@ -469,7 +469,7 @@ var catPizzas = [
     number: 3,
     name:"Caipira",
     description: "Queijo, frango desfiado, milho, tomate, cebola.",
-    img: "https://mezzani.com.br/wp-content/uploads/2019/08/pizza-com-pedacos-de-carne-de-frango-tomate-milho-e-queijo_116500-20-1.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237965232_117292373978976_748908005551020441_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=cwueK9p2owoAX-kpArW&_nc_ht=scontent.fvdc3-1.fna&oh=6713790a6d58fa5e04bde691a457e47a&oe=61436D81",
     display: "display:none"
   },
   {
@@ -477,7 +477,7 @@ var catPizzas = [
     number: 4,
     name:"Portuguesa",
     description: "Queijo, presunto, ovo, tomate, azeitona, cebola.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234517260_114414477600099_3761092935236468369_n.jpg?_nc_cat=100&ccb=1-4&_nc_sid=730e14&_nc_ohc=JuFKK7Mhw1YAX_9LxjG&_nc_ht=scontent.fvdc3-1.fna&oh=b0a22d5d2d1183ad63dfedbe3643c9a8&oe=6139F718",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240113265_117292950645585_8766229871408610626_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=eIq4O1cu6ioAX9pdDrY&_nc_ht=scontent.fvdc3-1.fna&oh=f8660a2654cca0b0d11ce65149d21070&oe=614379CA",
     display: "display:none"
   },
   {
@@ -485,7 +485,7 @@ var catPizzas = [
     number: 5,
     name:"Frango Catupiry",
     description: "Queijo, frango, catupiry.",
-    img: "https://padarianutrivida.com.br/web/image/product.template/3463/image_1024?unique=d167039",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117292870645593_1533618693700679347_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=c6wYHPHHg_4AX9AXq9I&_nc_ht=scontent.fvdc3-1.fna&oh=3f0a840d81feb6dffdbd69c8f679a5d2&oe=61445D0A",
     display: "display:none"
   },
   {
@@ -493,7 +493,7 @@ var catPizzas = [
     number: 6,
     name:"Carne Seca",
     description: "Carne seca, muçarela, azeitona, cebola.",
-    img: "https://www.redelevepizza.com.br/assets/imagens/pizzas/022/carne-seca-assada.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233552856_117292757312271_2132117680449860470_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7NJrtEhJl0YAX9pS_yo&_nc_ht=scontent.fvdc3-1.fna&oh=9d703af7a689d407b6f9056723ff108a&oe=6147199F",
     display: "display:none"
   },
   {
@@ -501,7 +501,7 @@ var catPizzas = [
     number: 7,
     name:"Atum",
     description: "Atum, muçarela, azeitona, cebola.",
-    img: "https://maniadeesfiha.com.br/wp-content/uploads/2019/03/0910201210466229235099.jpg",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233649511_117292293978984_5101822464847389961_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=PZMmYfK_j9AAX_pg-JA&_nc_ht=scontent.fvdc3-1.fna&oh=dd38717079ae4376dca1ad5f9ccea219&oe=614420FD",
     display: "display:none"
   },
 ]
