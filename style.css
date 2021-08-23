@@ -329,6 +329,47 @@ header #menu-bar{
   color:#666;
 }
 
+.menu .row .content .info .offerDiv{
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  padding-left: 4.5rem;
+}
+
+.menu .row .content .info .offerDiv .headerOfferDiv{
+  display: flex;
+  background-color: var(--yellow);
+  border-radius: 8px 8px 0 0;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.menu .row .content .info .offerDiv .headerOfferDiv i{
+  font-size: 13px;
+  text-align: center;
+  margin: 0 3px;
+}
+
+.menu .row .content .info .offerDiv .bodyOfferDiv{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  padding:0.5rem 0.5rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0 0 8px 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
 .popular{
   background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(../images/popular-bg.jpg) no-repeat;
   background-size: cover;
