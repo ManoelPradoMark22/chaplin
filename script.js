@@ -715,3 +715,53 @@ document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/* Sessão 4 - PADARIA
+ Pães (4tab1)*/
+var catPaes = [
+  {
+    id: '4tab1.1',
+    number: 1,
+    name:"Pão de doce",
+    description: "Pãozinho de doce caseiro, delicioso e fofinho.",
+    price:"R$0,50",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    display: "display:flex"
+  },
+  {
+    id: '4tab1.2',
+    number: 2,
+    name:"Pão de sal",
+    description: "Pãozinho de doce caseiro, delicioso e fofinho.",
+    price:"R$0,50",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    display: "display:none"
+  },
+  {
+    id: '4tab1.3',
+    number: 3,
+    name:"Rosca doce",
+    description: "Pãozinho em forma de rosca, super fofo e coberto de leite condesado com coco.",
+    price:"R$0,75",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    display: "display:none"
+  },
+]
+
+document.getElementById('catPaes').innerHTML = catPaes.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabPaes" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')

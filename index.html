@@ -86,7 +86,7 @@
 <h1 class="heading"> Nosso Delicioso <span>Menu</span> </h1>
 <br>
 <br>
-<h3 class="heading" data-aos="fade-down"><span><i class="fas fa-hamburger"></i></span>Lanchonete<span><i class="fas fa-hamburger"></i></span></h3>
+<h3 class="heading" data-aos="fade-down"><span><i class="fas fa-hamburger" style=" margin-right: 5px;"></i></span>Lanchonete<span><i class="fas fa-hamburger" style=" margin-left: 5px;"></i></span></h3>
 <br>
 <ul class="list" data-aos="fade-down">
     <li class="btn active" onclick="openLanchonete('1tab1')">Lanches</li>
@@ -194,7 +194,7 @@
 <!--*************************-->
 
 <section class="menu" id="pizzaria">
-    <h3 class="heading" data-aos="fade-down"><span><i class="fas fa-pizza-slice" style="transform: rotate(-90deg);"></i></span>Pizzaria<span><i class="fas fa-pizza-slice"></i></span></h3>
+    <h3 class="heading" data-aos="fade-down"><span><i class="fas fa-pizza-slice" style="transform: rotate(-90deg); margin-right: 5px;"></i></span>Pizzaria<span><i class="fas fa-pizza-slice" style="margin-left: 5px;"></i></span></h3>
     <br>
     <div class="row city" data-aos="fade-right">
         <div class="scroll" style="overflow-y: auto;">
@@ -285,6 +285,38 @@
         <div class="break"></div>
     
         <div id="catSorvetes" class="box"></div>
+    
+    </div>
+
+    <hr class="hrCustom" data-aos="fade-right">
+</section>
+
+<!--*************************-->
+
+<section class="menu" id="padaria">
+    <h3 class="heading" data-aos="fade-down"><span><i class="fas fa-mug-hot" style="transform: scaleX(-1); margin-right: 5px;"></i></span>Padaria<span><i class="fas fa-mug-hot" style=" margin-left: 5px;"></i></span></h3>
+    <br>
+    <ul class="list" data-aos="fade-down">
+        <li class="btn active" onclick="openPadaria('4tab1')">Pães</li>
+        <li class="btn" onclick="openPadaria('4tab2')">Bolos</li>
+        <li class="btn" onclick="openPadaria('4tab3')">Diversos</li>
+    </ul>
+
+    <div id="4tab1" class="row tabPadaria" data-aos="fade-right">
+
+        <div class="scroll" style="overflow-y: auto;">
+            <div style="display: flex;width: max-content;">
+                <ul class="listInside">
+                    <li class="btnInside active" onclick="openItensPaes('4tab1.1')">Doce</li>
+                    <li class="btnInside" onclick="openItensPaes('4tab1.2')">Sal</li>
+                    <li class="btnInside" onclick="openItensPaes('4tab1.3')">Rosca</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="break"></div>
+    
+        <div id="catPaes" class="box"></div>
     
     </div>
 
@@ -601,6 +633,24 @@
     function openItensSorvetes(prodName) {
       var i;
       var x = document.getElementsByClassName("tabSorvetes");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openPadaria(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabPadaria");
+      for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+      }
+      document.getElementById(prodName).style.display = "flex";  
+    }
+
+    function openItensPaes(prodName) {
+      var i;
+      var x = document.getElementsByClassName("tabPaes");
       for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
       }
