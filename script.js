@@ -728,7 +728,7 @@ var catPaes = [
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
     display: "display:flex",
     hasOffer: "display:flex",
-    offer: "5 pães por: R$2,00"
+    offer: "5 por: R$2,00"
   },
   {
     id: '4tab1.2',
@@ -739,7 +739,7 @@ var catPaes = [
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
     display: "display:none",
     hasOffer: "display:flex",
-    offer: "5 pães por: R$2,00"
+    offer: "5 por: R$2,00"
   },
   {
     id: '4tab1.3',
@@ -750,7 +750,7 @@ var catPaes = [
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none",
     hasOffer: "display:flex",
-    offer: "3 roscas por: R$2,00"
+    offer: "3 por: R$2,00"
   },
 ]
 

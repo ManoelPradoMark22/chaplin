@@ -359,7 +359,7 @@ header #menu-bar{
   align-items: center;
   justify-content: center;
   background-color: red;
-  padding:0.5rem 0.5rem;
+  padding:0.5rem 1rem;
   color: white;
   font-family: 'Roboto', sans-serif;
   border-radius: 0 0 8px 8px;
