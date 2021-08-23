@@ -725,7 +725,7 @@ var catPaes = [
     name:"Pão de doce",
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
     display: "display:flex"
   },
   {
@@ -734,7 +734,7 @@ var catPaes = [
     name:"Pão de sal",
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
     display: "display:none"
   },
   {
@@ -743,7 +743,7 @@ var catPaes = [
     name:"Rosca doce",
     description: "Pãozinho em forma de rosca, super fofo e coberto de leite condesado com coco.",
     price:"R$0,75",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none"
   },
 ]
