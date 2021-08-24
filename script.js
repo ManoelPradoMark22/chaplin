@@ -805,6 +805,60 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none"
   },
+  {
+    id: '4tab2.4',
+    number: '04',
+    name:"Bolo de Arroz (G)",
+    description: "Delicioso bolo de arroz (tamanho normal).",
+    price:"R$6,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.5',
+    number: '05',
+    name:"Bolo de Arroz (P)",
+    description: "Delicioso bolo de arroz (tamanho pequeno).",
+    price:"R$3,50",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.6',
+    number: '06',
+    name:"Brevidade (G)",
+    description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho normal).",
+    price:"R$7,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.7',
+    number: '07',
+    name:"Brevidade (P)",
+    description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho pequeno).",
+    price:"R$4,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.8',
+    number: '08',
+    name:"Bolo de Cenoura",
+    description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
+    price:"R$6,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.9',
+    number: '09',
+    name:"Bolo de Mandioca",
+    description: "Delicioso, macio e cremoso bolo de mandioca.",
+    price:"R$6,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
 ]
 
 document.getElementById('catBolos').innerHTML = catBolos.map(prod => 
