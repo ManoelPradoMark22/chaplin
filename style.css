@@ -139,6 +139,33 @@ header #menu-bar{
   display: none;
 }
 
+.bagDiv {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  bottom: 10px;
+}
+
+.bagDiv:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
+.bagDiv i {
+  font-size: 35px;
+}
+
 .home{
   display: flex;
   align-items: center;
