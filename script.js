@@ -878,3 +878,88 @@ document.getElementById('catBolos').innerHTML = catBolos.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/* DiversosPad (4tab3)*/
+var catDiversosPad = [
+  {
+    id: '4tab3.1',
+    number: '01',
+    name:"Chimango",
+    description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
+    display: "display:flex"
+  },
+  {
+    id: '4tab3.2',
+    number: '02',
+    name:"Pão de queijo",
+    description: "Delicioso e fofinho pão de queijo. Vem sentir o gostinho de Minas na Bahia.",
+    price:"R$1,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.3',
+    number: '03',
+    name:"Bolachinha (200g)",
+    description: "200g da famosa e deliciosa bolachinha de tapioca!",
+    price:"R$4,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.4',
+    number: '04',
+    name:"Doce de Leite (1kg)",
+    description: "1Kg do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
+    price:"R$17,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.5',
+    number: '05',
+    name:"Doce de Leite (500g)",
+    description: "500g do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
+    price:"R$9,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.6',
+    number: '06',
+    name:"Doce de Leite (250g)",
+    description: "250g do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
+    price:"R$6,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.7',
+    number: '07',
+    name:"Avoador",
+    description: "O tão conhecido biscoito de polvilho (avoador).",
+    price:"R$4,50",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  }
+]
+
+document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabDiversosPad" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
