@@ -775,3 +775,52 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     </div>
   </div>`
 ).join('')
+
+/* Bolos (4tab2)*/
+ var catBolos = [
+  {
+    id: '4tab2.1',
+    number: '01',
+    name:"Bolo da prima",
+    description: "O tradicional e queiridinho do café de todo dia: Bolo de trigo, super fofinho e saboroso!",
+    price:"R$7,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
+    display: "display:flex"
+  },
+  {
+    id: '4tab2.2',
+    number: '02',
+    name:"Bolo de Formigueiro",
+    description: "A delícia do bolo da prima com um plus: granulado de chocolate!",
+    price:"R$7,50",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
+    display: "display:none"
+  },
+  {
+    id: '4tab2.3',
+    number: '03',
+    name:"Bolo de Milho",
+    description: "Delicioso bolo cremoso feito com fubá de milho e milho verde. Uma delícia!",
+    price:"R$6,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+]
+
+document.getElementById('catBolos').innerHTML = catBolos.map(prod => 
+  `<div>
+    <div id="${prod.id}" class="row tabBolos" data-aos="fade-right" style="${prod.display}">
+      <div class="image" data-aos="fade-left">
+          <img src="${prod.img}" alt="${prod.name}">
+      </div>
+
+      <div class="content">
+          <div class="info">
+              <h3> <span>${prod.number}.</span> ${prod.name}</h3>
+              <text class="priceCatalog">${prod.price}</text>
+              <p>${prod.description}</p>
+          </div>
+      </div>
+    </div>
+  </div>`
+).join('')
