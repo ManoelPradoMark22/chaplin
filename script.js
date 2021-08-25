@@ -1038,33 +1038,28 @@ var catDiversosPad = [
   {
     id: '4tab3.4',
     number: '04',
-    name:"Doce de Leite (1kg)",
-    description: "1Kg do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
-    price:"R$17,00",
+    name:"Doce de Leite",
+    description: "O maravilhoso doce de leite caseiro, super cremoso e delicioso.",
+    manyPrices: [
+      {
+        price: 'R$6,00',
+        size: '250g'
+      },
+      {
+        price: 'R$9,00',
+        size: '500g'
+      },
+      {
+        price: 'R$18,00',
+        size: '1Kg'
+      }
+    ],
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none"
   },
   {
     id: '4tab3.5',
     number: '05',
-    name:"Doce de Leite (500g)",
-    description: "500g do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
-    price:"R$9,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
-    display: "display:none"
-  },
-  {
-    id: '4tab3.6',
-    number: '06',
-    name:"Doce de Leite (250g)",
-    description: "250g do maravilhoso doce de leite caseiro, super cremoso e delicioso.",
-    price:"R$6,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
-    display: "display:none"
-  },
-  {
-    id: '4tab3.7',
-    number: '07',
     name:"Avoador",
     description: "O tão conhecido biscoito de polvilho (avoador).",
     price:"R$4,50",
@@ -1083,8 +1078,24 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
       <div class="content">
           <div class="info">
               <h3> <span>${prod.number}.</span> ${prod.name}</h3>
-              <text class="priceCatalog">${prod.price}</text>
+              ${prod.price ? `<text class="priceCatalog">${prod.price}</text>` : ``}
               <p>${prod.description}</p>
+              ${prod.manyPrices ?
+                `
+                <div class="boxManyPrices">
+                  ${prod.manyPrices.map((price =>
+                    `
+                    <div class="manyPrices">
+                      <h3 class="headerManyPrices">${price.size}</h3>
+                      <div class="bodyManyPrices">${price.price}</div>
+                    </div>
+                    `
+                  ))}
+                </div>
+                `
+                :
+                ``
+              }
           </div>
       </div>
     </div>
