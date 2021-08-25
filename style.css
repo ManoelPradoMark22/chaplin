@@ -401,12 +401,45 @@ header #menu-bar{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   align-content: space-between;
+  padding-left: 4.5rem;
 }
 
 .menu .row .content .info .boxManyPrices .manyPrices{
   margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .row .content .info .boxManyPrices .manyPrices .headerManyPrices{
+  display: flex;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  border-radius: 8px 8px 0 0;
+  padding:0.3rem 0.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.menu .row .content .info .boxManyPrices .manyPrices .bodyManyPrices{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  padding:0.5rem 1rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0 0 8px 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 .popular{

@@ -450,132 +450,108 @@ PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
   {
     price: 'R$6,00',
-    size: 'Brotinho',
-    orientation: 'up'
+    size: 'Brotinho'
   },
   {
     price: 'R$9,00',
-    size: 'Brot. Especial',
-    orientation: 'up'
+    size: 'Brot. Especial'
   },
   {
     price: 'R$17,00',
-    size: 'P',
-    orientation: 'left'
+    size: 'P'
   },
   {
     price: 'R$22,00',
-    size: 'M',
-    orientation: 'left'
+    size: 'M'
   },
   {
     price: 'R$28,00',
-    size: 'G',
-    orientation: 'left'
+    size: 'G'
   },
   {
     price: 'R$34,00',
-    size: 'GG',
-    orientation: 'left'
+    size: 'GG'
   },
 ]
 
 var pizzaPrices2 = [
   {
     price: 'R$7,00',
-    size: 'Brotinho',
-    orientation: 'up'
+    size: 'Brotinho'
   },
   {
     price: 'R$10,00',
-    size: 'Brot. Especial',
-    orientation: 'up'
+    size: 'Brot. Especial'
   },
   {
     price: 'R$19,00',
-    size: 'P',
-    orientation: 'left'
+    size: 'P'
   },
   {
     price: 'R$24,00',
-    size: 'M',
-    orientation: 'left'
+    size: 'M'
   },
   {
     price: 'R$30,00',
-    size: 'G',
-    orientation: 'left'
+    size: 'G'
   },
   {
     price: 'R$37,00',
-    size: 'GG',
-    orientation: 'left'
+    size: 'GG'
   },
 ]
 
 var pizzaPrices3 = [
   {
     price: 'R$10,00',
-    size: 'Brotinho',
-    orientation: 'up'
+    size: 'Brotinho'
   },
   {
     price: 'R$15,00',
-    size: 'Brot. Especial',
-    orientation: 'up'
+    size: 'Brot. Especial'
   },
   {
     price: 'R$27,00',
-    size: 'P',
-    orientation: 'left'
+    size: 'P'
   },
   {
     price: 'R$33,00',
-    size: 'M',
-    orientation: 'left'
+    size: 'M'
   },
   {
     price: 'R$40,00',
-    size: 'G',
-    orientation: 'left'
+    size: 'G'
   },
   {
     price: 'R$46,00',
-    size: 'GG',
-    orientation: 'left'
+    size: 'GG'
   },
 ]
 
 var pizzaPrices4 = [
   {
     price: 'R$8,00',
-    size: 'Brotinho',
-    orientation: 'up'
+    size: 'Brotinho'
   },
   {
     price: 'R$12,00',
-    size: 'Brot. Especial',
-    orientation: 'up'
+    size: 'Brot. Especial'
   },
   {
     price: 'R$22,00',
-    size: 'P',
-    orientation: 'left'
+    size: 'P'
   },
   {
     price: 'R$28,00',
-    size: 'M',
-    orientation: 'left'
+    size: 'M'
   },
   {
     price: 'R$34,00',
-    size: 'G',
-    orientation: 'left'
+    size: 'G'
   },
   {
     price: 'R$40,00',
-    size: 'GG',
-    orientation: 'left'
+    size: 'GG'
   },
 ]
 
@@ -660,7 +636,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
               <div class="boxManyPrices">
                   ${prod.prices.map((price =>
                     `
-                    <div class="manyPrices ${price.orientation}">
+                    <div class="manyPrices">
                       <h3 class="headerManyPrices">${price.size}</h3>
                       <div class="bodyManyPrices">${price.price}</div>
                     </div>
