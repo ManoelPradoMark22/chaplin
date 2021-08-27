@@ -641,7 +641,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
                       <div class="bodyManyPrices">${price.price}</div>
                     </div>
                     `
-                  ))}
+                  )).join('')}
               </div>
 
           </div>
@@ -691,6 +691,90 @@ var catAcais = [
   }
 ]
 
+var additionals = [
+  {
+    id: 1,
+    name: 'Banana',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: true,
+    fourFree: true
+  },
+  {
+    id: 2,
+    name: 'Morango',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: false,
+    fourFree: true
+  },
+  {
+    id: 3,
+    name: 'Granola',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: true,
+    fourFree: true
+  },
+  {
+    id: 4,
+    name: 'Paçoca',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: false,
+    fourFree: true
+  },
+  {
+    id: 5,
+    name: 'Leite Cond.',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: true,
+    fourFree: true
+  },
+  {
+    id: 6,
+    name: 'Leite em pó',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: true,
+    fourFree: true
+  },
+  {
+    id: 7,
+    name: 'Amendoim',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: false,
+    fourFree: true
+  },
+  {
+    id: 8,
+    name: 'Nutella',
+    available: true,
+    price: 'R$2,00',
+    value: 2.00,
+    selected: false,
+    fourFree: false
+  },
+  {
+    id: 9,
+    name: 'Ovomaltine',
+    available: true,
+    price: 'R$2,00',
+    value: 2.00,
+    selected: false,
+    fourFree: false
+  }
+]
+
 document.getElementById('catAcais').innerHTML = catAcais.map(prod => 
   `<div>
     <div id="${prod.id}" class="row tabAcais" data-aos="fade-right" style="${prod.display}">
@@ -703,6 +787,13 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
+              <div class="boxAdittionals">
+                ${additionals.map(add =>
+                  `
+                    <button type="button" class="adittional">${add.name}</button>
+                  `
+                ).join('')}
+              </div>
           </div>
       </div>
     </div>

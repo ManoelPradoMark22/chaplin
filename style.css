@@ -402,11 +402,11 @@ header #menu-bar{
   flex-wrap: wrap;
   align-items: center;
   align-content: space-between;
-  padding-left: 4.5rem;
+  padding-left: 4.187rem;
 }
 
 .menu .row .content .info .boxManyPrices .manyPrices{
-  margin: 5px 5px;
+  margin: 0.313rem 0.313rem;
   display: flex;
   flex-direction: column;
 }
@@ -440,6 +440,32 @@ header #menu-bar{
   text-align: center;
   text-transform: uppercase;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.menu .row .content .info .boxAdittionals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  padding-left: 4.312rem;
+}
+
+.menu .row .content .info .boxAdittionals .adittional{
+  font-size: 1.2rem;
+  padding:.4rem 2rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background:none;
+  color:#333;
+  cursor: pointer;
+  user-select: none;
+  border:.2rem solid var(--yellow);
+  margin: 0.188rem 0.188rem;
+}
+
+.menu .row .content .info .boxAdittionals .adittional:hover{
+  background:var(--yellow);
+  color:#fff;
 }
 
 .popular{
