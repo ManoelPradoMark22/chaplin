@@ -656,38 +656,11 @@ var catAcais = [
   {
     id: '3tab1.1',
     number: 1,
-    name:"Açaí PP (250ml)",
+    name:"Açaí",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
     price:"R$5,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF",
     display: "display:flex"
-  },
-  {
-    id: '3tab1.2',
-    number: 2,
-    name:"Açaí P (300ml)",
-    description: "Açaí dasjd sad asl fas lfas lfasl fa",
-    price:"R$7,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59",
-    display: "display:none"
-  },
-  {
-    id: '3tab1.3',
-    number: 3,
-    name:"Açaí M (400ml)",
-    description: "Açaí dasjd sad asl fas lfas lfasl fa",
-    price:"R$10,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE",
-    display: "display:none"
-  },
-  {
-    id: '3tab1.4',
-    number: 4,
-    name:"Açaí G (500ml)",
-    description: "Açaí dasjd sad asl fas lfas lfasl fa",
-    price:"R$12,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5",
-    display: "display:none"
   }
 ]
 
@@ -695,6 +668,7 @@ var additionals = [
   {
     id: 1,
     name: 'Banana',
+    idAddName: 'addBanana',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -704,6 +678,7 @@ var additionals = [
   {
     id: 2,
     name: 'Morango',
+    idAddName: 'addMorango',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -713,6 +688,7 @@ var additionals = [
   {
     id: 3,
     name: 'Granola',
+    idAddName: 'addGranola',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -722,6 +698,7 @@ var additionals = [
   {
     id: 4,
     name: 'Paçoca',
+    idAddName: 'addPacoca',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -731,6 +708,7 @@ var additionals = [
   {
     id: 5,
     name: 'Leite Cond.',
+    idAddName: 'addLeiteCond',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -740,6 +718,7 @@ var additionals = [
   {
     id: 6,
     name: 'Leite em pó',
+    idAddName: 'addLeitePo',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -749,6 +728,7 @@ var additionals = [
   {
     id: 7,
     name: 'Amendoim',
+    idAddName: 'addAmendoim',
     available: true,
     price: 'R$1,00',
     value: 1.00,
@@ -758,6 +738,7 @@ var additionals = [
   {
     id: 8,
     name: 'Nutella',
+    idAddName: 'addNutella',
     available: true,
     price: 'R$2,00',
     value: 2.00,
@@ -767,6 +748,7 @@ var additionals = [
   {
     id: 9,
     name: 'Ovomaltine',
+    idAddName: 'addOvomaltine',
     available: true,
     price: 'R$2,00',
     value: 2.00,
@@ -774,6 +756,25 @@ var additionals = [
     fourFree: false
   }
 ]
+
+function changeSelect(id) {
+  additionals.map(add => {
+    if (add.id === id) {
+      console.log(add);
+      const elemento = document.getElementById(add.idAddName);
+      if (add.selected ){
+        add.selected=false;
+        if (elemento.classList) elemento.classList.remove("active")
+        else elemento.className -= " active";
+      }else {
+        add.selected=true;
+        if (elemento.classList) elemento.classList.add("active")
+        else elemento.className += " active";
+      }
+      console.log(add);
+    }
+  })
+}
 
 document.getElementById('catAcais').innerHTML = catAcais.map(prod => 
   `<div>
@@ -792,11 +793,11 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
                   add.selected 
                   ?
                   `
-                    <button type="button" class="adittional active">${add.name}</button>
+                    <button type="button" id=${add.idAddName} class="adittional active" onClick="changeSelect(${add.id})" >${add.name}</button>
                   `
                   :
                   `
-                    <button type="button" class="adittional">${add.name}</button>
+                    <button type="button" id=${add.idAddName} class="adittional" onClick="changeSelect(${add.id})">${add.name}</button>
                   `
                 ).join('')}
               </div>

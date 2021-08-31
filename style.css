@@ -469,8 +469,7 @@ header #menu-bar{
 }
 
 .menu .row .content .info .boxAdittionals .adittional:hover{
-  background:var(--yellow);
-  color:#fff;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
 }
 
 .popular{
