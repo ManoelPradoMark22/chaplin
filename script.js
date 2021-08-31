@@ -32,7 +32,7 @@ $(document).ready(function(){
 
   $('.listInside .btnInside').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
-});
+  });
 
 });
 
@@ -789,6 +789,12 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               <p>${prod.description}</p>
               <div class="boxAdittionals">
                 ${additionals.map(add =>
+                  add.selected 
+                  ?
+                  `
+                    <button type="button" class="adittional active">${add.name}</button>
+                  `
+                  :
                   `
                     <button type="button" class="adittional">${add.name}</button>
                   `
