@@ -788,6 +788,24 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
+              <div class="boxManyPrices">
+                <div class="manyPrices">
+                  <h3 class="headerManyPrices">PP</h3>
+                  <div class="bodyManyPrices">250ml</div>
+                </div>
+                <div class="manyPrices">
+                  <h3 class="headerManyPrices">P</h3>
+                  <div class="bodyManyPrices">300ml</div>
+                </div>
+                <div class="manyPrices">
+                  <h3 class="headerManyPrices">M</h3>
+                  <div class="bodyManyPrices">400ml</div>
+                </div>
+                <div class="manyPrices">
+                  <h3 class="headerManyPrices">G</h3>
+                  <div class="bodyManyPrices">500ml</div>
+                </div>
+              </div>
               <div class="boxAdittionals">
                 ${additionals.map(add =>
                   add.selected 
