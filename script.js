@@ -660,7 +660,7 @@ var catAcais = [
     id: '3tab1.1',
     number: 1,
     name:"Açaí",
-    description: "Açaí dasjd sad asl fas lfas lfasl fa",
+    description: "Aquele açaí delicioso e super cremoso! &#128523",
     priceOriginalAcai: 5.00,
     priceTotalAcai: 5.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF",
@@ -822,13 +822,42 @@ function changeSelect(id) {
   }
 }
 
-function changeSelectedSizeAcai(priceSize) {
+function changeSelectedSizeAcai(sizeId) {
+  var priceSize = 5.00;
+  var imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+
+  switch (sizeId) {
+    case 1:
+      priceSize = 5.00;
+      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+      break;
+    case 2:
+      priceSize = 7.00;
+      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59";
+      break;
+    case 3:
+      priceSize = 10.00;
+      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE";
+      break;
+    case 4:
+      priceSize = 12.00;
+      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5";
+      break;
+
+    default:
+      priceSize = 5.00;
+      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+      break;
+  }
+
   var subtotal = catAcais[0].priceOriginalAcai;
   var total = catAcais[0].priceTotalAcai;
   var newTotal = total - subtotal + priceSize;
   catAcais[0].priceOriginalAcai = priceSize;
   catAcais[0].priceTotalAcai = newTotal;
   document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+  document.getElementById("spanAcai").innerHTML = `0${sizeId}.`;
+  document.getElementById("imgAcai").src=imgPath;
 }
 
 
@@ -836,28 +865,28 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
   `<div>
     <div id="${prod.id}" class="row tabAcais" data-aos="fade-right" style="${prod.display}">
       <div class="image" data-aos="fade-left">
-          <img src="${prod.img}" alt="${prod.name}">
+          <img id="imgAcai" src="${prod.img}" alt="${prod.name}">
       </div>
 
       <div class="content">
           <div class="info">
-              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
+              <h3> <span id="spanAcai">0${prod.number}.</span> ${prod.name}</h3>
               <text id="idChangePriceAcai" class="priceCatalog">R$${prod.priceTotalAcai},00</text>
               <p>${prod.description}</p>
               <div class="boxManyPrices boxAcaiSizes">
-                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(5.00)">
+                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(1)">
                   <h3 class="headerManyPrices">PP</h3>
                   <div class="bodyManyPrices">250ml</div>
                 </div>
-                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(7.00)">
+                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(2)">
                   <h3 class="headerManyPrices">P</h3>
                   <div class="bodyManyPrices">300ml</div>
                 </div>
-                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(10.00)">
+                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(3)">
                   <h3 class="headerManyPrices">M</h3>
                   <div class="bodyManyPrices">400ml</div>
                 </div>
-                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(12.00)">
+                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(4)">
                   <h3 class="headerManyPrices">G</h3>
                   <div class="bodyManyPrices">500ml</div>
                 </div>
