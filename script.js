@@ -34,6 +34,9 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
 
+  $('.boxAcaiSizes .acaiSizeInside').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 });
 
 /*swiper */
@@ -760,7 +763,6 @@ var additionals = [
 function changeSelect(id) {
   additionals.map(add => {
     if (add.id === id) {
-      console.log(add);
       const elemento = document.getElementById(add.idAddName);
       if (add.selected ){
         add.selected=false;
@@ -771,10 +773,14 @@ function changeSelect(id) {
         if (elemento.classList) elemento.classList.add("active")
         else elemento.className += " active";
       }
-      console.log(add);
     }
   })
 }
+
+function changeSelectedSizeAcai(idNameSize) {
+  
+}
+
 
 document.getElementById('catAcais').innerHTML = catAcais.map(prod => 
   `<div>
@@ -788,20 +794,20 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
-              <div class="boxManyPrices">
-                <div class="manyPrices">
+              <div class="boxManyPrices boxAcaiSizes">
+                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai("sizeAcaiPP")">
                   <h3 class="headerManyPrices">PP</h3>
                   <div class="bodyManyPrices">250ml</div>
                 </div>
-                <div class="manyPrices">
+                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiP")">
                   <h3 class="headerManyPrices">P</h3>
                   <div class="bodyManyPrices">300ml</div>
                 </div>
-                <div class="manyPrices">
+                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiM")">
                   <h3 class="headerManyPrices">M</h3>
                   <div class="bodyManyPrices">400ml</div>
                 </div>
-                <div class="manyPrices">
+                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiG")">
                   <h3 class="headerManyPrices">G</h3>
                   <div class="bodyManyPrices">500ml</div>
                 </div>

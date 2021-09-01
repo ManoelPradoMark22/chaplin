@@ -409,6 +409,16 @@ header #menu-bar{
   margin: 0.313rem 0.313rem;
   display: flex;
   flex-direction: column;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.menu .row .content .info .boxManyPrices .manyPrices.active{
+  opacity: 1;
+}
+
+.menu .row .content .info .boxManyPrices .manyPrices:hover{
+  opacity: 1;
 }
 
 .menu .row .content .info .boxManyPrices .manyPrices .headerManyPrices{
