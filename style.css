@@ -411,6 +411,7 @@ header #menu-bar{
   flex-direction: column;
   opacity: 0.5;
   cursor: pointer;
+  user-select: none;
 }
 
 .menu .row .content .info .boxManyPrices .manyPrices.active{

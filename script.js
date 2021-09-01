@@ -762,20 +762,64 @@ var additionals = [
 ]
 
 function changeSelect(id) {
+  var contador = 0;
+  var valor = 0;
+  var simpleAdd = true;
+  var wasSelected = true;
   additionals.map(add => {
     if (add.id === id) {
+      valor = add.value;
+      simpleAdd = add.fourFree;
+      wasSelected = add.selected;
+
       const elemento = document.getElementById(add.idAddName);
-      if (add.selected ){
+      if (add.selected){ //desmarcando
         add.selected=false;
-        if (elemento.classList) elemento.classList.remove("active")
-        else elemento.className -= " active";
-      }else {
+        if (elemento.classList) {
+          elemento.classList.remove("active");
+        } else {
+          elemento.className -= " active";
+        }
+      }else { //marcando
         add.selected=true;
-        if (elemento.classList) elemento.classList.add("active")
-        else elemento.className += " active";
+        if (elemento.classList) {
+          elemento.classList.add("active");
+        } else {
+          elemento.className += " active";
+        }
       }
     }
+    if(add.fourFree && add.selected) {
+      contador = contador + 1;
+    }
   })
+  
+  var oldTotal = catAcais[0].priceTotalAcai;
+  if (wasSelected){ //desmarcando
+    if (!simpleAdd) {
+      var newTotal = oldTotal - valor;
+      catAcais[0].priceTotalAcai = newTotal;
+      document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+    } else {
+      if (contador >= 4) {
+        var newTotal = oldTotal - valor;
+        catAcais[0].priceTotalAcai = newTotal;
+        document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+      }
+    }
+  } else { //marcando
+    if (!simpleAdd) {
+      var newTotal = oldTotal + valor;
+      catAcais[0].priceTotalAcai = newTotal;
+      document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+    } else {
+      if (contador > 4) {
+        var newTotal = oldTotal + valor;
+        catAcais[0].priceTotalAcai = newTotal;
+        document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+      }
+    }
+  }
 }
 
 function changeSelectedSizeAcai(priceSize) {
