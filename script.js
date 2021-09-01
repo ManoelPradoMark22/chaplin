@@ -661,7 +661,8 @@ var catAcais = [
     number: 1,
     name:"Açaí",
     description: "Açaí dasjd sad asl fas lfas lfasl fa",
-    price:"R$5,00",
+    priceOriginalAcai: 5.00,
+    priceTotalAcai: 5.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF",
     display: "display:flex"
   }
@@ -777,8 +778,13 @@ function changeSelect(id) {
   })
 }
 
-function changeSelectedSizeAcai(idNameSize) {
-  
+function changeSelectedSizeAcai(priceSize) {
+  var subtotal = catAcais[0].priceOriginalAcai;
+  var total = catAcais[0].priceTotalAcai;
+  var newTotal = total - subtotal + priceSize;
+  catAcais[0].priceOriginalAcai = priceSize;
+  catAcais[0].priceTotalAcai = newTotal;
+  document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
 }
 
 
@@ -792,22 +798,22 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
       <div class="content">
           <div class="info">
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
-              <text class="priceCatalog">${prod.price}</text>
+              <text id="idChangePriceAcai" class="priceCatalog">R$${prod.priceTotalAcai},00</text>
               <p>${prod.description}</p>
               <div class="boxManyPrices boxAcaiSizes">
-                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai("sizeAcaiPP")">
+                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(5.00)">
                   <h3 class="headerManyPrices">PP</h3>
                   <div class="bodyManyPrices">250ml</div>
                 </div>
-                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiP")">
+                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(7.00)">
                   <h3 class="headerManyPrices">P</h3>
                   <div class="bodyManyPrices">300ml</div>
                 </div>
-                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiM")">
+                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(10.00)">
                   <h3 class="headerManyPrices">M</h3>
                   <div class="bodyManyPrices">400ml</div>
                 </div>
-                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai("sizeAcaiG")">
+                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(12.00)">
                   <h3 class="headerManyPrices">G</h3>
                   <div class="bodyManyPrices">500ml</div>
                 </div>
