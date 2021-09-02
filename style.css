@@ -483,6 +483,12 @@ header #menu-bar{
   box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
 }
 
+.menu .row .content .info .boxAdittionals .adittional:disabled{
+  cursor: not-allowed;
+  opacity: 0.6;
+  border:.2rem dotted var(--yellow);
+}
+
 .popular{
   background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(../images/popular-bg.jpg) no-repeat;
   background-size: cover;

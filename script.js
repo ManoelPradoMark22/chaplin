@@ -733,7 +733,7 @@ var additionals = [
     id: 7,
     name: 'Amendoim',
     idAddName: 'addAmendoim',
-    available: true,
+    available: false,
     price: 'R$1,00',
     value: 1.00,
     selected: false,
@@ -893,14 +893,8 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               </div>
               <div class="boxAdittionals">
                 ${additionals.map(add =>
-                  add.selected 
-                  ?
                   `
-                    <button type="button" id=${add.idAddName} class="adittional active" onClick="changeSelect(${add.id})" >${add.name}</button>
-                  `
-                  :
-                  `
-                    <button type="button" id=${add.idAddName} class="adittional" onClick="changeSelect(${add.id})">${add.name}</button>
+                    <button type="button" id=${add.idAddName} class="adittional ${add.selected ? 'active' : ''}" ${add.available ? '' : 'disabled'} onClick="changeSelect(${add.id})">${add.name}</button>
                   `
                 ).join('')}
               </div>
@@ -993,7 +987,7 @@ var catSorvetes = [
     number: 4,
     name:"Picolé cremoso",
     description: "Picolé super cremoso!",
-    price:"R$1,00",
+    price:"R$1,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239936010_117352233972990_454351185082107640_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=4FFonRsFZP8AX-Jrlwt&_nc_ht=scontent.fvdc3-1.fna&oh=afaab0a74271d13a9f009f24446e29d2&oe=6146C7B7",
     display: "display:none"
   },
@@ -1002,7 +996,7 @@ var catSorvetes = [
     number: 5,
     name:"Picolé cristalizado",
     description: "Picolé cristalizado super refrescante!",
-    price:"R$1,00",
+    price:"R$1,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233041204_117352190639661_4044371983558569854_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=VNufUH7TTCAAX9KYpdB&_nc_ht=scontent.fvdc3-1.fna&oh=eb18d0e77352241e369be2d3df5e7c5d&oe=61473D1D",
     display: "display:none"
   },
@@ -1011,7 +1005,7 @@ var catSorvetes = [
     number: 6,
     name:"Picolé SKIMO",
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
-    price:"R$2,00",
+    price:"R$3,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233643579_117352293972984_4682700727986961552_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=6X9dB2EaAxkAX8jLD3z&_nc_ht=scontent.fvdc3-1.fna&oh=07bd68b253caad1dd1c654ff208bec4e&oe=61444790",
     display: "display:none"
   },
