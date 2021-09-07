@@ -484,9 +484,10 @@ header #menu-bar{
 }
 
 .menu .row .content .info .boxAdittionals .adittional:disabled{
-  cursor: not-allowed;
   opacity: 0.6;
   border:.2rem dotted var(--yellow);
+  pointer-events: none;
+  /*cursor: not-allowed;*/
 }
 
 .popular{
