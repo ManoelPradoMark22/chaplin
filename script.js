@@ -72,14 +72,14 @@ slider.addEventListener("mousemove", e => {
 function closeCart() {
 	const cart = document.querySelector('.producstOnCart');
 	cart.classList.toggle('hide');
-	document.querySelector('body').classList.toggle('stopScrolling')
+	/*document.querySelector('body').classList.toggle('stopScrolling') */
 }
 
 const openShopCart = document.querySelector('.bagDiv');
 openShopCart.addEventListener('click', () => {
 	const cart = document.querySelector('.producstOnCart');
 	cart.classList.toggle('hide');
-	document.querySelector('body').classList.toggle('stopScrolling');
+	/*document.querySelector('body').classList.toggle('stopScrolling'); */
 });
 
 const closeShopCart = document.querySelector('#closeButton');
