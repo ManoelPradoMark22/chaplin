@@ -83,9 +83,11 @@ openShopCart.addEventListener('click', () => {
 });
 
 const closeShopCart = document.querySelector('#closeButton');
-const overlay = document.querySelector('.overlay');
 closeShopCart.addEventListener('click', closeCart);
-overlay.addEventListener('click', closeCart);
+/*fechar o carrinho ao clicar fora
+  const overlay = document.querySelector('.overlay');
+  overlay.addEventListener('click', closeCart);
+*/
 
 /*CATEGORIES*/
 
