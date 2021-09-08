@@ -84,7 +84,7 @@ openShopCart.addEventListener('click', () => {
 
 const closeShopCart = document.querySelector('#closeButton');
 closeShopCart.addEventListener('click', closeCart);
-/*fechar o carrinho ao clicar fora
+/*fechar o carrinho ao clicar fora (overlay)
   const overlay = document.querySelector('.overlay');
   overlay.addEventListener('click', closeCart);
 */
@@ -182,6 +182,12 @@ document.getElementById('catLanches').innerHTML = catLanches.map(prod =>
                 <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
                 <text class="priceCatalog">${prod.price}</text>
                 <p>${prod.description}</p>
+                <button
+                  class="btnCart btnCart-small addToCart"
+                  data-product-id="5">
+                    <i class="fas fa-cart-plus"></i>
+                    Adicionar item
+                </button>
             </div>
         </div>
       </div>

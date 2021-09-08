@@ -963,3 +963,37 @@ header #menu-bar{
   padding: 5px;
   font-size: 1rem;
 }
+
+.btnCart {
+  margin-left: 4.5rem;
+    padding: 15px 50px 15px 30px;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btnCart i{
+  margin: 0 5px;
+}
+
+.btnCart:active {
+  box-shadow: none;
+}
+
+.btnCart-small {
+  border: none;
+  font-size: 0.9rem;
+  width: 30%;
+  padding: 15px;
+  background-color: #Ffe28d;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  color: black;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btnCart:hover {
+  background-color: var(--yellow);
+}
