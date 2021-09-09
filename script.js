@@ -5,6 +5,11 @@ if(!productsInCart){
 
 const parentElement = document.querySelector('#buyItems');
 
+function convertToReal(value) {
+  const valueConverted = value.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+  return valueConverted;
+}
+
 const updateShoppingCartHTML = function () {  // 3
 	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
@@ -14,7 +19,7 @@ const updateShoppingCartHTML = function () {  // 3
 					<img src="${product.img}">
 					<div>
 						<h5 class="cartProdName">${product.name}</h5>
-						<h6>R$${product.priceNumb}</h6>
+						<h6>${convertToReal(product.priceNumb)}</h6>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>

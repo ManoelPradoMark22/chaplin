@@ -953,6 +953,7 @@ header #menu-bar{
   font-size: 1.2rem;
   padding: 0 6px;
   border: none;
+  user-select: none;
 }
 
 .buyItem button:active {
@@ -961,6 +962,10 @@ header #menu-bar{
 
 .buyItem > div {
   padding: 0 20px;
+}
+
+.countOfProduct {
+  user-select: none;
 }
 
 .producstOnCart .empty {
