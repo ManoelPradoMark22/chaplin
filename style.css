@@ -66,6 +66,19 @@ section{
   border:.2rem solid var(--yellow);
 }
 
+.btnConfirmShop{
+  font-size: 1.3rem;
+  padding:.7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background:none;
+  color:#333;
+  cursor: pointer;
+  user-select: none;
+  border:.2rem solid var(--yellow);
+}
+
 .btnInside{
   font-size: 1.2rem;
   padding:.4rem 2rem;
@@ -79,7 +92,8 @@ section{
 }
 
 .btn:hover,
-.btnInside:hover{
+.btnInside:hover,
+.btnConfirmShop:hover{
   background:var(--yellow);
 }
 
@@ -904,16 +918,6 @@ header #menu-bar{
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-}
-
-.producstOnCart > .checkout {
-  font-size: 0.9rem;
-  margin: 20px auto;
-  border: none;
-  background-color: #297075;
-  padding: 10px 20px;
-  color: #eee;
-  cursor: pointer;
 }
 
 .overlay {
