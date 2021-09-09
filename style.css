@@ -825,15 +825,16 @@ header #menu-bar{
   overflow-y: scroll;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
-  background-color: #202020;
+  background-color: #fff;
   width: 90%;
   height: 80%;
-  color: #f0f0f0;
+  color: #000;
   z-index: 1000;
   position: fixed;
   bottom: 0;
   right: 0;
   text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 @media (min-width: 400px) {
@@ -872,12 +873,13 @@ header #menu-bar{
 
 .producstOnCart .top {
   display: flex;
-  background-color: #616161;
+  background-color: var(--yellow);
   text-align: center;
   padding: 10px 0;
   position: sticky;
   top: 0;
   width: 100%;
+  box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
 }
 
 .top button {
@@ -921,7 +923,7 @@ header #menu-bar{
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
 }
 
 .stopScrolling {
@@ -935,7 +937,7 @@ header #menu-bar{
 
 .buyItem button {
   background: transparent;
-  color: #fff;
+  color: black;
   cursor: pointer;
   font-weight: 900;
   font-size: 1.2rem;
