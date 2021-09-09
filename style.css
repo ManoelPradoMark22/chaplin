@@ -997,3 +997,7 @@ header #menu-bar{
 .btnCart:hover {
   background-color: var(--yellow);
 }
+
+.hidden {
+  display: none;
+}
