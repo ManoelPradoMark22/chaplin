@@ -13,7 +13,7 @@ const updateShoppingCartHTML = function () {  // 3
 				<li class="buyItem">
 					<img src="${product.img}">
 					<div>
-						<h5>${product.name}</h5>
+						<h5 class="cartProdName">${product.name}</h5>
 						<h6>R$${product.priceNumb}</h6>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>

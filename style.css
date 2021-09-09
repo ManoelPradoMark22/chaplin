@@ -826,6 +826,7 @@ header #menu-bar{
   scroll-behavior: smooth;
   overscroll-behavior: contain;
   background-color: #fff;
+  border-radius: 8px 0 0 0;
   width: 90%;
   height: 80%;
   color: #000;
@@ -868,7 +869,9 @@ header #menu-bar{
 }
 
 .producstOnCart img {
-  width: 90px;
+  max-width: 90px;
+  max-height: 75px;
+  border-radius: 4px;
 }
 
 .producstOnCart .top {
@@ -931,8 +934,15 @@ header #menu-bar{
   overflow: hidden;
 }
 
+.buyItem .cartProdName {
+  font-size: 1.4rem;
+  font-family: 'Oswald', sans-serif;
+}
+
 .buyItem h6 {
   margin-bottom: 10px;
+  font-size: 1.1rem;
+  color:#666;
 }
 
 .buyItem button {
