@@ -44,8 +44,9 @@ function addItemToCart(prodObj) {
   console.log(prodObj);
   for (let i = 0; i < productsInCart.length; i++) {
 		if (productsInCart[i].id == prodObj.id) {
-			productsInCart[i].count += 1;
-			productsInCart[i].priceNumb = productsInCart[i].priceNumb;
+			productsInCart[i].count = productsInCart[i].count + 1;
+			productsInCart[i].priceNumb = productsInCart[i].priceOne*productsInCart[i].count;
+      updateShoppingCartHTML();
 			return;
 		}
 	}
@@ -251,7 +252,7 @@ document.getElementById('catLanches').innerHTML = catLanches.map(prod =>
                   onclick="addItemToCart({
                     id: '${prod.id}',
                     name: '${prod.name}',
-                    price: '${prod.price}',
+                    priceOne: '${prod.priceNumb}',
                     priceNumb: ${prod.priceNumb},
                     img: '${prod.img}',
                     count: 1
