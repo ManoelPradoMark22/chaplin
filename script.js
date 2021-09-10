@@ -29,14 +29,20 @@ const updateShoppingCartHTML = function () {  // 3
 					</div>
 				</li>`
 		});
+
+    let stringItems = '';
     
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
+      stringItems = `${stringItems}\n-*${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]`;
     });
 
+    console.log(stringItems);
+    
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
     document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
+    document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+5577991998770&text=${encodeURI(stringItems)}`;
 		/*cartSumPrice.innerHTML = '$' + countTheSumPrice(); */
 
 	}
@@ -48,7 +54,6 @@ const updateShoppingCartHTML = function () {  // 3
 }
 
 function addItemToCart(prodObj) {
-  console.log(prodObj);
   for (let i = 0; i < productsInCart.length; i++) {
 		if (productsInCart[i].id == prodObj.id) {
 			productsInCart[i].count = productsInCart[i].count + 1;
