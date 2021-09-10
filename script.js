@@ -13,6 +13,7 @@ function convertToReal(value) {
 const updateShoppingCartHTML = function () {  // 3
 	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
+    let numberOfItens = 0;
 		let result = productsInCart.map(product => {
 			return `
 				<li class="buyItem">
@@ -28,8 +29,14 @@ const updateShoppingCartHTML = function () {  // 3
 					</div>
 				</li>`
 		});
+    
+    productsInCart.map(prod => {
+      numberOfItens = numberOfItens + prod.count;
+    });
+
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
+    document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
 		/*cartSumPrice.innerHTML = '$' + countTheSumPrice(); */
 
 	}
