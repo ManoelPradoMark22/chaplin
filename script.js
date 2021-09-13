@@ -150,12 +150,13 @@ openShopCart.addEventListener('click', () => {
 	/*document.querySelector('body').classList.toggle('stopScrolling'); */
 });
 
+/*close cart when click the closeButton */
 const closeShopCart = document.querySelector('#closeButton');
 closeShopCart.addEventListener('click', closeCart);
-/*fechar o carrinho ao clicar fora (overlay)
-  const overlay = document.querySelector('.overlay');
-  overlay.addEventListener('click', closeCart);
-*/
+/*close cart when click on overlay */
+const overlay = document.querySelector('.overlay');
+overlay.addEventListener('click', closeCart);
+
 
 /*CATEGORIES*/
 
