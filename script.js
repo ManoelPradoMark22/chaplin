@@ -66,6 +66,19 @@ function addItemToCart(prodObj) {
   updateShoppingCartHTML();
 }
 
+function changeCountOfItens(prodObj, IsIncrease) {
+  for (let i = 0; i < productsInCart.length; i++) {
+		if (productsInCart[i].id == prodObj.id) {
+			productsInCart[i].count = productsInCart[i].count + 1;
+			productsInCart[i].priceNumb = productsInCart[i].priceOne*productsInCart[i].count;
+      updateShoppingCartHTML();
+			return;
+		}
+	}
+	productsInCart.push(prodObj);
+  updateShoppingCartHTML();
+}
+
 $(document).ready(function(){
 
   $('#menu-bar').click(function(){
