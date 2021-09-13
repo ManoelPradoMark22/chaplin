@@ -30,11 +30,11 @@ const updateShoppingCartHTML = function () {  // 3
 				</li>`
 		});
 
-    let stringItems = '';
+    let stringItems = 'Olá! O meu pedido é:';
     
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n-*${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]`;
+      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]`;
     });
 
     console.log(stringItems);
