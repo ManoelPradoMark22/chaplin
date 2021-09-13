@@ -22,9 +22,13 @@ const updateShoppingCartHTML = function () {  // 3
 						<h5 class="cartProdName">${product.name}</h5>
 						<h6>${convertToReal(product.priceNumb)}</h6>
 						<div>
-							<button class="button-minus" data-id=${product.id}>-</button>
+							<button class="button-minus" data-id=${product.id} 
+              onclick="changeCountOfItens('${product.id}', false)"
+              >-</button>
 							<span class="countOfProduct">${product.count}</span>
-							<button class="button-plus" data-id=${product.id}>+</button>
+							<button class="button-plus" data-id=${product.id}
+              onclick="changeCountOfItens('${product.id}', true)"
+              >+</button>
 						</div>
 					</div>
 				</li>`
@@ -36,8 +40,6 @@ const updateShoppingCartHTML = function () {  // 3
       numberOfItens = numberOfItens + prod.count;
       stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]`;
     });
-
-    console.log(stringItems);
     
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
@@ -49,6 +51,7 @@ const updateShoppingCartHTML = function () {  // 3
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty">Sua sacola está vazia!</h4>';
+    document.getElementById("badgeId").innerHTML = '0';
 		/*cartSumPrice.innerHTML = ''; */
 	}
 }
@@ -66,16 +69,20 @@ function addItemToCart(prodObj) {
   updateShoppingCartHTML();
 }
 
-function changeCountOfItens(prodObj, IsIncrease) {
+function changeCountOfItens(idProd, IsIncrease) {
   for (let i = 0; i < productsInCart.length; i++) {
-		if (productsInCart[i].id == prodObj.id) {
-			productsInCart[i].count = productsInCart[i].count + 1;
+		if (productsInCart[i].id == idProd) {
+      if (IsIncrease) {
+        productsInCart[i].count = productsInCart[i].count + 1;
+      } else {
+        productsInCart[i].count = productsInCart[i].count - 1;
+      }
 			productsInCart[i].priceNumb = productsInCart[i].priceOne*productsInCart[i].count;
-      updateShoppingCartHTML();
-			return;
+      if (productsInCart[i].count <= 0) {
+				productsInCart.splice(i, 1);
+			}
 		}
 	}
-	productsInCart.push(prodObj);
   updateShoppingCartHTML();
 }
 
