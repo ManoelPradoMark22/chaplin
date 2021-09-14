@@ -1103,10 +1103,32 @@ header #menu-bar{
   display: block;
 }
 
+.boxImgPizzaChoose{
+  position: relative;
+}
+
 .imgPizzaChoose {
   width: 90%;
 }
 
+.pizzaChosen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  padding:.7rem 4rem;
+  border-radius: 5rem;
+  background: var(--yellow);
+  color:#333;
+  cursor: pointer;
+  user-select: none;
+  border:.2rem solid var(--yellow);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+.pizzaChosen:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+}
 
 @media (min-width: 650px) {
   .imgPizzaChoose {
