@@ -39,7 +39,7 @@ const updateShoppingCartHTML = function () {  // 3
     
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]`;
+      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n(Complemento: ${prod.adittionals})` : ''}`;
     });
     
 		parentElement.innerHTML = result.join('');
@@ -75,7 +75,7 @@ function addAcaiToCart() {
 
   additionals.map(add => {
     if (add.selected) {
-      adittionalsString = `${adittionalsString}-${add.name}`;
+      adittionalsString = `${adittionalsString}${add.name}-`;
     }
   })
 
