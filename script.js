@@ -828,7 +828,7 @@ var catAcais = [
   {
     id: '3tab1.1',
     number: 1,
-    name:"Açaí",
+    name:"Açaí (250ml)",
     description: "Aquele açaí delicioso e super cremoso! &#128523",
     priceOriginalAcai: 5.00,
     priceTotalAcai: 5.00,
@@ -993,28 +993,34 @@ function changeSelect(id) {
 
 function changeSelectedSizeAcai(sizeId) {
   var priceSize = 5.00;
+  var newName = 'Açaí';
   var imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
 
   switch (sizeId) {
     case 1:
       priceSize = 5.00;
+      newName = 'Açaí (250ml)';
       imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
       break;
     case 2:
       priceSize = 7.00;
+      newName = 'Açaí (300ml)';
       imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59";
       break;
     case 3:
       priceSize = 10.00;
+      newName = 'Açaí (400ml)';
       imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE";
       break;
     case 4:
       priceSize = 12.00;
+      newName = 'Açaí (500ml)';
       imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5";
       break;
 
     default:
       priceSize = 5.00;
+      newName = 'Açaí';
       imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
       break;
   }
@@ -1025,8 +1031,9 @@ function changeSelectedSizeAcai(sizeId) {
   catAcais[0].priceOriginalAcai = priceSize;
   catAcais[0].priceTotalAcai = newTotal;
   catAcais[0].img = imgPath;
+  catAcais[0].name = newName;
   document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
-  document.getElementById("spanAcai").innerHTML = `0${sizeId}.`;
+  document.getElementById("nameH3Acai").innerHTML = `<span>0${sizeId}.</span> ${newName}`;
   document.getElementById("imgAcai").src=imgPath;
 }
 
@@ -1040,7 +1047,7 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
 
       <div class="content">
           <div class="info">
-              <h3> <span id="spanAcai">0${prod.number}.</span> ${prod.name}</h3>
+              <h3 id="nameH3Acai"> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text id="idChangePriceAcai" class="priceCatalog">R$${prod.priceTotalAcai},00</text>
               <p>${prod.description}</p>
               <div class="boxManyPrices boxAcaiSizes">
