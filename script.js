@@ -21,6 +21,7 @@ const updateShoppingCartHTML = function () {  // 3
 					<div>
 						<h5 class="cartProdName">${product.name}</h5>
 						<h6>${convertToReal(product.priceNumb)}</h6>
+            <div class="adittionals">${product.adittionals ? product.adittionals : ''}</div>
 						<div>
 							<button class="button-minus" data-id=${product.id} 
               onclick="changeCountOfItens('${product.id}', false)"
@@ -66,6 +67,40 @@ function addItemToCart(prodObj) {
 		}
 	}
 	productsInCart.push(prodObj);
+  updateShoppingCartHTML();
+}
+
+function addAcaiToCart() {
+  let adittionalsString = '';
+
+  additionals.map(add => {
+    if (add.selected) {
+      adittionalsString = `${adittionalsString}-${add.name}`;
+    }
+  })
+
+  let idString = `ACAI-${catAcais[0].priceOriginalAcai}.${adittionalsString}`;
+
+  for (let i = 0; i < productsInCart.length; i++) {
+		if (productsInCart[i].id === idString) {
+			productsInCart[i].count = productsInCart[i].count + 1;
+			productsInCart[i].priceNumb = catAcais[0].priceTotalAcai*productsInCart[i].count;
+      updateShoppingCartHTML();
+			return;
+		}
+	}
+
+  let acaiObj = {
+    id: `${idString}`,
+    name: `${catAcais[0].name}`,
+    adittionals: `${adittionalsString==='' ? 'Sem adicionais' : adittionalsString}`,
+    priceOne: catAcais[0].priceTotalAcai,
+    priceNumb: catAcais[0].priceTotalAcai,
+    img: `${catAcais[0].img}`,
+    count: 1
+  };
+
+	productsInCart.push(acaiObj);
   updateShoppingCartHTML();
 }
 
@@ -788,6 +823,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
 
 /* Sessão 3 - SORVETERIA
  Açaís (3tab1)*/
+
 var catAcais = [
   {
     id: '3tab1.1',
@@ -988,6 +1024,7 @@ function changeSelectedSizeAcai(sizeId) {
   var newTotal = total - subtotal + priceSize;
   catAcais[0].priceOriginalAcai = priceSize;
   catAcais[0].priceTotalAcai = newTotal;
+  catAcais[0].img = imgPath;
   document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
   document.getElementById("spanAcai").innerHTML = `0${sizeId}.`;
   document.getElementById("imgAcai").src=imgPath;
@@ -1031,6 +1068,14 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
                   `
                 ).join('')}
               </div>
+              <button
+                  class="btnCart btnCart-small addToCart"
+                  data-product-id=${prod.id}
+                  style="margin-top: 1rem"
+                  onclick="addAcaiToCart()">
+                    <i class="fas fa-cart-plus"></i>
+                    Adicionar item
+                </button>
           </div>
       </div>
     </div>

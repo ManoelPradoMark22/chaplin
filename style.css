@@ -980,9 +980,13 @@ header #menu-bar{
 }
 
 .buyItem h6 {
-  margin-bottom: 10px;
   font-size: 1.1rem;
   color:#666;
+}
+
+.buyItem .adittionals {
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
 }
 
 .buyItem button {
