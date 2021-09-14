@@ -1102,3 +1102,14 @@ header #menu-bar{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.imgPizzaChoose {
+  width: 90%;
+}
+
+
+@media (min-width: 650px) {
+  .imgPizzaChoose {
+    width: 567px;
+  }
+}
