@@ -1108,7 +1108,8 @@ header #menu-bar{
 }
 
 .imgPizzaChoose {
-  width: 90%;
+  
+  width: 100%;
 }
 
 .pizzaChosen {
@@ -1130,8 +1131,10 @@ header #menu-bar{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
 }
 
+/*
 @media (min-width: 650px) {
   .imgPizzaChoose {
     width: 567px;
   }
 }
+*/
