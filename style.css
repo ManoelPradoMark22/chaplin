@@ -1071,12 +1071,14 @@ header #menu-bar{
   align-items: center;
 }
 
-.dropdown {
+.dropdown,
+.dropdown2 {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content,
+.dropdown2-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -1087,7 +1089,8 @@ header #menu-bar{
   text-align: center;
 }
 
-.dropdown-content button {
+.dropdown-content button,
+.dropdown2-content button {
   cursor: pointer;
   border:.12rem solid var(--yellow);
   border-radius: 5rem;
@@ -1100,11 +1103,13 @@ header #menu-bar{
   width: 100%;
 }
 
-.dropdown-content button:hover {
+.dropdown-content button:hover,
+.dropdown2-content button:hover {
   background:var(--yellow);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown2:hover .dropdown2-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1119,11 +1124,14 @@ header #menu-bar{
   width: 100%;
 }
 
-.pizzaChosen {
+.dropdown2{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.pizzaChosen {
   font-size: 1.7rem;
   padding:.7rem 4rem;
   border-radius: 5rem;
