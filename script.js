@@ -39,7 +39,7 @@ const updateShoppingCartHTML = function () {  // 3
     
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n(Complemento: ${prod.adittionals})` : ''}`;
+      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \nComplemento: _${prod.adittionals}_` : ''}`;
     });
     
 		parentElement.innerHTML = result.join('');
