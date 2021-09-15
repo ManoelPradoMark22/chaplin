@@ -1097,8 +1097,26 @@ header #menu-bar{
 
 .dropdown2-content,
 .dropdown3-content {
-  height: 15rem;
+  height: 17rem;
   overflow-y: auto;
+}
+
+.dropdown2-content::-webkit-scrollbar,
+.dropdown3-content::-webkit-scrollbar{
+  width: 0.4rem;
+}
+.dropdown2-content::-webkit-scrollbar-track,
+.dropdown3-content::-webkit-scrollbar-track{
+  background:rgba(0,0,0,.1);
+}
+
+.dropdown2-content::-webkit-scrollbar-thumb,
+.dropdown3-content::-webkit-scrollbar-thumb{
+  background:var(--yellow);
+}
+.dropdown2-content::-webkit-scrollbar-thumb:hover,
+.dropdown3-content::-webkit-scrollbar-thumb:hover{
+  background:#fac420;
 }
 
 .dropdown-content button,
