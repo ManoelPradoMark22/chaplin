@@ -1095,6 +1095,12 @@ header #menu-bar{
   text-align: center;
 }
 
+.dropdown2-content,
+.dropdown3-content {
+  height: 15rem;
+  overflow-y: auto;
+}
+
 .dropdown-content button,
 .dropdown2-content button,
 .dropdown3-content button {
@@ -1119,7 +1125,7 @@ header #menu-bar{
 .dropdown:hover .dropdown-content,
 .dropdown2:hover .dropdown2-content,
 .dropdown3:hover .dropdown3-content {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
