@@ -1503,4 +1503,16 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
   </div>`
 ).join('')
 
+function changePizzaSizeSelection(size){
+  document.getElementById("choosePizzaSize").innerHTML = size;
+}
+
+function changeLeftPizzaSelection(flavor){
+  document.getElementById("choosePizzaFlavorLeft").innerHTML = `<p title="${flavor}">${flavor}</p>`
+}
+
+function changeRightPizzaSelection(flavor){
+  document.getElementById("choosePizzaFlavorRight").innerHTML = `<p title="${flavor}">${flavor}</p>`
+}
+
 updateShoppingCartHTML();

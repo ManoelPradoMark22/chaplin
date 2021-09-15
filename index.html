@@ -263,40 +263,44 @@
             <div class="dropdown">
                 <button type="button" id="choosePizzaSize" class="btn">M</button>
                 <div class="dropdown-content">
-                    <button>P (4 fatias)</button>
-                    <button>M (6 fatias)</button>
-                    <button>G (8 fatias)</button>
-                    <button>GG (10 fatias)</button>
+                    <button onclick="changePizzaSizeSelection('P')">P (4 fatias)</button>
+                    <button onclick="changePizzaSizeSelection('M')">M (6 fatias)</button>
+                    <button onclick="changePizzaSizeSelection('G')">G (8 fatias)</button>
+                    <button onclick="changePizzaSizeSelection('GG')">GG (10 fatias)</button>
                 </div>
             </div>
             <div class="boxImgPizzaChoose">
                 <div class="pizzaLeft">
                     <img class="imgPizzaChoose" src="images/pizzaIconleft.png" alt="pizza">
                     <div class="dropdown2">
-                        <button type="button" id="choosePizzaFlavorLeft" class="pizzaChosen"><p title="Carne seca ao catupiry">Carne seca ao catupiry</p></button>
+                        <button type="button" id="choosePizzaFlavorLeft" class="pizzaChosen"><p title="Tradicional">Tradicional</p></button>
                         <div class="dropdown2-content">
-                            <button>Tradicional</button>
-                            <button>Calabresa</button>
-                            <button>Caipira</button>
-                            <button>Portuguesa</button>
-                            <button>Frango Catupiry</button>
-                            <button>Carne Seca ao catupiry</button>
-                            <button>Atum</button>
+                            <button onclick="changeLeftPizzaSelection('Tradicional')">Tradicional</button>
+                            <button onclick="changeLeftPizzaSelection('Calabresa')">Calabresa</button>
+                            <button onclick="changeLeftPizzaSelection('Caipira')">Caipira</button>
+                            <button onclick="changeLeftPizzaSelection('Portuguesa')">Portuguesa</button>
+                            <button onclick="changeLeftPizzaSelection('Frango Catupiry')">Frango Catupiry</button>
+                            <button onclick="changeLeftPizzaSelection('Carne Seca Muçarela')">Carne Seca Muçarela</button>
+                            <button onclick="changeLeftPizzaSelection('Carne Seca Catupiry')">Carne Seca Catupiry</button>
+                            <button onclick="changeLeftPizzaSelection('Carne Seca Cheddar')">Carne Seca Cheddar</button>
+                            <button onclick="changeLeftPizzaSelection('Atum')">Atum</button>
                         </div>
                     </div>
                 </div>
                 <div class="pizzaRight">
                     <img class="imgPizzaChoose" src="images/pizzaIconright.png" alt="pizza">
                     <div class="dropdown3">
-                        <button type="button" id="choosePizzaFlavorRight" class="pizzaChosen"><p title="Tradicional">Tradicional</p></button>
+                        <button type="button" id="choosePizzaFlavorRight" class="pizzaChosen"><p title="Frango catupiry">Frango catupiry</p></button>
                         <div class="dropdown3-content">
-                            <button>Tradicional</button>
-                            <button>Calabresa</button>
-                            <button>Caipira</button>
-                            <button>Portuguesa</button>
-                            <button>Frango Catupiry</button>
-                            <button>Carne Seca</button>
-                            <button>Atum</button>
+                            <button onclick="changeRightPizzaSelection('Tradicional')">Tradicional</button>
+                            <button onclick="changeRightPizzaSelection('Calabresa')">Calabresa</button>
+                            <button onclick="changeRightPizzaSelection('Caipira')">Caipira</button>
+                            <button onclick="changeRightPizzaSelection('Portuguesa')">Portuguesa</button>
+                            <button onclick="changeRightPizzaSelection('Frango Catupiry')">Frango Catupiry</button>
+                            <button onclick="changeRightPizzaSelection('Carne Seca Muçarela')">Carne Seca Muçarela</button>
+                            <button onclick="changeRightPizzaSelection('Carne Seca Catupiry')">Carne Seca Catupiry</button>
+                            <button onclick="changeRightPizzaSelection('Carne Seca Cheddar')">Carne Seca Cheddar</button>
+                            <button onclick="changeRightPizzaSelection('Atum')">Atum</button>
                         </div>
                     </div>
                 </div>
