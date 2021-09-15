@@ -1139,7 +1139,13 @@ header #menu-bar{
   width: 100%;
 }
 
-.dropdown2,
+.dropdown2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .dropdown3{
   position: absolute;
   left: 50%;
@@ -1148,9 +1154,14 @@ header #menu-bar{
 }
 
 .pizzaChosen {
-  font-size: 1.4rem;
-  padding:.7rem 3rem;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3vw;
+  padding:.5rem 1.5rem;
+  width: max-content;
+  max-width: 100%;
   border-radius: 5rem;
   background: var(--yellow);
   color:#333;
@@ -1161,6 +1172,13 @@ header #menu-bar{
 }
 .pizzaChosen:hover {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+}
+
+@media (min-width: 650px) {
+  .pizzaChosen {
+    font-size: 1.7rem;
+    padding:.5rem 2.5rem;
+  }
 }
 
 /*
