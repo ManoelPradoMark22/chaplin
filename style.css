@@ -1159,8 +1159,8 @@ header #menu-bar{
   justify-content: center;
   text-align: center;
   font-size: 3vw;
-  padding:.5rem 1.5rem;
-  width: max-content;
+  padding:.5rem 1rem;
+  width: 100%;
   max-width: 100%;
   border-radius: 5rem;
   background: var(--yellow);
@@ -1170,13 +1170,23 @@ header #menu-bar{
   border:.2rem solid var(--yellow);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
+.pizzaChosen p {
+  display: -webkit-box;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  user-select: none;
+  -webkit-line-clamp: 3;
+}
+
 .pizzaChosen:hover {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
 }
 
 @media (min-width: 650px) {
   .pizzaChosen {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding:.5rem 2.5rem;
   }
 }
