@@ -1695,10 +1695,15 @@ function toggleCheckbox(element) {
 function chooseMakedPizza(){
   let stringLevar = isToTakeOut ? ' - [levar]' : '';
 
+  let stringFlavor = 
+    flavorLeftPizzaSelected===flavorRightPizzaSelected
+    ? flavorRightPizzaSelected
+    : `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected}`;
+
   let objMakedPizzaChoosed = {
-    id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - ${sizePizzaSelected}${stringLevar}`,
+    id: `${stringFlavor} - ${sizePizzaSelected}${stringLevar}`,
     name:`Pizza (${sizePizzaSelected})`,
-    adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected}${stringLevar}`,
+    adittionals: `${stringFlavor}${stringLevar}`,
     isPizza: true,
     priceOne: priceMakedPizza,
     priceNumb: priceMakedPizza,
