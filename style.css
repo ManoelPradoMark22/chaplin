@@ -463,6 +463,11 @@ header #menu-bar{
   user-select: none;
 }
 
+.menu .row .content .info .boxManyPrices .manyPricesPizza {
+  opacity: 1;
+  cursor: auto;
+}
+
 .menu .row .content .info .boxManyPrices .manyPrices.active{
   opacity: 1;
 }

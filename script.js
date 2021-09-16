@@ -823,7 +823,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
               <div class="boxManyPrices">
                   ${prod.prices.map((price =>
                     `
-                    <div class="manyPrices">
+                    <div class="manyPrices manyPricesPizza">
                       <h3 class="headerManyPrices">${price.size} ${price.slices ? `<text class="slicesPizza">${price.slices}</text>` : ''}</h3>
                       <div class="bodyManyPrices">${convertToReal(price.price)}</div>
                     </div>
@@ -1665,7 +1665,6 @@ function changeRightPizzaSelection(flavor, type){
 
 function toggleCheckbox(element) {
   isToTakeOut = element.checked;
-  console.log(isToTakeOut);
 }
 
 function chooseMakedPizza(){
