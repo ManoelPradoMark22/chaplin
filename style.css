@@ -1081,6 +1081,10 @@ header #menu-bar{
   align-items: center;
 }
 
+.noticePizzaDays {
+  text-align: center;
+}
+
 .boxPriceNewPizza {
   display: flex;
   align-items: center;
