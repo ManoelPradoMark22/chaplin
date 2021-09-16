@@ -792,7 +792,7 @@ var catPizzas = [
     id: '2tab1.6',
     number: 6,
     name:"Carne Seca",
-    description: "Carne seca, muçarela, azeitona e cebola.",
+    description: "Carne seca, azeitona, cebola + (muçarela ou catupiry ou cheddar)",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233552856_117292757312271_2132117680449860470_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7NJrtEhJl0YAX9pS_yo&_nc_ht=scontent.fvdc3-1.fna&oh=9d703af7a689d407b6f9056723ff108a&oe=6147199F",
     display: "display:none",
     prices: pizzaPrices3
