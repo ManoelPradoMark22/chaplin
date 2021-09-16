@@ -1533,9 +1533,22 @@ let priceMakedPizza = 23.00;
 
 let isToTakeOut = false;
 
-function changePizzaSizeSelection(size){
+/*changing sizes*/
+
+function changePizzaSizeSelection(size, isJustOne){
   document.getElementById("choosePizzaSize").innerHTML = size;
   sizePizzaSelected = size;
+  
+  if (isJustOne) {
+    document.querySelector('.boxImgPizzaChoose').classList.add('oneFlavor');
+    document.getElementById("choosePizzaFlavorLeft").innerHTML = `<p title="${flavorRightPizzaSelected}">${flavorRightPizzaSelected}</p>`;
+    flavorLeftPizzaSelected = flavorRightPizzaSelected;
+    typeLeftPizzaSelected = typeRightPizzaSelected;
+    priceLeftPizzaSelected = priceRightPizzaSelected;
+    priceMakedPizza = priceRightPizzaSelected;
+  } else {
+    document.querySelector('.boxImgPizzaChoose').classList.remove('oneFlavor');
+  }
   
   if (typeLeftPizzaSelected === typeRightPizzaSelected) {
     calculateMakedPizzaValueChangingSize(true, true);
@@ -1547,8 +1560,6 @@ function changePizzaSizeSelection(size){
   priceMakedPizza = (priceLeftPizzaSelected+priceRightPizzaSelected)/2;
   document.getElementById('idPriceMakedPizza').innerHTML = convertToReal(priceMakedPizza);
 }
-
-/*changing sizes*/
 
 function changePricesByChangingSize(isEqual, isLeft, price) {
   if (isEqual){
@@ -1602,20 +1613,25 @@ function calculateMakedPizzaValueChangingSize(isEqual, isLeft){
 
 /*changing flavors*/
 
-function changePrices(isLeft, price) {
-  isLeft 
-    ? priceLeftPizzaSelected = price
-    : priceRightPizzaSelected = price;
+function changePrices(isLeft, price, isJustOne) {
+  if (isJustOne) {
+    priceRightPizzaSelected = price;
+    priceLeftPizzaSelected = price;
+  } else {
+    isLeft 
+      ? priceLeftPizzaSelected = price
+      : priceRightPizzaSelected = price;
+  }
   priceMakedPizza = (priceLeftPizzaSelected+priceRightPizzaSelected)/2;
   document.getElementById('idPriceMakedPizza').innerHTML = convertToReal(priceMakedPizza);
 }
 
-function calculateMakedPizzaValue(type, isLeft){
+function calculateMakedPizzaValue(type, isLeft, isJustOne){
   switch (type) {
     case 1:
       pizzaPrices1.map(price => {
         if (price.size === sizePizzaSelected) {
-          changePrices(isLeft, price.price);
+          changePrices(isLeft, price.price, isJustOne);
         }
       });
       break;
@@ -1623,7 +1639,7 @@ function calculateMakedPizzaValue(type, isLeft){
     case 2:
       pizzaPrices2.map(price => {
         if (price.size === sizePizzaSelected) {
-          changePrices(isLeft, price.price);
+          changePrices(isLeft, price.price, isJustOne);
         }
       });
       break;
@@ -1631,7 +1647,7 @@ function calculateMakedPizzaValue(type, isLeft){
     case 3:
       pizzaPrices3.map(price => {
         if (price.size === sizePizzaSelected) {
-          changePrices(isLeft, price.price);
+          changePrices(isLeft, price.price, isJustOne);
         }
       });
       break;
@@ -1639,7 +1655,7 @@ function calculateMakedPizzaValue(type, isLeft){
     case 4:
       pizzaPrices4.map(price => {
         if (price.size === sizePizzaSelected) {
-          changePrices(isLeft, price.price);
+          changePrices(isLeft, price.price, isJustOne);
         }
       });
       break;
@@ -1660,7 +1676,16 @@ function changeRightPizzaSelection(flavor, type){
   document.getElementById("choosePizzaFlavorRight").innerHTML = `<p title="${flavor}">${flavor}</p>`;
   flavorRightPizzaSelected = flavor;
   typeRightPizzaSelected = type;
-  calculateMakedPizzaValue(type, false);
+  console.log(sizePizzaSelected);
+  if (sizePizzaSelected==='Brotinho' || sizePizzaSelected==='Brot. Especial') {
+    flavorLeftPizzaSelected = flavorRightPizzaSelected;
+    typeLeftPizzaSelected = typeRightPizzaSelected;
+    document.getElementById("choosePizzaFlavorLeft").innerHTML = `<p title="${flavorRightPizzaSelected}">${flavorRightPizzaSelected}</p>`;
+    calculateMakedPizzaValue(type, false, true);
+  } else {
+    calculateMakedPizzaValue(type, false);
+  }
+  
 }
 
 function toggleCheckbox(element) {

@@ -1181,6 +1181,23 @@ header #menu-bar{
   margin-right: 1rem;
 }
 
+.oneFlavor {
+  position: relative;
+}
+
+.oneFlavor .pizzaRight{
+  position: unset;
+}
+
+.oneFlavor .pizzaLeft{
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.oneFlavor .pizzaLeft .dropdown2{
+  display: none;
+}
+
 .pizzaRight {
   position: relative;
 }
@@ -1201,6 +1218,10 @@ header #menu-bar{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.twoFlavors {
+
 }
 
 .pizzaChosen {
