@@ -620,108 +620,108 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
 PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
   {
-    price: 'R$6,00',
+    price: 6.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$9,00',
+    price: 9.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$17,00',
+    price: 17.00,
     size: 'P'
   },
   {
-    price: 'R$22,00',
+    price: 22.00,
     size: 'M'
   },
   {
-    price: 'R$28,00',
+    price: 28.00,
     size: 'G'
   },
   {
-    price: 'R$34,00',
+    price: 34.00,
     size: 'GG'
   },
 ]
 
 var pizzaPrices2 = [
   {
-    price: 'R$7,00',
+    price: 7.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$10,00',
+    price: 10.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$19,00',
+    price: 19.00,
     size: 'P'
   },
   {
-    price: 'R$24,00',
+    price: 24.00,
     size: 'M'
   },
   {
-    price: 'R$30,00',
+    price: 30.00,
     size: 'G'
   },
   {
-    price: 'R$37,00',
+    price: 37.00,
     size: 'GG'
   },
 ]
 
 var pizzaPrices3 = [
   {
-    price: 'R$10,00',
+    price: 10.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$15,00',
+    price: 15.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$27,00',
+    price: 27.00,
     size: 'P'
   },
   {
-    price: 'R$33,00',
+    price: 33.00,
     size: 'M'
   },
   {
-    price: 'R$40,00',
+    price: 40.00,
     size: 'G'
   },
   {
-    price: 'R$46,00',
+    price: 46.00,
     size: 'GG'
   },
 ]
 
 var pizzaPrices4 = [
   {
-    price: 'R$8,00',
+    price: 8.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$12,00',
+    price: 12.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$22,00',
+    price: 22.00,
     size: 'P'
   },
   {
-    price: 'R$28,00',
+    price: 28.00,
     size: 'M'
   },
   {
-    price: 'R$34,00',
+    price: 34.00,
     size: 'G'
   },
   {
-    price: 'R$40,00',
+    price: 40.00,
     size: 'GG'
   },
 ]
@@ -809,7 +809,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
                     `
                     <div class="manyPrices">
                       <h3 class="headerManyPrices">${price.size}</h3>
-                      <div class="bodyManyPrices">${price.price}</div>
+                      <div class="bodyManyPrices">${convertToReal(price.price)}</div>
                     </div>
                     `
                   )).join('')}
@@ -1503,16 +1503,158 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
   </div>`
 ).join('')
 
+let sizePizzaSelected = 'M';
+
+let flavorLeftPizzaSelected = 'Tradicional';
+let priceLeftPizzaSelected = 22.00;
+let typeLeftPizzaSelected = 1;
+
+let flavorRightPizzaSelected = 'Frango Catupiry';
+let priceRightPizzaSelected = 24.00;
+let typeRightPizzaSelected = 2;
+
+let priceMakedPizza = 23.00;
+
 function changePizzaSizeSelection(size){
   document.getElementById("choosePizzaSize").innerHTML = size;
+  sizePizzaSelected = size;
+  
+  if (typeLeftPizzaSelected === typeRightPizzaSelected) {
+    calculateMakedPizzaValueChangingSize(true, true);
+  } else {
+    calculateMakedPizzaValueChangingSize(false, true);
+    calculateMakedPizzaValueChangingSize(false, false);
+  }
+
+  priceMakedPizza = (priceLeftPizzaSelected+priceRightPizzaSelected)/2;
+  document.getElementById('idPriceMakedPizza').innerHTML = convertToReal(priceMakedPizza);
 }
 
-function changeLeftPizzaSelection(flavor){
-  document.getElementById("choosePizzaFlavorLeft").innerHTML = `<p title="${flavor}">${flavor}</p>`
+function changePricesByChangingSize(isEqual, isLeft, price) {
+  if (isEqual){
+    priceLeftPizzaSelected = price;
+    priceRightPizzaSelected = price;
+  } else {
+    isLeft 
+    ? priceLeftPizzaSelected = price
+    : priceRightPizzaSelected = price;
+  }
 }
 
-function changeRightPizzaSelection(flavor){
-  document.getElementById("choosePizzaFlavorRight").innerHTML = `<p title="${flavor}">${flavor}</p>`
+function calculateMakedPizzaValueChangingSize(isEqual, isLeft){
+  switch (isLeft ? typeLeftPizzaSelected : typeRightPizzaSelected) {
+    case 1:
+      pizzaPrices1.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+
+    case 2:
+      pizzaPrices2.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+
+    case 3:
+      pizzaPrices3.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+
+    case 4:
+      pizzaPrices4.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+  
+    default:
+      break;
+  }
+}
+
+/*changing flavors*/
+
+function changePrices(isLeft, price) {
+  isLeft 
+    ? priceLeftPizzaSelected = price
+    : priceRightPizzaSelected = price;
+  priceMakedPizza = (priceLeftPizzaSelected+priceRightPizzaSelected)/2;
+  document.getElementById('idPriceMakedPizza').innerHTML = convertToReal(priceMakedPizza);
+}
+
+function calculateMakedPizzaValue(type, isLeft){
+  switch (type) {
+    case 1:
+      pizzaPrices1.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePrices(isLeft, price.price);
+        }
+      });
+      break;
+
+    case 2:
+      pizzaPrices2.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePrices(isLeft, price.price);
+        }
+      });
+      break;
+
+    case 3:
+      pizzaPrices3.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePrices(isLeft, price.price);
+        }
+      });
+      break;
+
+    case 4:
+      pizzaPrices4.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePrices(isLeft, price.price);
+        }
+      });
+      break;
+  
+    default:
+      break;
+  }
+}
+
+function changeLeftPizzaSelection(flavor,type){
+  document.getElementById("choosePizzaFlavorLeft").innerHTML = `<p title="${flavor}">${flavor}</p>`;
+  flavorLeftPizzaSelected = flavor;
+  typeLeftPizzaSelected = type;
+  calculateMakedPizzaValue(type, true);
+}
+
+function changeRightPizzaSelection(flavor, type){
+  document.getElementById("choosePizzaFlavorRight").innerHTML = `<p title="${flavor}">${flavor}</p>`;
+  flavorRightPizzaSelected = flavor;
+  typeRightPizzaSelected = type;
+  calculateMakedPizzaValue(type, false);
+}
+
+let objMakedPizzaChoosed = {
+  id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - M - [levar]`,
+  name:`Pizza (${sizePizzaSelected})`,
+  adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} [levar]`,
+  priceOne: priceMakedPizza,
+  priceNumb: priceMakedPizza,
+  img: "images/pizzaIcon.png",
+  count: 1
+}
+
+function chooseMakedPizza(){
+
 }
 
 updateShoppingCartHTML();

@@ -1071,6 +1071,18 @@ header #menu-bar{
   align-items: center;
 }
 
+.boxPriceNewPizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceNewPizza{
+  font-size: 2.2rem;
+  color:#666;
+  margin-right: 0.7rem;
+}
+
 .boxImgPizzaChoose{
   display: flex;
 }
