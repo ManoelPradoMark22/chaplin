@@ -1227,6 +1227,26 @@ header #menu-bar{
   }
 }
 
+.checkBoxPizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.625rem;
+}
+
+.checkBoxPizza input{
+  cursor: pointer;
+}
+
+.checkBoxPizza label{
+  cursor: pointer;
+  margin-left: .4rem;
+  font-size: 2rem;
+  color:#333333;
+  font-family: 'Oswald', sans-serif;
+  user-select: none;
+}
+
 /*
 @media (min-width: 650px) {
   .imgPizzaChoose {
