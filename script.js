@@ -39,7 +39,7 @@ const updateShoppingCartHTML = function () {  // 3
     
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \nComplemento: _${prod.adittionals}_` : ''}`;
+      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n${prod.isPizza ? 'Sabor:' : 'Complemento:'} _${prod.adittionals}_` : ''}`;
     });
     
 		parentElement.innerHTML = result.join('');
@@ -1651,24 +1651,20 @@ function toggleCheckbox(element) {
 }
 
 function chooseMakedPizza(){
-  /* {
-    id: '${prod.id}',
-    name: '${prod.name}',
-    priceOne: ${prod.priceNumb},
-    priceNumb: ${prod.priceNumb},
-    img: '${prod.img}',
-    count: 1
-  } */
+  let stringLevar = isToTakeOut ? ' - [levar]' : '';
 
   let objMakedPizzaChoosed = {
-    id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - ${sizePizzaSelected} - [levar]`,
+    id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - ${sizePizzaSelected}${stringLevar}`,
     name:`Pizza (${sizePizzaSelected})`,
-    adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} [levar]`,
+    adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected}${stringLevar}`,
+    isPizza: true,
     priceOne: priceMakedPizza,
     priceNumb: priceMakedPizza,
     img: "images/pizzaIcon.png",
     count: 1
   };
+
+  addItemToCart(objMakedPizzaChoosed);
 }
 
 updateShoppingCartHTML();
