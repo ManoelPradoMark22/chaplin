@@ -485,6 +485,11 @@ header #menu-bar{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
+.menu .row .content .info .boxManyPrices .manyPrices .headerManyPrices .slicesPizza{
+  font-size: 1rem;
+  padding-left: .3rem;
+}
+
 .menu .row .content .info .boxManyPrices .manyPrices .bodyManyPrices{
   display: flex;
   text-align: center;

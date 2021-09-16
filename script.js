@@ -629,19 +629,23 @@ var pizzaPrices1 = [
   },
   {
     price: 17.00,
-    size: 'P'
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
     price: 22.00,
-    size: 'M'
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
     price: 28.00,
-    size: 'G'
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
     price: 34.00,
-    size: 'GG'
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
@@ -656,19 +660,23 @@ var pizzaPrices2 = [
   },
   {
     price: 19.00,
-    size: 'P'
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
     price: 24.00,
-    size: 'M'
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
     price: 30.00,
-    size: 'G'
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
     price: 37.00,
-    size: 'GG'
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
@@ -683,19 +691,23 @@ var pizzaPrices3 = [
   },
   {
     price: 27.00,
-    size: 'P'
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
     price: 33.00,
-    size: 'M'
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
     price: 40.00,
-    size: 'G'
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
     price: 46.00,
-    size: 'GG'
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
@@ -710,19 +722,23 @@ var pizzaPrices4 = [
   },
   {
     price: 22.00,
-    size: 'P'
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
     price: 28.00,
-    size: 'M'
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
     price: 34.00,
-    size: 'G'
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
     price: 40.00,
-    size: 'GG'
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
@@ -808,7 +824,7 @@ document.getElementById('catPizzas').innerHTML = catPizzas.map(prod =>
                   ${prod.prices.map((price =>
                     `
                     <div class="manyPrices">
-                      <h3 class="headerManyPrices">${price.size}</h3>
+                      <h3 class="headerManyPrices">${price.size} ${price.slices ? `<text class="slicesPizza">${price.slices}</text>` : ''}</h3>
                       <div class="bodyManyPrices">${convertToReal(price.price)}</div>
                     </div>
                     `
@@ -1531,6 +1547,8 @@ function changePizzaSizeSelection(size){
   priceMakedPizza = (priceLeftPizzaSelected+priceRightPizzaSelected)/2;
   document.getElementById('idPriceMakedPizza').innerHTML = convertToReal(priceMakedPizza);
 }
+
+/*changing sizes*/
 
 function changePricesByChangingSize(isEqual, isLeft, price) {
   if (isEqual){
