@@ -1515,6 +1515,8 @@ let typeRightPizzaSelected = 2;
 
 let priceMakedPizza = 23.00;
 
+let isToTakeOut = false;
+
 function changePizzaSizeSelection(size){
   document.getElementById("choosePizzaSize").innerHTML = size;
   sizePizzaSelected = size;
@@ -1643,18 +1645,30 @@ function changeRightPizzaSelection(flavor, type){
   calculateMakedPizzaValue(type, false);
 }
 
-let objMakedPizzaChoosed = {
-  id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - M - [levar]`,
-  name:`Pizza (${sizePizzaSelected})`,
-  adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} [levar]`,
-  priceOne: priceMakedPizza,
-  priceNumb: priceMakedPizza,
-  img: "images/pizzaIcon.png",
-  count: 1
+function toggleCheckbox(element) {
+  isToTakeOut = element.checked;
+  console.log(isToTakeOut);
 }
 
 function chooseMakedPizza(){
+  /* {
+    id: '${prod.id}',
+    name: '${prod.name}',
+    priceOne: ${prod.priceNumb},
+    priceNumb: ${prod.priceNumb},
+    img: '${prod.img}',
+    count: 1
+  } */
 
+  let objMakedPizzaChoosed = {
+    id: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} - ${sizePizzaSelected} - [levar]`,
+    name:`Pizza (${sizePizzaSelected})`,
+    adittionals: `${flavorLeftPizzaSelected}/${flavorRightPizzaSelected} [levar]`,
+    priceOne: priceMakedPizza,
+    priceNumb: priceMakedPizza,
+    img: "images/pizzaIcon.png",
+    count: 1
+  };
 }
 
 updateShoppingCartHTML();
