@@ -942,6 +942,7 @@ header #menu-bar{
   top: 0;
   width: 100%;
   box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+  align-items: center;
 }
 
 .top button {
@@ -963,6 +964,13 @@ header #menu-bar{
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+}
+
+.top #cartSumTotal {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  color:#666;
 }
 
 .overlay {
