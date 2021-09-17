@@ -39,24 +39,23 @@ const updateShoppingCartHTML = function () {  // 3
     let sumTotal = 0;
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n${prod.isPizza ? 'Sabor:' : 'Complemento:'} _${prod.adittionals}_` : ''}`;
+      stringItems = `${stringItems}\n\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n${prod.isPizza ? 'Sabor:' : 'Complemento:'} _${prod.adittionals}_` : ''}`;
       sumTotal  = sumTotal + prod.priceNumb;
     });
+    let maskedSumTotal = convertToReal(sumTotal);
+    stringItems = `${stringItems}\n\n*****************\nSubtotal: *${maskedSumTotal}*`;
     
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
     document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
     document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+5577991998770&text=${encodeURI(stringItems)}`;
-    document.getElementById("cartSumTotal").innerHTML = convertToReal(sumTotal);
-		/*cartSumPrice.innerHTML = '$' + countTheSumPrice(); */
-
+    document.getElementById("cartSumTotal").innerHTML = maskedSumTotal;
 	}
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty">Sua sacola está vazia!</h4>';
     document.getElementById("badgeId").innerHTML = '0';
     document.getElementById("cartSumTotal").innerHTML = '';
-		/*cartSumPrice.innerHTML = ''; */
 	}
 }
 
