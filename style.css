@@ -67,6 +67,10 @@ section{
   border:.2rem solid var(--yellow);
 }
 
+.btnCart:disabled {
+  pointer-events: none;
+}
+
 .btnConfirmShop{
   font-size: 1.5rem;
   padding:.7rem 4rem;
@@ -351,6 +355,11 @@ header #menu-bar{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.menu .itemNotAvailable .image,
+.menu .itemNotAvailable .content{
+  opacity: 0.5;
 }
 
 .break {
@@ -1062,6 +1071,7 @@ header #menu-bar{
     border-radius: 5px;
     text-align: center;
     font-size: 1.1rem;
+    user-select: none;
 }
 
 .btnCart i{

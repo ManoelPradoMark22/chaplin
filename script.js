@@ -342,8 +342,10 @@ var catPorcoes = [
     id: '1tab2.1',
     number: 1,
     name:"Frango e Batata com Cheddar e Bacon",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$28,00",
+    price:"R$ 28,00",
+    priceNumb: 28.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232378070_117300867311460_8194682613149046208_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=ixoJgvgSW70AX-1xGqQ&_nc_ht=scontent.fvdc3-1.fna&oh=52d2a9bbabc6d8a7181a0f31b0032db9&oe=61445C42",
     display: "display:flex"
   },
@@ -351,8 +353,10 @@ var catPorcoes = [
     id: '1tab2.2',
     number: 2,
     name:"Frango",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$16,00",
+    price:"R$ 16,00",
+    priceNumb: 16.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233132893_117300823978131_1758347187518323947_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=CH7hBQ0g4EcAX88zRX-&_nc_ht=scontent.fvdc3-1.fna&oh=8da4b24a9bfd3c199c9e62ccfb91153c&oe=6143B978",
     display: "display:none"
   },
@@ -360,8 +364,10 @@ var catPorcoes = [
     id: '1tab2.3',
     number: 3,
     name:"Batata com Cheddar e Bacon",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$12,00",
+    price:"R$ 12,00",
+    priceNumb: 12.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233262635_117300590644821_1719707751774929036_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=LDqN8H8hDqUAX-2SH27&_nc_ht=scontent.fvdc3-1.fna&oh=c01ecfa5d908c705083ec0e07d46ca59&oe=6146847A",
     display: "display:none"
   },
@@ -369,8 +375,10 @@ var catPorcoes = [
     id: '1tab2.4',
     number: 4,
     name:"Batata com Cheddar",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$10,00",
+    price:"R$ 10,00",
+    priceNumb: 10.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/235171800_117300657311481_5551938420942140045_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=AFZVaMHcRJgAX-Q5qZv&_nc_ht=scontent.fvdc3-1.fna&oh=05859381de2d1145ade4c3ac966257b7&oe=61451EC7",
     display: "display:none"
   },
@@ -378,8 +386,10 @@ var catPorcoes = [
     id: '1tab2.5',
     number: 5,
     name:"Batata com Bacon",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$10,00",
+    price:"R$ 10,00",
+    priceNumb: 10.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232289142_117300527311494_5517302782081115995_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=QsHbFpqIH3wAX8qi2j-&_nc_ht=scontent.fvdc3-1.fna&oh=445c55f187d587312318f9e9b5b1db5d&oe=6144527B",
     display: "display:none"
   },
@@ -387,8 +397,10 @@ var catPorcoes = [
     id: '1tab2.6',
     number: 6,
     name:"Batata Frita",
+    available: true,
     description: "sdk dask dajks k",
-    price:"R$8,00",
+    price:"R$ 8,00",
+    priceNumb: 8.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232130364_117300710644809_8564924637729767580_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=P7-5UDBKbacAX-oWHrw&_nc_ht=scontent.fvdc3-1.fna&oh=fbf30fa4a64e73bc38be16e68a8e565e&oe=6144797A",
     display: "display:none"
   },
@@ -396,8 +408,10 @@ var catPorcoes = [
     id: '1tab2.7',
     number: 7,
     name:"Frango a passarinho",
+    available: false,
     description: "sdk dask dajks k",
-    price:"R$22,00",
+    price:"R$ 22,00",
+    priceNumb: 22.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240055901_117300777311469_2843962142386130061_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=OGap_RCubbIAX_uVR6S&_nc_ht=scontent.fvdc3-1.fna&oh=7b3c64b01446393bf21ed9547c899cd4&oe=614381B7",
     display: "display:none"
   }
@@ -405,7 +419,7 @@ var catPorcoes = [
 
 document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod => 
   `<div>
-    <div id="${prod.id}" class="row tabPorcoes" data-aos="fade-right" style="${prod.display}">
+    <div id="${prod.id}" class="row tabPorcoes ${prod.available ? '' : 'itemNotAvailable'}" data-aos="fade-right" style="${prod.display}">
       <div class="image" data-aos="fade-left">
           <img src="${prod.img}" alt="${prod.name}">
       </div>
@@ -415,6 +429,21 @@ document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod =>
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
+              <button
+                  ${prod.available ? '' : 'disabled'}
+                  class="btnCart btnCart-small addToCart"
+                  data-product-id=${prod.id}
+                  onclick="addItemToCart({
+                    id: '${prod.id}',
+                    name: '${prod.name}',
+                    priceOne: ${prod.priceNumb},
+                    priceNumb: ${prod.priceNumb},
+                    img: '${prod.img}',
+                    count: 1
+                  })">
+                    <i class="fas fa-cart-plus"></i>
+                    Adicionar item
+                </button>
           </div>
       </div>
     </div>
