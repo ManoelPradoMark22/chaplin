@@ -59,6 +59,18 @@ const updateShoppingCartHTML = function () {  // 3
 	}
 }
 
+function sentIce(){
+  let objIce = {
+    id: '5tab4',
+    name: 'Gelo',
+    priceOne: 5.00,
+    priceNumb: 5.00,
+    img: 'images/product-1.jpg',
+    count: 1
+  };
+  addItemToCart(objIce);
+}
+
 function addItemToCart(prodObj) {
   for (let i = 0; i < productsInCart.length; i++) {
 		if (productsInCart[i].id == prodObj.id) {
