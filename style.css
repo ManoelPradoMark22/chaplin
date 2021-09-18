@@ -757,6 +757,11 @@ header #menu-bar{
   color: #eee;
 }
 
+.footer .box-container .box p a:hover{
+  color:var(--yellow);
+  padding-left: .5rem;
+}
+
 .footer .box-container .box p a i{
   padding-right: .5rem;
   color:var(--yellow);
