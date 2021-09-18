@@ -227,7 +227,7 @@ var catLanches = [
     number: 1,
     name:"X-Tudo",
     description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
-    price:"R$13,00",
+    price:"R$ 13,00",
     priceNumb: 13.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228982349_116403880734492_7546688830169748149_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=OBhionX2qt4AX9zMz5f&_nc_ht=scontent.fvdc3-1.fna&oh=9375b31d749fba0f55e98f9d4e661443&oe=6142FCE3",
     display: "display:flex"
@@ -237,7 +237,7 @@ var catLanches = [
     number: 2,
     name:"X-Calabresa",
     description: "Hambúrguer, calabresa, queijo, cebola, alface, tomate e molho.",
-    price:"R$10,00",
+    price:"R$ 10,00",
     priceNumb: 10.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229922661_116404507401096_5192594160246130830_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=AUUV8wHMT3kAX_Rsqav&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=78c289de1b6b8bff68917bf6fdda3285&oe=61403A89",
     display: "display:none"
@@ -247,7 +247,7 @@ var catLanches = [
     number: 3,
     name:"X-Egg",
     description: "Hambúrguer, ovo, queijo, alface, tomate e molho.",
-    price:"R$9,00",
+    price:"R$ 9,00",
     priceNumb: 9.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/p526x296/234648403_116404864067727_4274334103086826176_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=xiunFLgqfhIAX8_vunB&_nc_ht=scontent.fvdc3-1.fna&oh=ae00da9ad7acea9d30e249dcec2bf741&oe=61439B9F",
     display: "display:none"
@@ -257,7 +257,7 @@ var catLanches = [
     number: 4,
     name:"Americano",
     description: "Queijo, presunto, ovo, alface e tomate.",
-    price:"R$7,50",
+    price:"R$ 7,50",
     priceNumb: 7.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233427102_116405447401002_3188619586584457176_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=Z43iCrs4kiQAX9W-SSv&_nc_ht=scontent.fvdc3-1.fna&oh=4d0435308c02a6a87ba0422f19c5c24a&oe=61427025",
     display: "display:none"
@@ -267,7 +267,7 @@ var catLanches = [
     number: 5,
     name:"X-Salada",
     description: "Hambúrguer, alface, tomate e milho.",
-    price:"R$7,00",
+    price:"R$ 7,00",
     priceNumb: 7.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229709333_116403054067908_1695209198032983876_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=4ekORxcHkf4AX8EfbUx&_nc_ht=scontent.fvdc3-1.fna&oh=0fc96348b594cb173199eb089e19ad28&oe=6142D6E7",
     display: "display:none"
@@ -277,7 +277,7 @@ var catLanches = [
     number: 6,
     name:"X-Frango",
     description: "Peito de frango, queijo, alface, tomate e molho.",
-    price:"R$7,00",
+    price:"R$ 7,00",
     priceNumb: 7.00,
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/s640x640/230485402_116604577381089_5371820810698774108_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=JH1mpGV1Q5oAX_H2eKr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=c7ddd4cda85f2c097049626d1fdfe56b&oe=6140C3B1",
     display: "display:none"
@@ -287,7 +287,7 @@ var catLanches = [
     number: 7,
     name:"X-Burguer",
     description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
-    price:"R$6,00",
+    price:"R$ 6,00",
     priceNumb: 6.00,
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/239448457_116605857380961_5138412958336672385_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=U5BKHUpdNroAX_Y_LOr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=318bddf52d420bd29ecb9bdb3aa5ef9d&oe=614332D0",
     display: "display:none"
@@ -297,7 +297,7 @@ var catLanches = [
     number: 8,
     name:"Mistão",
     description: "Hambúrguer, queijo e molho.",
-    price:"R$5,00",
+    price:"R$ 5,00",
     priceNumb: 5.00,
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/235818218_116606420714238_3907036065709012017_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=3IehahWSg8QAX-IfhLY&_nc_ht=scontent.fvdc6-1.fna&oh=9449fa67d6c9548653493cce22ea87dd&oe=61439773",
     display: "display:none"
@@ -429,6 +429,7 @@ var catSalgAssados = [
     name:"Esfirra de frango",
     description: "sdk dask dajks k",
     price:"R$3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240394056_117294680645412_5292669921026068825_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=8Znl397nYd4AX8MScoH&_nc_ht=scontent.fvdc3-1.fna&oh=8fae60372c32847c4cdffc3dfc57af8b&oe=6145D041",
     display: "display:flex"
   },
@@ -438,6 +439,7 @@ var catSalgAssados = [
     name:"Esfirra de carne",
     description: "sdk dask dajks k",
     price:"R$3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236299548_117294447312102_4444898762647027655_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=qhEC9qKeHdAAX-Os1Li&_nc_ht=scontent.fvdc3-1.fna&oh=64495db032c5ffcf2a4d64592433bd2e&oe=61448CDC",
     display: "display:none"
   },
@@ -447,6 +449,7 @@ var catSalgAssados = [
     name:"Esfirra de queijo e presunto",
     description: "sdk dask dajks k",
     price:"R$3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236337351_117294380645442_94699090341248678_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=ChCE8FHxdYwAX80PdjC&_nc_ht=scontent.fvdc3-1.fna&oh=ad413928efe6b5ded03ef7f4243aa1c4&oe=614394F9",
     display: "display:none"
   },
@@ -456,6 +459,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com catupiry",
     description: "sdk dask dajks k",
     price:"R$4,00",
+    priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232227148_117294503978763_3382087541275160377_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=WCSHBNHi5bgAX8p_Aqs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=d116ba20554ada90a55dc1b13ea0af23&oe=6146D1B2",
     display: "display:none"
   },
@@ -465,6 +469,7 @@ var catSalgAssados = [
     name:"Esfirra de frango com cheddar",
     description: "sdk dask dajks k",
     price:"R$4,00",
+    priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233370570_117294630645417_4916506231140999812_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=dfOzeNE4JGUAX-8Aho8&_nc_ht=scontent.fvdc3-1.fna&oh=4d7b2f40cd6cc4989ebab2690744b4e6&oe=614584BB",
     display: "display:none"
   },
@@ -474,6 +479,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo",
     description: "sdk dask dajks k",
     price:"R$4,00",
+    priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238534998_117294877312059_1264715566418216028_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgmASK5gL4MAX97I7Uj&_nc_ht=scontent.fvdc3-1.fna&oh=63857559794810ce6d848952fc33a11d&oe=6145939B",
     display: "display:none"
   },
@@ -483,6 +489,7 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo e cheddar",
     description: "sdk dask dajks k",
     price:"R$5,00",
+    priceNumb: 5.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232329304_117294750645405_1026935317479180654_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=VnKNQLsBBnAAX9Q_bLL&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=469efdb52c2f1dd90c2ef333cd4b0f7f&oe=614563FA",
     display: "display:none"
   },
@@ -492,6 +499,7 @@ var catSalgAssados = [
     name:"Hamburgão",
     description: "sdk dask dajks k",
     price:"R$4,00",
+    priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/225534944_117294817312065_5737254042580129881_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=XK7lGA9uXygAX_lWhc9&_nc_ht=scontent.fvdc3-1.fna&oh=fcbd8837822269d5ba19ac836bbb66a0&oe=61461806",
     display: "display:none"
   },
@@ -501,6 +509,7 @@ var catSalgAssados = [
     name:"Bauru",
     description: "sdk dask dajks k",
     price:"R$4,00",
+    priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240078676_117294217312125_9141162846575852765_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Q98xPl8Huk4AX8a3nns&_nc_ht=scontent.fvdc3-1.fna&oh=8f3ef5c590b2b440dfe777c8bd63a75d&oe=6145FEB6",
     display: "display:none"
   },
@@ -510,6 +519,7 @@ var catSalgAssados = [
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
     price:"R$3,00",
+    priceNumb: 3.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
     display: "display:none"
   },
@@ -527,6 +537,20 @@ document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod =>
               <h3> <span>${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
+              <button
+                  class="btnCart btnCart-small addToCart"
+                  data-product-id=${prod.id}
+                  onclick="addItemToCart({
+                    id: '${prod.id}',
+                    name: '${prod.name}',
+                    priceOne: ${prod.priceNumb},
+                    priceNumb: ${prod.priceNumb},
+                    img: '${prod.img}',
+                    count: 1
+                  })">
+                    <i class="fas fa-cart-plus"></i>
+                    Adicionar item
+                </button>
           </div>
       </div>
     </div>
