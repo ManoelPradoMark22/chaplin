@@ -1347,7 +1347,6 @@ var catPaes = [
     price:"R$0,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
     display: "display:flex",
-    hasOffer: "display:flex",
     offer: "5 por: R$2,00"
   },
   {
@@ -1358,7 +1357,6 @@ var catPaes = [
     price:"R$0,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
     display: "display:none",
-    hasOffer: "display:flex",
     offer: "5 por: R$2,00"
   },
   {
@@ -1369,7 +1367,6 @@ var catPaes = [
     price:"R$0,75",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none",
-    hasOffer: "display:flex",
     offer: "3 por: R$2,00"
   },
 ]
@@ -1386,10 +1383,12 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
-              <div class="offerDiv" style="${prod.hasOffer}">
+              ${prod.offer ?
+              `<div class="offerDiv">
                 <h3 class="headerOfferDiv"><i class="fas fa-certificate"></i>Oferta<i class="fas fa-certificate"></i></h3>
                 <div class="bodyOfferDiv">${prod.offer}</div>
-              </div>
+              </div>` 
+              :``}
           </div>
       </div>
     </div>
@@ -1507,6 +1506,7 @@ var catDiversosPad = [
     name:"Chimango",
     description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
     price:"R$1,00",
+    offer: '4 por R$3,00',
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
     display: "display:flex"
   },
@@ -1535,15 +1535,15 @@ var catDiversosPad = [
     description: "O maravilhoso doce de leite caseiro, super cremoso e delicioso.",
     manyPrices: [
       {
-        price: 'R$6,00',
+        price: 'R$ 5,00',
         size: '250g'
       },
       {
-        price: 'R$9,00',
+        price: 'R$ 9,00',
         size: '500g'
       },
       {
-        price: 'R$18,00',
+        price: 'R$ 18,00',
         size: '1Kg'
       }
     ],
@@ -1588,6 +1588,13 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
                 `
                 :
                 ``
+              }
+              ${prod.offer ?
+                `<div class="offerDiv">
+                  <h3 class="headerOfferDiv"><i class="fas fa-certificate"></i>Oferta<i class="fas fa-certificate"></i></h3>
+                  <div class="bodyOfferDiv">${prod.offer}</div>
+                </div>`
+                : ``
               }
           </div>
       </div>
