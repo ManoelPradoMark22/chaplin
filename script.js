@@ -443,7 +443,7 @@ document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod =>
                   })">
                     <i class="fas fa-cart-plus"></i>
                     Adicionar item
-                </button>
+              </button>
           </div>
       </div>
     </div>
@@ -593,7 +593,8 @@ var catSalgFritos = [
     number: "01",
     name:"Coxinha",
     description: "sdk dask dajks k",
-    price:"R$3,00",
+    price:"R$ 3,00",
+    priceNumb: 3.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240158547_117296533978560_7889505186724044514_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=Ygcq-KnrRYwAX8xQuUS&_nc_ht=scontent.fvdc3-1.fna&oh=19f207c7be4c71740bc783d59853608b&oe=61458D04",
     display: "display:flex"
   },
@@ -602,7 +603,8 @@ var catSalgFritos = [
     number: "02",
     name:"Risoles de Carne",
     description: "sdk dask dajks k",
-    price:"R$3,50",
+    price:"R$ 3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/231438220_117296480645232_7767201498510745427_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zFP3GEsepV8AX_o5xGk&_nc_ht=scontent.fvdc3-1.fna&oh=86686739578b31fdbec896535a200dbf&oe=614471B8",
     display: "display:none"
   },
@@ -611,7 +613,8 @@ var catSalgFritos = [
     number: "03",
     name:"Risoles de Pizza",
     description: "sdk dask dajks k",
-    price:"R$3,50",
+    price:"R$ 3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233106344_117296717311875_8271198056886297579_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=GgTv6fqXhdMAX8b_vNY&_nc_ht=scontent.fvdc3-1.fna&oh=398d80f62d5c7cd3050b71c77ea51be1&oe=614446A2",
     display: "display:none"
   },
@@ -620,7 +623,8 @@ var catSalgFritos = [
     number: "04",
     name:"Enroladinho de Salsicha",
     description: "sdk dask dajks k",
-    price:"R$3,50",
+    price:"R$ 3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228301159_117296790645201_8092389903944790366_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=h6dCiKoczyIAX8Xyp5D&_nc_ht=scontent.fvdc3-1.fna&oh=2617f5a7765bf057519005f3fb5b3063&oe=61434A31",
     display: "display:none"
   },
@@ -629,7 +633,8 @@ var catSalgFritos = [
     number: "05",
     name:"Enroladinho de queijo e presunto",
     description: "sdk dask dajks k",
-    price:"R$3,50",
+    price:"R$ 3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239197237_117296650645215_3964218506547131055_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=_O5akTc2frUAX9VOavC&_nc_ht=scontent.fvdc3-1.fna&oh=c23611c981c8823bf39dc819f20fcef1&oe=614602BF",
     display: "display:none"
   },
@@ -638,7 +643,8 @@ var catSalgFritos = [
     number: "06",
     name:"Kibe",
     description: "sdk dask dajks k",
-    price:"R$3,50",
+    price:"R$ 3,50",
+    priceNumb: 3.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240097809_117296597311887_5222320388318549415_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=EVG-axz_iToAX8MJt_r&_nc_oc=AQkBb7LqS69WOLFlKa5pVy_BKBcxFy7CgxoT6PQFMzWsbU7Eq0Y2NA9XxreWQuNk_is&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=5f315cf8eba1360a04f53700a698c7d9&oe=614565F6",
     display: "display:none"
   },
@@ -647,7 +653,8 @@ var catSalgFritos = [
     number: "07",
     name:"Steak de Frango",
     description: "sdk dask dajks k",
-    price:"R$2,50",
+    price:"R$ 2,50",
+    priceNumb: 2.50,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233330204_117296840645196_8355075857624459406_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=ibsb68IlwCYAX-AZtst&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=3877ac7dedb802d985c0e7fa3c339755&oe=6145E112",
     display: "display:none"
   },
@@ -665,6 +672,20 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
               <h3> <span>${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
+              <button
+                  class="btnCart btnCart-small addToCart"
+                  data-product-id=${prod.id}
+                  onclick="addItemToCart({
+                    id: '${prod.id}',
+                    name: '${prod.name}',
+                    priceOne: ${prod.priceNumb},
+                    priceNumb: ${prod.priceNumb},
+                    img: '${prod.img}',
+                    count: 1
+                  })">
+                    <i class="fas fa-cart-plus"></i>
+                    Adicionar item
+              </button>
           </div>
       </div>
     </div>
@@ -1557,12 +1578,12 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
                 <div class="boxManyPrices">
                   ${prod.manyPrices.map((price =>
                     `
-                    <div class="manyPrices">
+                    <div class="manyPrices manyPricesDoceLeite">
                       <h3 class="headerManyPrices">${price.size}</h3>
                       <div class="bodyManyPrices">${price.price}</div>
                     </div>
                     `
-                  ))}
+                  )).join('')}
                 </div>
                 `
                 :

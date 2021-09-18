@@ -473,7 +473,8 @@ header #menu-bar{
   user-select: none;
 }
 
-.menu .row .content .info .boxManyPrices .manyPricesPizza {
+.menu .row .content .info .boxManyPrices .manyPricesPizza,
+.menu .row .content .info .boxManyPrices .manyPricesDoceLeite {
   opacity: 1;
   cursor: auto;
 }
