@@ -744,11 +744,17 @@ header #menu-bar{
   font-size: 1.7rem;
   color:#eee;
   padding:2rem 0;
+  width: max-content;
 }
 
 .footer .box-container .box p i{
   padding-right: .5rem;
   color:var(--yellow);
+}
+
+.footer .box-container .box p a{
+  text-decoration: none;
+  color: #eee;
 }
 
 .footer .box-container .box p a i{
