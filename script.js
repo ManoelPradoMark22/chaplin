@@ -15,6 +15,27 @@ function clearSessionStorage() {
   updateShoppingCartHTML();
 }
 
+const salgadosImages = {
+  imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
+  imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
+  imgEsfirraFrangoCatupiry: 'https://i.ibb.co/BjJmYKG/esf-Fran-Catup.jpg',
+  imgEsfirraFrangoCheddar: 'https://i.ibb.co/V2tQBHM/Esf-Fran-Cheddar.jpg',
+  imgEsfirraFrango: 'https://i.ibb.co/6bRSBw5/esf-Frango.jpg',
+  imgEsfirraQueijo: 'https://i.ibb.co/X7gdqXd/esf-Queijo-Pres.jpg',
+  imgHamburgao: 'https://i.ibb.co/ZLN8bPj/hamburgao.jpg',
+  imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
+  imgEnrSals: 'https://i.ibb.co/Bjr972m/enro-Salsicha-Assado.jpg',
+
+};
+
+const padariaImages = {
+  imgChimango: 'https://i.ibb.co/zNpjQBJ/chimango.jpg',
+  imgPaoSal: 'https://i.ibb.co/mTCKxjs/paosal.jpg',
+  imgPaoDoce: 'https://i.ibb.co/vzq0vym/paodoce.jpg',
+  imgBoloCenoura: 'https://i.ibb.co/9vnGb0q/bolocenoura.jpg',
+  imgDoceLeite: 'https://i.ibb.co/xLZT76F/doceleite.jpg',
+};
+
 const updateShoppingCartHTML = function () {  // 3
 	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
@@ -1574,7 +1595,7 @@ var catPaes = [
     name:"Pão de doce",
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
+    img: padariaImages.imgPaoDoce,
     display: "display:flex",
     offer: "5 por: R$2,00"
   },
@@ -1584,7 +1605,7 @@ var catPaes = [
     name:"Pão de sal",
     description: "Pãozinho de sal caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
+    img: padariaImages.imgPaoSal,
     display: "display:none",
     offer: "5 por: R$2,00"
   },
@@ -1695,7 +1716,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Cenoura",
     description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
     price:"R$6,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgBoloCenoura,
     display: "display:none"
   },
   {
