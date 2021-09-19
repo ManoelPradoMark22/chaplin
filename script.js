@@ -960,7 +960,7 @@ var additionals = [
     id: 2,
     name: 'Morango',
     idAddName: 'addMorango',
-    available: true,
+    available: false,
     price: 'R$1,00',
     value: 1.00,
     selected: false,
@@ -1010,7 +1010,7 @@ var additionals = [
     id: 7,
     name: 'Amendoim',
     idAddName: 'addAmendoim',
-    available: false,
+    available: true,
     price: 'R$1,00',
     value: 1.00,
     selected: false,
@@ -1241,6 +1241,42 @@ var additionalsMilkShake = [
   }
 ]
 
+function changeSelectedMS(id){
+  var valorMS = 0;
+  var wasSelectedMS = true;
+
+  additionalsMilkShake.map(add => {
+    if (add.id === id) {
+      valorMS = add.value;
+      wasSelectedMS = add.selected;
+
+      const elemento = document.getElementById(add.idAddName);
+      if (add.selected){ //desmarcando
+        add.selected=false;
+        if (elemento.classList) {
+          elemento.classList.remove("active");
+        } else {
+          elemento.className -= " active";
+        }
+      }else { //marcando
+        add.selected=true;
+        if (elemento.classList) {
+          elemento.classList.add("active");
+        } else {
+          elemento.className += " active";
+        }
+      }
+    }
+  });
+
+  var oldTotalMS = catMilkShakes[0].priceTotalMS;
+  /*wasSelectedMS=true -> desmarcando*/
+  var newTotalMS = wasSelectedMS ? (oldTotalMS - valorMS) : (oldTotalMS + valorMS);
+  catMilkShakes[0].priceTotalMS = newTotalMS;
+  document.getElementById("idChangePriceMS").innerHTML = convertToReal(newTotalMS);
+
+}
+
 function changeSelectedSizeMS(sizeId) {
   var priceSizeMS = 5.00;
   var newNameMS = 'Milk-Shake';
@@ -1273,10 +1309,10 @@ function changeSelectedSizeMS(sizeId) {
   var subtotalMS = catMilkShakes[0].priceOriginalMS;
   var totalMS = catMilkShakes[0].priceTotalMS;
   var newTotalMS = totalMS - subtotalMS + priceSizeMS;
-  catAcais[0].priceOriginalAcai = priceSizeMS;
-  catAcais[0].priceTotalAcai = newTotalMS;
-  catAcais[0].img = imgPathMS;
-  catAcais[0].name = newNameMS;
+  catMilkShakes[0].priceOriginalMS = priceSizeMS;
+  catMilkShakes[0].priceTotalMS = newTotalMS;
+  catMilkShakes[0].img = imgPathMS;
+  catMilkShakes[0].name = newNameMS;
   document.getElementById("idChangePriceMS").innerHTML = `R$${newTotalMS},00`;
   document.getElementById("nameH3MS").innerHTML = `<span>0${sizeId}.</span> ${newNameMS}`;
   document.getElementById("imgMS").src=imgPathMS;
