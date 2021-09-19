@@ -1005,6 +1005,16 @@ header #menu-bar{
   color:#666;
 }
 
+.top #cartSumTotal i{
+  margin-right: .2rem;
+  color: #c24c37;
+}
+
+.top #cartSumTotal i:hover{
+  color: #e40505;
+  cursor: pointer;
+}
+
 .overlay {
   overflow: hidden;
   display: inline-block;

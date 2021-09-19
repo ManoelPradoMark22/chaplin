@@ -10,6 +10,11 @@ function convertToReal(value) {
   return valueConverted;
 }
 
+function clearSessionStorage() {
+  productsInCart = [];
+  updateShoppingCartHTML();
+}
+
 const updateShoppingCartHTML = function () {  // 3
 	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
@@ -49,7 +54,7 @@ const updateShoppingCartHTML = function () {  // 3
 		document.querySelector('.checkout').classList.remove('hidden');
     document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
     document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+5577991998770&text=${encodeURI(stringItems)}`;
-    document.getElementById("cartSumTotal").innerHTML = maskedSumTotal;
+    document.getElementById("cartSumTotal").innerHTML = `<i class="fas fa-trash-alt" title="Limpar Sacola" onclick="clearSessionStorage()"></i>${maskedSumTotal}`;
 	}
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
