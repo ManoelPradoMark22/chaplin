@@ -1238,7 +1238,7 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
     id: '3tab2.1',
     number: 1,
     name:"Milk-shake (300ml)",
-    description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316; *Pergunte os sabores*",
+    description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316;",
     priceOriginalMS: 5.00,
     priceTotalMS: 5.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21",
@@ -1394,6 +1394,18 @@ document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod =>
               <i class="fas fa-cart-plus"></i>
               Adicionar item
           </button>
+          <p>
+            <a
+            href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de sorvete para Milk-shake?"
+            target="_blank"
+            class="linkFlavors">
+                <button
+                class="btn btnFlavors">
+                    <i class="fab fa-whatsapp"></i>
+                    Sabores
+                </button>
+            </a>
+          </p>
         </div>
       </div>
     </div>

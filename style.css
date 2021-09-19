@@ -1079,6 +1079,17 @@ header #menu-bar{
   margin-left: 4.5rem;
 }
 
+.btnFlavors {
+  font-size: 1.1rem;
+  margin: 0;
+  padding:.5rem 1.5rem;
+  background: var(--yellow);
+}
+
+.linkFlavors button:hover {
+  cursor: help;
+}
+
 .btnCart {
   margin-left: 4.5rem;
     padding: 15px 50px 15px 30px;
