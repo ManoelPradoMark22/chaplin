@@ -15,7 +15,7 @@ function clearSessionStorage() {
   updateShoppingCartHTML();
 }
 
-const lanchesImages = {
+var lanchesImages = {
   imgMistao: 'https://i.ibb.co/p3Mrfhb/MISTAO.jpg',
   imgAmericano: 'https://i.ibb.co/bR0rhLb/AMERICANO.jpg',
   imgXburguer: 'https://i.ibb.co/nDVzL0j/X-BURGUER.jpg',
@@ -26,61 +26,71 @@ const lanchesImages = {
   imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg'
 }
 
-const pizzasImages = {
+var pizzasImages = {
   imgCarneSeca: 'https://i.ibb.co/QkXsPkf/carne-seca-1.jpg',
   imgFrangCatup: 'https://i.ibb.co/WBDKTTP/frangocat-1.jpg',
   imgPortuguesa: 'https://i.ibb.co/1r6bfxp/portuguesa-1.png',
   imgTradicional: 'https://i.ibb.co/jyFWrVw/tradicional-1.jpg',
   imgAtum: 'https://i.ibb.co/26HhcjG/atum-1.jpg',
   imgCaipira: 'https://i.ibb.co/6m0t23k/caipira-1.jpg',
-  imgCalabresa: 'https://i.ibb.co/q0wWqPP/calabresa-1.jpg',
-};
+  imgCalabresa: 'https://i.ibb.co/q0wWqPP/calabresa-1.jpg'
+}
 
-const porcoesImages = {
+var porcoesImages = {
   imgCompletao: 'https://i.ibb.co/85pb2JB/completao.jpg',
   imgBatata: 'https://i.ibb.co/0FQpF24/Batata-Frita-Crocante.jpg',
   imgFrangoPass: 'https://i.ibb.co/BrN0ccQ/frango-a-passarinho.png',
   imgFrango: 'https://i.ibb.co/HggFKLk/frango.jpg',
   imgBatataChedBac: 'https://i.ibb.co/Csb51P2/batata-completa.jpg',
   imgBatataBacon: 'https://i.ibb.co/wRfCM6V/batata.jpg',
-  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png',
-};
+  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png'
+}
 
-const sorveteriaImages = {
-  imgMSP = 'https://i.ibb.co/jW57QPs/p.jpg',
-  imgMSM = 'https://i.ibb.co/JrgQQcw/m.jpg',
-  imgMSG = 'https://i.ibb.co/H7L8y82/g.png',
-  imgBola = 'https://i.ibb.co/fdbq07c/bola.jpg',
-  imgCasquinha = 'https://i.ibb.co/QNd0kT8/casquinha.jpg',
-  imgCascao = 'https://i.ibb.co/94n6vXB/cascao.png',
-  imgpicCremoso = 'https://i.ibb.co/jJbh7Pd/picole-cremoso.png',
-  imgpicCristalizado = 'https://i.ibb.co/Hd0t7bw/pic-cristalizado.jpg',
-  imgpicCasquinha = 'https://i.ibb.co/YtKBNq0/picole-skimo.jpg',
-  imgCremosinho = 'https://i.ibb.co/hmpQCP2/cremosinho.jpg',
-  imgAcaiPP = 'https://i.ibb.co/ZWHjbvv/pp.jpg',
-  imgAcaiP = 'https://i.ibb.co/kXLSpQj/p.png',
-  imgAcaiM = 'https://i.ibb.co/rx7STdG/m.png',
-  imgAcaiG = 'https://i.ibb.co/zFDsx6D/g.png',
-};
+var sorveteriaImages = {
+  imgMSP: 'https://i.ibb.co/jW57QPs/p.jpg',
+  imgMSM: 'https://i.ibb.co/JrgQQcw/m.jpg',
+  imgMSG: 'https://i.ibb.co/H7L8y82/g.png',
+  imgBola: 'https://i.ibb.co/fdbq07c/bola.jpg',
+  imgCasquinha: 'https://i.ibb.co/QNd0kT8/casquinha.jpg',
+  imgCascao: 'https://i.ibb.co/94n6vXB/cascao.png',
+  imgpicCremoso: 'https://i.ibb.co/jJbh7Pd/picole-cremoso.png',
+  imgpicCristalizado: 'https://i.ibb.co/Hd0t7bw/pic-cristalizado.jpg',
+  imgpicCasquinha: 'https://i.ibb.co/YtKBNq0/picole-skimo.jpg',
+  imgCremosinho: 'https://i.ibb.co/hmpQCP2/cremosinho.jpg',
+  imgAcaiPP: 'https://i.ibb.co/ZWHjbvv/pp.jpg',
+  imgAcaiP: 'https://i.ibb.co/kXLSpQj/p.png',
+  imgAcaiM: 'https://i.ibb.co/rx7STdG/m.png',
+  imgAcaiG: 'https://i.ibb.co/zFDsx6D/g.png'
+}
 
-const muitoMaisImages = {
+var muitoMaisImages = {
   imgBomboniere: 'https://i.ibb.co/sgWBhGb/doces.jpg',
   imgSalgadosFesta: 'https://i.ibb.co/M9P0Z2B/mini-Salgados.jpg',
   imgBebidas: 'https://i.ibb.co/X3mCXFZ/refrigerantes.jpg',
   imgBebidasAlcoolicas: 'https://i.ibb.co/my1kZNY/whiskey.jpg',
-  imgGelo: 'https://i.ibb.co/JRGtpS8/icephoto.jpg',
-};
+  imgGelo: 'https://i.ibb.co/JRGtpS8/icephoto.jpg'
+}
 
-const padariaImages = {
+var padariaImages = {
   imgChimango: 'https://i.ibb.co/zNpjQBJ/chimango.jpg',
   imgPaoSal: 'https://i.ibb.co/mTCKxjs/paosal.jpg',
   imgPaoDoce: 'https://i.ibb.co/vzq0vym/paodoce.jpg',
   imgRosca: 'https://i.ibb.co/YW0GHjj/rosca-4.jpg',
   imgBoloCenoura: 'https://i.ibb.co/9vnGb0q/bolocenoura.jpg',
   imgDoceLeite: 'https://i.ibb.co/xLZT76F/doceleite.jpg',
-};
+  imgarrozpequeno: 'https://i.ibb.co/BVDc0mf/arroz-pequeno.jpg',
+  imgarrozgrande: 'https://i.ibb.co/S68BMGJ/arroz-grande.png',
+  imgavoador: 'https://i.ibb.co/b5LpLF0/avoador.jpg',
+  imgbrevidadegrande: 'https://i.ibb.co/1nT10jg/brevidade-grande.jpg',
+  imgbrevidadepequena: 'https://i.ibb.co/stqNnpN/brevidade-pequena.jpg',
+  imgformigueiro: 'https://i.ibb.co/Xj331wv/formigueiro.jpg',
+  imgmilho: 'https://i.ibb.co/7jwBhYK/milho.jpg',
+  imgpaoqueijo: 'https://i.ibb.co/Gsh2JC8/paoqueijo.jpg',
+  imgprima: 'https://i.ibb.co/ZTV65fW/prima.jpg',
+  imgbolachinha: 'https://i.ibb.co/dp9FJgH/bolachinha.jpg',
+}
 
-const salgadosAssadosImages = {
+var salgadosAssadosImages = {
   imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
   imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
   imgEsfirraFrangoCatupiry: 'https://i.ibb.co/BjJmYKG/esf-Fran-Catup.jpg',
@@ -91,18 +101,18 @@ const salgadosAssadosImages = {
   imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
   imgEnrSals: 'https://i.ibb.co/Bjr972m/enro-Salsicha-Assado.jpg',
   imgEsfCarne: 'https://i.ibb.co/c3k26pD/esfirra-de-carne.jpg',
-  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg',
-};
+  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg'
+}
 
-const salgadosFritosImages = {
+var salgadosFritosImages = {
   imgRisolesPizza: 'https://i.ibb.co/XsdLZZv/Risoles-de-presunto-e-queijo.jpg',
   imgEnrSalsichaFrito: 'https://i.ibb.co/3s26YBp/salsicha.jpg',
   imgSteak: 'https://i.ibb.co/sw4b4B4/steak.png',
   imgRisolesCarne: 'https://i.ibb.co/QD8c83J/carne.png',
   imgCoxinha: 'https://i.ibb.co/bLJysvg/coxinha.jpg',
   imgKibe: 'https://i.ibb.co/NgRynqB/kibe.jpg',
-  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png',
-};
+  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png'
+}
 
 const updateShoppingCartHTML = function () {  // 3
 	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
@@ -1663,7 +1673,7 @@ var catPaes = [
     name:"Pão de doce",
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: padariaImages.imgPaoDoce,
+    img: '',
     display: "display:flex",
     offer: "5 por: R$2,00"
   },
@@ -1673,7 +1683,7 @@ var catPaes = [
     name:"Pão de sal",
     description: "Pãozinho de sal caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: padariaImages.imgPaoSal,
+    img: '',
     display: "display:none",
     offer: "5 por: R$2,00"
   },
@@ -1784,18 +1794,9 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Cenoura",
     description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
     price:"R$6,00",
-    img: padariaImages.imgBoloCenoura,
+    img: '',
     display: "display:none"
-  },
-  {
-    id: '4tab2.9',
-    number: '09',
-    name:"Bolo de Mandioca",
-    description: "Delicioso, macio e cremoso bolo de mandioca.",
-    price:"R$6,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
-    display: "display:none"
-  },
+  }
 ]
 
 document.getElementById('catBolos').innerHTML = catBolos.map(prod => 
@@ -1874,15 +1875,6 @@ var catDiversosPad = [
     name:"Avoador",
     description: "O tão conhecido biscoito de polvilho (avoador).",
     price:"R$4,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
-    display: "display:none"
-  },
-  {
-    id: '4tab3.6',
-    number: '06',
-    name:"Avoador com queijo",
-    description: "Delicioso avoador com queijo.",
-    price:"R$4,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none"
   }
