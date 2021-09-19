@@ -26,7 +26,61 @@ const lanchesImages = {
   imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg'
 }
 
-const salgadosImages = {
+const pizzasImages = {
+  imgCarneSeca: 'https://i.ibb.co/QkXsPkf/carne-seca-1.jpg',
+  imgFrangCatup: 'https://i.ibb.co/WBDKTTP/frangocat-1.jpg',
+  imgPortuguesa: 'https://i.ibb.co/1r6bfxp/portuguesa-1.png',
+  imgTradicional: 'https://i.ibb.co/jyFWrVw/tradicional-1.jpg',
+  imgAtum: 'https://i.ibb.co/26HhcjG/atum-1.jpg',
+  imgCaipira: 'https://i.ibb.co/6m0t23k/caipira-1.jpg',
+  imgCalabresa: 'https://i.ibb.co/q0wWqPP/calabresa-1.jpg',
+};
+
+const porcoesImages = {
+  imgCompletao: 'https://i.ibb.co/85pb2JB/completao.jpg',
+  imgBatata: 'https://i.ibb.co/0FQpF24/Batata-Frita-Crocante.jpg',
+  imgFrangoPass: 'https://i.ibb.co/BrN0ccQ/frango-a-passarinho.png',
+  imgFrango: 'https://i.ibb.co/HggFKLk/frango.jpg',
+  imgBatataChedBac: 'https://i.ibb.co/Csb51P2/batata-completa.jpg',
+  imgBatataBacon: 'https://i.ibb.co/wRfCM6V/batata.jpg',
+  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png',
+};
+
+const sorveteriaImages = {
+  imgMSP = 'https://i.ibb.co/jW57QPs/p.jpg',
+  imgMSM = 'https://i.ibb.co/JrgQQcw/m.jpg',
+  imgMSG = 'https://i.ibb.co/H7L8y82/g.png',
+  imgBola = 'https://i.ibb.co/fdbq07c/bola.jpg',
+  imgCasquinha = 'https://i.ibb.co/QNd0kT8/casquinha.jpg',
+  imgCascao = 'https://i.ibb.co/94n6vXB/cascao.png',
+  imgpicCremoso = 'https://i.ibb.co/jJbh7Pd/picole-cremoso.png',
+  imgpicCristalizado = 'https://i.ibb.co/Hd0t7bw/pic-cristalizado.jpg',
+  imgpicCasquinha = 'https://i.ibb.co/YtKBNq0/picole-skimo.jpg',
+  imgCremosinho = 'https://i.ibb.co/hmpQCP2/cremosinho.jpg',
+  imgAcaiPP = 'https://i.ibb.co/ZWHjbvv/pp.jpg',
+  imgAcaiP = 'https://i.ibb.co/kXLSpQj/p.png',
+  imgAcaiM = 'https://i.ibb.co/rx7STdG/m.png',
+  imgAcaiG = 'https://i.ibb.co/zFDsx6D/g.png',
+};
+
+const muitoMaisImages = {
+  imgBomboniere: 'https://i.ibb.co/sgWBhGb/doces.jpg',
+  imgSalgadosFesta: 'https://i.ibb.co/M9P0Z2B/mini-Salgados.jpg',
+  imgBebidas: 'https://i.ibb.co/X3mCXFZ/refrigerantes.jpg',
+  imgBebidasAlcoolicas: 'https://i.ibb.co/my1kZNY/whiskey.jpg',
+  imgGelo: 'https://i.ibb.co/JRGtpS8/icephoto.jpg',
+};
+
+const padariaImages = {
+  imgChimango: 'https://i.ibb.co/zNpjQBJ/chimango.jpg',
+  imgPaoSal: 'https://i.ibb.co/mTCKxjs/paosal.jpg',
+  imgPaoDoce: 'https://i.ibb.co/vzq0vym/paodoce.jpg',
+  imgRosca: 'https://i.ibb.co/YW0GHjj/rosca-4.jpg',
+  imgBoloCenoura: 'https://i.ibb.co/9vnGb0q/bolocenoura.jpg',
+  imgDoceLeite: 'https://i.ibb.co/xLZT76F/doceleite.jpg',
+};
+
+const salgadosAssadosImages = {
   imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
   imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
   imgEsfirraFrangoCatupiry: 'https://i.ibb.co/BjJmYKG/esf-Fran-Catup.jpg',
@@ -36,15 +90,18 @@ const salgadosImages = {
   imgHamburgao: 'https://i.ibb.co/ZLN8bPj/hamburgao.jpg',
   imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
   imgEnrSals: 'https://i.ibb.co/Bjr972m/enro-Salsicha-Assado.jpg',
-
+  imgEsfCarne: 'https://i.ibb.co/c3k26pD/esfirra-de-carne.jpg',
+  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg',
 };
 
-const padariaImages = {
-  imgChimango: 'https://i.ibb.co/zNpjQBJ/chimango.jpg',
-  imgPaoSal: 'https://i.ibb.co/mTCKxjs/paosal.jpg',
-  imgPaoDoce: 'https://i.ibb.co/vzq0vym/paodoce.jpg',
-  imgBoloCenoura: 'https://i.ibb.co/9vnGb0q/bolocenoura.jpg',
-  imgDoceLeite: 'https://i.ibb.co/xLZT76F/doceleite.jpg',
+const salgadosFritosImages = {
+  imgRisolesPizza: 'https://i.ibb.co/XsdLZZv/Risoles-de-presunto-e-queijo.jpg',
+  imgEnrSalsichaFrito: 'https://i.ibb.co/3s26YBp/salsicha.jpg',
+  imgSteak: 'https://i.ibb.co/sw4b4B4/steak.png',
+  imgRisolesCarne: 'https://i.ibb.co/QD8c83J/carne.png',
+  imgCoxinha: 'https://i.ibb.co/bLJysvg/coxinha.jpg',
+  imgKibe: 'https://i.ibb.co/NgRynqB/kibe.jpg',
+  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png',
 };
 
 const updateShoppingCartHTML = function () {  // 3
