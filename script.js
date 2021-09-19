@@ -169,7 +169,7 @@ function sentIce(){
     name: 'Gelo',
     priceOne: 5.00,
     priceNumb: 5.00,
-    img: 'images/icephoto.jpg',
+    img: 'https://i.ibb.co/JRGtpS8/icephoto.jpg',
     count: 1
   };
   addItemToCart(objIce);
