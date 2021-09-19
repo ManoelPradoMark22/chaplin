@@ -1724,7 +1724,7 @@ var catDiversosPad = [
   {
     id: '4tab3.3',
     number: '03',
-    name:"Bolachinha (200g)",
+    name:"Bolachinha de tapioca",
     description: "200g da famosa e deliciosa bolachinha de tapioca!",
     price:"R$4,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
@@ -1757,6 +1757,15 @@ var catDiversosPad = [
     number: '05',
     name:"Avoador",
     description: "O tão conhecido biscoito de polvilho (avoador).",
+    price:"R$4,00",
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    display: "display:none"
+  },
+  {
+    id: '4tab3.6',
+    number: '06',
+    name:"Avoador com queijo",
+    description: "Delicioso avoador com queijo.",
     price:"R$4,50",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
     display: "display:none"
