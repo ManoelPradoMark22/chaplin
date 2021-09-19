@@ -15,6 +15,17 @@ function clearSessionStorage() {
   updateShoppingCartHTML();
 }
 
+const lanchesImages = {
+  imgMistao: 'https://i.ibb.co/p3Mrfhb/MISTAO.jpg',
+  imgAmericano: 'https://i.ibb.co/bR0rhLb/AMERICANO.jpg',
+  imgXburguer: 'https://i.ibb.co/nDVzL0j/X-BURGUER.jpg',
+  imgXcalabresa: 'https://i.ibb.co/XXLr1fc/X-CALABRESA.jpg',
+  imgXegg: 'https://i.ibb.co/mhhhWPb/X-EGG.png',
+  imgXsalada: 'https://i.ibb.co/4j0Dzwc/X-SALADA.jpg',
+  imgXfrango: 'https://i.ibb.co/RCF0P5T/X-FRANGO.png',
+  imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg'
+}
+
 const salgadosImages = {
   imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
   imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
