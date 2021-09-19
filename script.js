@@ -118,6 +118,40 @@ function addAcaiToCart() {
   updateShoppingCartHTML();
 }
 
+function addMSToCart() {
+  let adittionalsStringMS = '';
+
+  additionalsMilkShake.map(add => {
+    if (add.selected) {
+      adittionalsStringMS = `${adittionalsStringMS}${add.name}-`;
+    }
+  })
+
+  let idStringMS = `MILKSHAKE-${catMilkShakes[0].priceOriginalMS}.${adittionalsStringMS}`;
+
+  for (let i = 0; i < productsInCart.length; i++) {
+		if (productsInCart[i].id === idStringMS) {
+			productsInCart[i].count = productsInCart[i].count + 1;
+			productsInCart[i].priceNumb = catMilkShakes[0].priceTotalMS*productsInCart[i].count;
+      updateShoppingCartHTML();
+			return;
+		}
+	}
+
+  let msObj = {
+    id: `${idStringMS}`,
+    name: `${catMilkShakes[0].name}`,
+    adittionals: `${adittionalsStringMS==='' ? 'Sem adicionais' : adittionalsStringMS}`,
+    priceOne: catMilkShakes[0].priceTotalMS,
+    priceNumb: catMilkShakes[0].priceTotalMS,
+    img: `${catMilkShakes[0].img}`,
+    count: 1
+  };
+
+	productsInCart.push(msObj);
+  updateShoppingCartHTML();
+}
+
 function changeCountOfItens(idProd, IsIncrease) {
   for (let i = 0; i < productsInCart.length; i++) {
 		if (productsInCart[i].id == idProd) {
@@ -1076,24 +1110,24 @@ function changeSelect(id) {
     if (!simpleAdd) {
       var newTotal = oldTotal - valor;
       catAcais[0].priceTotalAcai = newTotal;
-      document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+      document.getElementById("idChangePriceAcai").innerHTML = convertToReal(newTotal);
     } else {
       if (contador >= 4) {
         var newTotal = oldTotal - valor;
         catAcais[0].priceTotalAcai = newTotal;
-        document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+        document.getElementById("idChangePriceAcai").innerHTML = convertToReal(newTotal);
       }
     }
   } else { //marcando
     if (!simpleAdd) {
       var newTotal = oldTotal + valor;
       catAcais[0].priceTotalAcai = newTotal;
-      document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+      document.getElementById("idChangePriceAcai").innerHTML = convertToReal(newTotal);
     } else {
       if (contador > 4) {
         var newTotal = oldTotal + valor;
         catAcais[0].priceTotalAcai = newTotal;
-        document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+        document.getElementById("idChangePriceAcai").innerHTML = convertToReal(newTotal);
       }
     }
   }
@@ -1140,7 +1174,7 @@ function changeSelectedSizeAcai(sizeId) {
   catAcais[0].priceTotalAcai = newTotal;
   catAcais[0].img = imgPath;
   catAcais[0].name = newName;
-  document.getElementById("idChangePriceAcai").innerHTML = `R$${newTotal},00`;
+  document.getElementById("idChangePriceAcai").innerHTML = convertToReal(newTotal);
   document.getElementById("nameH3Acai").innerHTML = `<span>0${sizeId}.</span> ${newName}`;
   document.getElementById("imgAcai").src=imgPath;
 }
@@ -1313,7 +1347,7 @@ function changeSelectedSizeMS(sizeId) {
   catMilkShakes[0].priceTotalMS = newTotalMS;
   catMilkShakes[0].img = imgPathMS;
   catMilkShakes[0].name = newNameMS;
-  document.getElementById("idChangePriceMS").innerHTML = `R$${newTotalMS},00`;
+  document.getElementById("idChangePriceMS").innerHTML = convertToReal(newTotalMS);
   document.getElementById("nameH3MS").innerHTML = `<span>0${sizeId}.</span> ${newNameMS}`;
   document.getElementById("imgMS").src=imgPathMS;
 }
