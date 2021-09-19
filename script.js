@@ -384,7 +384,7 @@ var catLanches = [
     description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
     price:"R$ 13,00",
     priceNumb: 13.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228982349_116403880734492_7546688830169748149_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=OBhionX2qt4AX9zMz5f&_nc_ht=scontent.fvdc3-1.fna&oh=9375b31d749fba0f55e98f9d4e661443&oe=6142FCE3",
+    img: lanchesImages.imgXtudo,
     display: "display:flex"
   },
   {
@@ -394,7 +394,7 @@ var catLanches = [
     description: "Hambúrguer, calabresa, queijo, cebola, alface, tomate e molho.",
     price:"R$ 10,00",
     priceNumb: 10.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229922661_116404507401096_5192594160246130830_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=AUUV8wHMT3kAX_Rsqav&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=78c289de1b6b8bff68917bf6fdda3285&oe=61403A89",
+    img: lanchesImages.imgXcalabresa,
     display: "display:none"
   },
   {
@@ -404,7 +404,7 @@ var catLanches = [
     description: "Hambúrguer, ovo, queijo, alface, tomate e molho.",
     price:"R$ 9,00",
     priceNumb: 9.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/p526x296/234648403_116404864067727_4274334103086826176_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=xiunFLgqfhIAX8_vunB&_nc_ht=scontent.fvdc3-1.fna&oh=ae00da9ad7acea9d30e249dcec2bf741&oe=61439B9F",
+    img: lanchesImages.imgXegg,
     display: "display:none"
   },
   {
@@ -414,7 +414,7 @@ var catLanches = [
     description: "Queijo, presunto, ovo, alface e tomate.",
     price:"R$ 7,50",
     priceNumb: 7.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233427102_116405447401002_3188619586584457176_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=Z43iCrs4kiQAX9W-SSv&_nc_ht=scontent.fvdc3-1.fna&oh=4d0435308c02a6a87ba0422f19c5c24a&oe=61427025",
+    img: lanchesImages.imgAmericano,
     display: "display:none"
   },
   {
@@ -424,7 +424,7 @@ var catLanches = [
     description: "Hambúrguer, alface, tomate e milho.",
     price:"R$ 7,00",
     priceNumb: 7.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229709333_116403054067908_1695209198032983876_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=4ekORxcHkf4AX8EfbUx&_nc_ht=scontent.fvdc3-1.fna&oh=0fc96348b594cb173199eb089e19ad28&oe=6142D6E7",
+    img: lanchesImages.imgXsalada,
     display: "display:none"
   },
   {
@@ -434,7 +434,7 @@ var catLanches = [
     description: "Peito de frango, queijo, alface, tomate e molho.",
     price:"R$ 7,00",
     priceNumb: 7.00,
-    img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/s640x640/230485402_116604577381089_5371820810698774108_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=JH1mpGV1Q5oAX_H2eKr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=c7ddd4cda85f2c097049626d1fdfe56b&oe=6140C3B1",
+    img: lanchesImages.imgXfrango,
     display: "display:none"
   },
   {
@@ -444,7 +444,7 @@ var catLanches = [
     description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
     price:"R$ 6,00",
     priceNumb: 6.00,
-    img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/239448457_116605857380961_5138412958336672385_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=U5BKHUpdNroAX_Y_LOr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=318bddf52d420bd29ecb9bdb3aa5ef9d&oe=614332D0",
+    img: lanchesImages.imgXburguer,
     display: "display:none"
   },
   {
@@ -454,7 +454,7 @@ var catLanches = [
     description: "Hambúrguer, queijo e molho.",
     price:"R$ 5,00",
     priceNumb: 5.00,
-    img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/235818218_116606420714238_3907036065709012017_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=3IehahWSg8QAX-IfhLY&_nc_ht=scontent.fvdc6-1.fna&oh=9449fa67d6c9548653493cce22ea87dd&oe=61439773",
+    img: lanchesImages.imgMistao,
     display: "display:none"
   }
 ]
@@ -501,7 +501,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 28,00",
     priceNumb: 28.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232378070_117300867311460_8194682613149046208_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=ixoJgvgSW70AX-1xGqQ&_nc_ht=scontent.fvdc3-1.fna&oh=52d2a9bbabc6d8a7181a0f31b0032db9&oe=61445C42",
+    img: porcoesImages.imgCompletao,
     display: "display:flex"
   },
   {
@@ -512,7 +512,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 16,00",
     priceNumb: 16.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233132893_117300823978131_1758347187518323947_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=CH7hBQ0g4EcAX88zRX-&_nc_ht=scontent.fvdc3-1.fna&oh=8da4b24a9bfd3c199c9e62ccfb91153c&oe=6143B978",
+    img: porcoesImages.imgFrango,
     display: "display:none"
   },
   {
@@ -523,7 +523,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 12,00",
     priceNumb: 12.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233262635_117300590644821_1719707751774929036_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=LDqN8H8hDqUAX-2SH27&_nc_ht=scontent.fvdc3-1.fna&oh=c01ecfa5d908c705083ec0e07d46ca59&oe=6146847A",
+    img: porcoesImages.imgBatataChedBac,
     display: "display:none"
   },
   {
@@ -534,7 +534,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 10,00",
     priceNumb: 10.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/235171800_117300657311481_5551938420942140045_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=AFZVaMHcRJgAX-Q5qZv&_nc_ht=scontent.fvdc3-1.fna&oh=05859381de2d1145ade4c3ac966257b7&oe=61451EC7",
+    img: porcoesImages.imgBatataCheddar,
     display: "display:none"
   },
   {
@@ -545,7 +545,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 10,00",
     priceNumb: 10.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232289142_117300527311494_5517302782081115995_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=QsHbFpqIH3wAX8qi2j-&_nc_ht=scontent.fvdc3-1.fna&oh=445c55f187d587312318f9e9b5b1db5d&oe=6144527B",
+    img: porcoesImages.imgBatataBacon,
     display: "display:none"
   },
   {
@@ -556,7 +556,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 8,00",
     priceNumb: 8.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232130364_117300710644809_8564924637729767580_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=P7-5UDBKbacAX-oWHrw&_nc_ht=scontent.fvdc3-1.fna&oh=fbf30fa4a64e73bc38be16e68a8e565e&oe=6144797A",
+    img: porcoesImages.imgBatata,
     display: "display:none"
   },
   {
@@ -567,7 +567,7 @@ var catPorcoes = [
     description: "sdk dask dajks k",
     price:"R$ 22,00",
     priceNumb: 22.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240055901_117300777311469_2843962142386130061_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=OGap_RCubbIAX_uVR6S&_nc_ht=scontent.fvdc3-1.fna&oh=7b3c64b01446393bf21ed9547c899cd4&oe=614381B7",
+    img: porcoesImages.imgFrangoPass,
     display: "display:none"
   }
 ]
@@ -615,7 +615,7 @@ var catSalgAssados = [
     description: "Com frango desfiado delicioso!",
     price:"R$3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240394056_117294680645412_5292669921026068825_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=8Znl397nYd4AX8MScoH&_nc_ht=scontent.fvdc3-1.fna&oh=8fae60372c32847c4cdffc3dfc57af8b&oe=6145D041",
+    img: salgadosAssadosImages.imgEsfirraFrango,
     display: "display:flex"
   },
   {
@@ -626,7 +626,7 @@ var catSalgAssados = [
     description: "Recheada com carne de dar água na boca!",
     price:"R$3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236299548_117294447312102_4444898762647027655_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=qhEC9qKeHdAAX-Os1Li&_nc_ht=scontent.fvdc3-1.fna&oh=64495db032c5ffcf2a4d64592433bd2e&oe=61448CDC",
+    img: salgadosAssadosImages.imgEsfCarne,
     display: "display:none"
   },
   {
@@ -637,7 +637,7 @@ var catSalgAssados = [
     description: "Irresistível!",
     price:"R$3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236337351_117294380645442_94699090341248678_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=ChCE8FHxdYwAX80PdjC&_nc_ht=scontent.fvdc3-1.fna&oh=ad413928efe6b5ded03ef7f4243aa1c4&oe=614394F9",
+    img: salgadosAssadosImages.imgEsfirraQueijo,
     display: "display:none"
   },
   {
@@ -648,7 +648,7 @@ var catSalgAssados = [
     description: "A queridinha da clientela!&#128525;",
     price:"R$4,00",
     priceNumb: 4.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232227148_117294503978763_3382087541275160377_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=WCSHBNHi5bgAX8p_Aqs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=d116ba20554ada90a55dc1b13ea0af23&oe=6146D1B2",
+    img: salgadosAssadosImages.imgEsfirraFrangoCatupiry,
     display: "display:none"
   },
   {
@@ -659,7 +659,7 @@ var catSalgAssados = [
     description: "Quem não gosta de cheddar né?&#129316;",
     price:"R$4,00",
     priceNumb: 4.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233370570_117294630645417_4916506231140999812_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=dfOzeNE4JGUAX-8Aho8&_nc_ht=scontent.fvdc3-1.fna&oh=4d7b2f40cd6cc4989ebab2690744b4e6&oe=614584BB",
+    img: salgadosAssadosImages.imgEsfirraFrangoCheddar,
     display: "display:none"
   },
   {
@@ -670,7 +670,7 @@ var catSalgAssados = [
     description: "Quero bis!&#128540;",
     price:"R$4,00",
     priceNumb: 4.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238534998_117294877312059_1264715566418216028_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgmASK5gL4MAX97I7Uj&_nc_ht=scontent.fvdc3-1.fna&oh=63857559794810ce6d848952fc33a11d&oe=6145939B",
+    img: salgadosAssadosImages.imgEsfirraCalabresa,
     display: "display:none"
   },
   {
@@ -681,7 +681,7 @@ var catSalgAssados = [
     description: "Alguém disse cheddar?&#128556;",
     price:"R$5,00",
     priceNumb: 5.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232329304_117294750645405_1026935317479180654_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=VnKNQLsBBnAAX9Q_bLL&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=469efdb52c2f1dd90c2ef333cd4b0f7f&oe=614563FA",
+    img: salgadosAssadosImages.imgEsfCalabCheddar,
     display: "display:none"
   },
   {
@@ -692,7 +692,7 @@ var catSalgAssados = [
     description: "Hambúrguer, queijo e tomate. Esse acompanhado de um milk-shake... hummmmm&#128523;",
     price:"R$4,00",
     priceNumb: 4.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/225534944_117294817312065_5737254042580129881_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=XK7lGA9uXygAX_lWhc9&_nc_ht=scontent.fvdc3-1.fna&oh=fcbd8837822269d5ba19ac836bbb66a0&oe=61461806",
+    img: salgadosAssadosImages.imgHamburgao,
     display: "display:none"
   },
   {
@@ -703,7 +703,7 @@ var catSalgAssados = [
     description: "Queijo, presunto, milho, tomate e orégano. Perfeito! Muitos preferem chamá-lo de pão pizza.",
     price:"R$4,00",
     priceNumb: 4.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240078676_117294217312125_9141162846575852765_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Q98xPl8Huk4AX8a3nns&_nc_ht=scontent.fvdc3-1.fna&oh=8f3ef5c590b2b440dfe777c8bd63a75d&oe=6145FEB6",
+    img: salgadosAssadosImages.imgBauru,
     display: "display:none"
   },
   {
@@ -714,7 +714,7 @@ var catSalgAssados = [
     description: "Aquele tradicional salgado de salsicha!&#127789;",
     price:"R$3,00",
     priceNumb: 3.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
+    img: salgadosAssadosImages.imgEnrSals,
     display: "display:none"
   },
   {
@@ -725,7 +725,7 @@ var catSalgAssados = [
     description: "Salsicha com queijo, combinação perfeita!&#127789;",
     price:"R$3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
+    img: salgadosAssadosImages.imgEnrSalsGourmet,
     display: "display:none"
   },
 ]
@@ -772,7 +772,7 @@ var catSalgFritos = [
     description: "A coxinha top 1 do Mundo!&#127942;&#127758;",
     price:"R$ 3,00",
     priceNumb: 3.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240158547_117296533978560_7889505186724044514_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=Ygcq-KnrRYwAX8xQuUS&_nc_ht=scontent.fvdc3-1.fna&oh=19f207c7be4c71740bc783d59853608b&oe=61458D04",
+    img: salgadosFritosImages.imgCoxinha,
     display: "display:flex"
   },
   {
@@ -782,7 +782,7 @@ var catSalgFritos = [
     description: "Aquele bolinho de carne maravilhoso!&#129316;",
     price:"R$ 3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/231438220_117296480645232_7767201498510745427_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zFP3GEsepV8AX_o5xGk&_nc_ht=scontent.fvdc3-1.fna&oh=86686739578b31fdbec896535a200dbf&oe=614471B8",
+    img: salgadosFritosImages.imgRisolesCarne,
     display: "display:none"
   },
   {
@@ -792,7 +792,7 @@ var catSalgFritos = [
     description: "Travesseiro ou Risoles, o nome não importa. Mas é unânime que este é suuuper irresistível!&#128523;",
     price:"R$ 3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233106344_117296717311875_8271198056886297579_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=GgTv6fqXhdMAX8b_vNY&_nc_ht=scontent.fvdc3-1.fna&oh=398d80f62d5c7cd3050b71c77ea51be1&oe=614446A2",
+    img: salgadosFritosImages.imgRisolesPizza,
     display: "display:none"
   },
   {
@@ -802,7 +802,7 @@ var catSalgFritos = [
     description: "Que tal optar pela deliciosa e tradicional salsicha?&#127789;",
     price:"R$ 3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/228301159_117296790645201_8092389903944790366_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=h6dCiKoczyIAX8Xyp5D&_nc_ht=scontent.fvdc3-1.fna&oh=2617f5a7765bf057519005f3fb5b3063&oe=61434A31",
+    img: salgadosFritosImages.imgEnrSalsichaFrito,
     display: "display:none"
   },
   {
@@ -812,7 +812,7 @@ var catSalgFritos = [
     description: "Mais um queridinho da galera!&#128525;",
     price:"R$ 3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239197237_117296650645215_3964218506547131055_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=_O5akTc2frUAX9VOavC&_nc_ht=scontent.fvdc3-1.fna&oh=c23611c981c8823bf39dc819f20fcef1&oe=614602BF",
+    img: salgadosFritosImages.imgEnrQueijoPres,
     display: "display:none"
   },
   {
@@ -822,7 +822,7 @@ var catSalgFritos = [
     description: "Aquele kibe maravilhosoooo!&#128523;",
     price:"R$ 3,50",
     priceNumb: 3.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240097809_117296597311887_5222320388318549415_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=EVG-axz_iToAX8MJt_r&_nc_oc=AQkBb7LqS69WOLFlKa5pVy_BKBcxFy7CgxoT6PQFMzWsbU7Eq0Y2NA9XxreWQuNk_is&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=5f315cf8eba1360a04f53700a698c7d9&oe=614565F6",
+    img: salgadosFritosImages.imgKibe,
     display: "display:none"
   },
   {
@@ -832,7 +832,7 @@ var catSalgFritos = [
     description: "O tradicional empanado de frango!&#128539;",
     price:"R$ 2,50",
     priceNumb: 2.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233330204_117296840645196_8355075857624459406_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=ibsb68IlwCYAX-AZtst&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=3877ac7dedb802d985c0e7fa3c339755&oe=6145E112",
+    img: salgadosFritosImages.imgSteak,
     display: "display:none"
   },
 ]
@@ -1001,7 +1001,7 @@ var catPizzas = [
     number: 1,
     name:"Tradicional",
     description: "Queijo, presunto, milho e tomate.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240106277_117293040645576_4924976795352147143_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=jo539THf4NwAX_1fT0l&_nc_ht=scontent.fvdc3-1.fna&oh=2954dc5b83f4e5d45c216670a825654b&oe=6143CE31",
+    img: pizzasImages.imgTradicional,
     display: "display:flex",
     prices: pizzaPrices1
   },
@@ -1010,7 +1010,7 @@ var catPizzas = [
     number: 2,
     name:"Calabresa",
     description: "Queijo, calabresa e cebola.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233625245_117292540645626_3782401061590880459_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=KY3wEdhSD1MAX_WKIA5&_nc_ht=scontent.fvdc3-1.fna&oh=237c81b2c01923d56d475261071e8999&oe=61459EC1",
+    img: pizzasImages.imgCalabresa,
     display: "display:none",
     prices: pizzaPrices1
   },
@@ -1019,7 +1019,7 @@ var catPizzas = [
     number: 3,
     name:"Caipira",
     description: "Queijo, frango desfiado, milho, tomate e cebola.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237965232_117292373978976_748908005551020441_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=cwueK9p2owoAX-kpArW&_nc_ht=scontent.fvdc3-1.fna&oh=6713790a6d58fa5e04bde691a457e47a&oe=61436D81",
+    img: pizzasImages.imgCaipira,
     display: "display:none",
     prices: pizzaPrices2
   },
@@ -1028,7 +1028,7 @@ var catPizzas = [
     number: 4,
     name:"Portuguesa",
     description: "Queijo, presunto, ovo, tomate, azeitona e cebola.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240113265_117292950645585_8766229871408610626_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=eIq4O1cu6ioAX9pdDrY&_nc_ht=scontent.fvdc3-1.fna&oh=f8660a2654cca0b0d11ce65149d21070&oe=614379CA",
+    img: pizzasImages.imgPortuguesa,
     display: "display:none",
     prices: pizzaPrices2
   },
@@ -1037,7 +1037,7 @@ var catPizzas = [
     number: 5,
     name:"Frango Catupiry",
     description: "Queijo, frango e catupiry.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117292870645593_1533618693700679347_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=c6wYHPHHg_4AX9AXq9I&_nc_ht=scontent.fvdc3-1.fna&oh=3f0a840d81feb6dffdbd69c8f679a5d2&oe=61445D0A",
+    img: pizzasImages.imgFrangCatup,
     display: "display:none",
     prices: pizzaPrices2
   },
@@ -1046,7 +1046,7 @@ var catPizzas = [
     number: 6,
     name:"Carne Seca",
     description: "Carne seca, azeitona, cebola + (muçarela ou catupiry ou cheddar)",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233552856_117292757312271_2132117680449860470_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7NJrtEhJl0YAX9pS_yo&_nc_ht=scontent.fvdc3-1.fna&oh=9d703af7a689d407b6f9056723ff108a&oe=6147199F",
+    img: pizzasImages.imgCarneSeca,
     display: "display:none",
     prices: pizzaPrices3
   },
@@ -1055,7 +1055,7 @@ var catPizzas = [
     number: 7,
     name:"Atum",
     description: "Atum, muçarela, azeitona e cebola.",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233649511_117292293978984_5101822464847389961_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=PZMmYfK_j9AAX_pg-JA&_nc_ht=scontent.fvdc3-1.fna&oh=dd38717079ae4376dca1ad5f9ccea219&oe=614420FD",
+    img: pizzasImages.imgAtum,
     display: "display:none",
     prices: pizzaPrices4
   },
@@ -1101,7 +1101,7 @@ var catAcais = [
     description: "Aquele açaí delicioso e super cremoso! &#128523",
     priceOriginalAcai: 5.00,
     priceTotalAcai: 5.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF",
+    img: sorveteriaImages.imgAcaiPP,
     display: "display:flex"
   }
 ]
@@ -1263,34 +1263,34 @@ function changeSelect(id) {
 function changeSelectedSizeAcai(sizeId) {
   var priceSize = 5.00;
   var newName = 'Açaí';
-  var imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+  var imgPath = sorveteriaImages.imgAcaiPP;
 
   switch (sizeId) {
     case 1:
       priceSize = 5.00;
       newName = 'Açaí (250ml)';
-      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+      imgPath = sorveteriaImages.imgAcaiPP;
       break;
     case 2:
       priceSize = 7.00;
       newName = 'Açaí (300ml)';
-      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236330275_117305127311034_741488201663957744_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=tgvL2zmq0pYAX-b3xHa&_nc_ht=scontent.fvdc3-1.fna&oh=2d2dc6ecee13919086a7f52372086c5d&oe=6146BF59";
+      imgPath = sorveteriaImages.imgAcaiP;
       break;
     case 3:
       priceSize = 10.00;
       newName = 'Açaí (400ml)';
-      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233199214_117305250644355_3054863440578884123_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=OptF-P0d90gAX_nq3Sj&_nc_ht=scontent.fvdc3-1.fna&oh=1410cefc7b9474534b1cbf52dc9a73d7&oe=6145CCFE";
+      imgPath = sorveteriaImages.imgAcaiM;
       break;
     case 4:
       priceSize = 12.00;
       newName = 'Açaí (500ml)';
-      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236276088_117305293977684_2682545797940775392_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=h-25wcQAJ34AX96IH4p&_nc_ht=scontent.fvdc3-1.fna&oh=b052fa61a79b32ecbb2851a085fa83fe&oe=61463FA5";
+      imgPath = sorveteriaImages.imgAcaiG;
       break;
 
     default:
       priceSize = 5.00;
       newName = 'Açaí';
-      imgPath = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238559296_117305193977694_3901278189704901807_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=23tWmA7QClEAX9eMmAu&_nc_ht=scontent.fvdc3-1.fna&oh=a1c6c084e95efbe2fdc638e8a7380ba9&oe=614678FF";
+      imgPath = sorveteriaImages.imgAcaiPP;
       break;
   }
 
@@ -1367,7 +1367,7 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
     description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316;",
     priceOriginalMS: 5.00,
     priceTotalMS: 5.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21",
+    img: sorveteriaImages.imgMSP,
     display: "display:flex"
   },
 ]
@@ -1441,29 +1441,29 @@ function changeSelectedMS(id){
 function changeSelectedSizeMS(sizeId) {
   var priceSizeMS = 5.00;
   var newNameMS = 'Milk-Shake';
-  var imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+  var imgPathMS = sorveteriaImages.imgMSP;
 
   switch (sizeId) {
     case 1:
       priceSizeMS = 5.00;
       newNameMS = 'Milk-Shake (300ml)';
-      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+      imgPathMS = sorveteriaImages.imgMSP;
       break;
     case 2:
       priceSizeMS = 7.00;
       newNameMS = 'Milk-Shake (400ml)';
-      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117317757309771_4209434100430702420_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=ve8VfyMCPnIAX_btUem&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=29fc7552e107937b052a0c5fbadd5e92&oe=6146950F";
+      imgPathMS = sorveteriaImages.imgMSM;
       break;
     case 3:
       priceSizeMS = 9.00;
       newNameMS = 'Milk-Shake (500ml)';
-      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239216709_117322060642674_3577494100427244924_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=6RHeG8kn1U0AX8LSPFv&_nc_ht=scontent.fvdc3-1.fna&oh=db16a535bc8f3db631d718f3fa852a78&oe=61469B06";
+      imgPathMS = sorveteriaImages.imgMSG;
       break;
 
     default:
       priceSizeMS = 5.00;
       newNameMS = 'Milk-Shake';
-      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+      imgPathMS = sorveteriaImages.imgMSP;
       break;
   }
 
@@ -1548,7 +1548,7 @@ var catSorvetes = [
     description: "Delicioso sorvete SUUUUPER cremoso!!",
     price:"R$1,00",
     priceNumb: 1.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238660236_117351967306350_2153640766580765402_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=6bxaiwjOwe8AX8X3i5K&_nc_ht=scontent.fvdc3-1.fna&oh=014a27d8627f0908f50b5d9f8785993c&oe=61445BFA",
+    img: sorveteriaImages.imgBola,
     display: "display:flex"
   },
   {
@@ -1559,7 +1559,7 @@ var catSorvetes = [
     description: "1 bola na casquinha desse sorvete maravilhoso e cremoso.",
     price:"R$1,00",
     priceNumb: 1.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/236452689_117352143972999_4656178210832626560_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=uiJ1a-I5BlQAX-XAv9x&_nc_ht=scontent.fvdc3-1.fna&oh=d073d85b37cbbb1e0c44880be1938f55&oe=61458A57",
+    img: sorveteriaImages.imgCasquinha,
     display: "display:none"
   },
   {
@@ -1570,7 +1570,7 @@ var catSorvetes = [
     description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
     price:"R$2,00",
     priceNumb: 2.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239928710_117352087306338_3799823051884595966_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=c1k7Ox3VesgAX_69boW&_nc_ht=scontent.fvdc3-1.fna&oh=b074f43a25ef47fc64eb05bfe5c41772&oe=61445AB1",
+    img: sorveteriaImages.imgCascao,
     display: "display:none"
   },
   {
@@ -1581,7 +1581,7 @@ var catSorvetes = [
     description: "Picolé super cremoso!",
     price:"R$1,50",
     priceNumb: 1.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239936010_117352233972990_454351185082107640_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=4FFonRsFZP8AX-Jrlwt&_nc_ht=scontent.fvdc3-1.fna&oh=afaab0a74271d13a9f009f24446e29d2&oe=6146C7B7",
+    img: sorveteriaImages.imgpicCremoso,
     display: "display:none"
   },
   {
@@ -1592,7 +1592,7 @@ var catSorvetes = [
     description: "Picolé cristalizado super refrescante!",
     price:"R$1,50",
     priceNumb: 1.50,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233041204_117352190639661_4044371983558569854_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=VNufUH7TTCAAX9KYpdB&_nc_ht=scontent.fvdc3-1.fna&oh=eb18d0e77352241e369be2d3df5e7c5d&oe=61473D1D",
+    img: sorveteriaImages.imgpicCristalizado,
     display: "display:none"
   },
   {
@@ -1603,7 +1603,7 @@ var catSorvetes = [
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
     price:"R$3,00",
     priceNumb: 3.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233643579_117352293972984_4682700727986961552_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=6X9dB2EaAxkAX8jLD3z&_nc_ht=scontent.fvdc3-1.fna&oh=07bd68b253caad1dd1c654ff208bec4e&oe=61444790",
+    img: sorveteriaImages.imgpicCasquinha,
     display: "display:none"
   },
   {
@@ -1614,7 +1614,7 @@ var catSorvetes = [
     description: "Sorvete no saquinho super cremoso!",
     price:"R$1,00",
     priceNumb: 1.00,
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233498861_117354517306095_6543384273992456851_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=d1xLOw1hQ6AAX--I_qI&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=0281ffd07444aa8d3a81f741ebf83e79&oe=6143CDAF",
+    img: sorveteriaImages.imgCremosinho,
     display: "display:none"
   }
 ]
@@ -1673,7 +1673,7 @@ var catPaes = [
     name:"Pão de doce",
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: '',
+    img: padariaImages.imgPaoDoce,
     display: "display:flex",
     offer: "5 por: R$2,00"
   },
@@ -1683,7 +1683,7 @@ var catPaes = [
     name:"Pão de sal",
     description: "Pãozinho de sal caseiro, delicioso e fofinho.",
     price:"R$0,50",
-    img: '',
+    img: padariaImages.imgPaoSal,
     display: "display:none",
     offer: "5 por: R$2,00"
   },
@@ -1693,7 +1693,7 @@ var catPaes = [
     name:"Rosca doce",
     description: "Pãozinho em forma de rosca, super fofo e coberto com leite condensado e coco.",
     price:"R$0,75",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgRosca,
     display: "display:none",
     offer: "3 por: R$2,00"
   },
@@ -1731,7 +1731,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo da prima",
     description: "O tradicional e queiridinho do café de todo dia: Bolo de trigo, super fofinho e saboroso!",
     price:"R$7,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
+    img: padariaImages.imgprima,
     display: "display:flex"
   },
   {
@@ -1740,7 +1740,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Formigueiro",
     description: "A delícia do bolo da prima com um plus: granulado de chocolate!",
     price:"R$7,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
+    img: padariaImages.imgformigueiro,
     display: "display:none"
   },
   {
@@ -1749,7 +1749,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Milho",
     description: "Delicioso bolo cremoso feito com fubá de milho e milho verde. Uma delícia!",
     price:"R$6,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgmilho,
     display: "display:none"
   },
   {
@@ -1758,7 +1758,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Arroz (G)",
     description: "Delicioso bolo de arroz (tamanho normal).",
     price:"R$6,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgarrozgrande,
     display: "display:none"
   },
   {
@@ -1767,7 +1767,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Arroz (P)",
     description: "Delicioso bolo de arroz (tamanho pequeno).",
     price:"R$3,50",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgarrozpequeno,
     display: "display:none"
   },
   {
@@ -1776,7 +1776,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Brevidade (G)",
     description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho normal).",
     price:"R$7,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgbrevidadegrande,
     display: "display:none"
   },
   {
@@ -1785,7 +1785,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Brevidade (P)",
     description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho pequeno).",
     price:"R$4,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgbrevidadepequena,
     display: "display:none"
   },
   {
@@ -1794,7 +1794,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     name:"Bolo de Cenoura",
     description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
     price:"R$6,00",
-    img: '',
+    img: padariaImages.imgBoloCenoura,
     display: "display:none"
   }
 ]
@@ -1826,7 +1826,7 @@ var catDiversosPad = [
     description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
     price:"R$1,00",
     offer: '4 por R$3,00',
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238556099_118298713878342_328503121037794522_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=kj13ulE-sggAX_H6vWs&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=ad783867d38aa5967c2bf52027553cb5&oe=6148C4E9",
+    img: padariaImages.imgChimango,
     display: "display:flex"
   },
   {
@@ -1835,7 +1835,7 @@ var catDiversosPad = [
     name:"Pão de queijo",
     description: "Delicioso e fofinho pão de queijo. Vem sentir o gostinho de Minas na Bahia.",
     price:"R$1,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/237037312_118298783878335_6063340236486753715_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=HpI1_V_HSdIAX-pRjPz&_nc_ht=scontent.fvdc3-1.fna&oh=37cc9064900d358012d3e3242af08488&oe=614B3A26",
+    img: padariaImages.imgpaoqueijo,
     display: "display:none"
   },
   {
@@ -1844,7 +1844,7 @@ var catDiversosPad = [
     name:"Bolachinha de tapioca",
     description: "200g da famosa e deliciosa bolachinha de tapioca!",
     price:"R$4,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgbolachinha,
     display: "display:none"
   },
   {
@@ -1866,7 +1866,7 @@ var catDiversosPad = [
         size: '1Kg'
       }
     ],
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgDoceLeite,
     display: "display:none"
   },
   {
@@ -1875,7 +1875,7 @@ var catDiversosPad = [
     name:"Avoador",
     description: "O tão conhecido biscoito de polvilho (avoador).",
     price:"R$4,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/234410895_118298827211664_2157678533272376702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=DumhlDVVISkAX9Zancb&_nc_ht=scontent.fvdc3-1.fna&oh=2c13acb5fc036dcc5e54e4930d6851da&oe=6149038E",
+    img: padariaImages.imgavoador,
     display: "display:none"
   }
 ]
