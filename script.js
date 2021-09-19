@@ -608,6 +608,16 @@ var catSalgAssados = [
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
     display: "display:none"
   },
+  {
+    id: '1tab3.11',
+    number: "11",
+    name:"Enroladinho de Salsicha Gourmet",
+    description: "Salsicha com queijo, combinação perfeita!&#127789;",
+    price:"R$3,50",
+    priceNumb: 3.50,
+    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/233342663_117294287312118_7478497229540650766_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=zgwU9j2CuJoAX-4XlGo&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=58311b6c3127c62c11a1a02a3ba7974a&oe=6145BA59",
+    display: "display:none"
+  },
 ]
 
 document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod => 
