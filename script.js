@@ -39,11 +39,11 @@ const updateShoppingCartHTML = function () {  // 3
     let sumTotal = 0;
     productsInCart.map(prod => {
       numberOfItens = numberOfItens + prod.count;
-      stringItems = `${stringItems}\n\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n${prod.isPizza ? 'Sabor:' : 'Complemento:'} _${prod.adittionals}_` : ''}`;
+      stringItems = `${stringItems}\n\n- *${prod.name}* (${prod.count} unid.) [${convertToReal(prod.priceNumb)}]${prod.adittionals ? ` \n${prod.isPizza ? 'Sabor:' : 'Complemento:'} _${prod.adittionals}_` : ''}${prod.whichFlavor ? `\n${prod.count>1 ? 'Sabores: ' : 'Sabor: '}` : ''}`;
       sumTotal  = sumTotal + prod.priceNumb;
     });
     let maskedSumTotal = convertToReal(sumTotal);
-    stringItems = `${stringItems}\n\n*****************\nSubtotal: *${maskedSumTotal}*`;
+    stringItems = `${stringItems}\n\n*****************\nSubtotal: *${maskedSumTotal}* \n*****************\nObservações: `;
     
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
@@ -142,6 +142,7 @@ function addMSToCart() {
     id: `${idStringMS}`,
     name: `${catMilkShakes[0].name}`,
     adittionals: `${adittionalsStringMS==='' ? 'Sem adicionais' : adittionalsStringMS}`,
+    whichFlavor: true,
     priceOne: catMilkShakes[0].priceTotalMS,
     priceNumb: catMilkShakes[0].priceTotalMS,
     img: `${catMilkShakes[0].img}`,
@@ -1491,6 +1492,7 @@ document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod =>
                   onclick="addItemToCart({
                     id: '${prod.id}',
                     name: '${prod.name}',
+                    whichFlavor: true,
                     priceOne: '${prod.priceNumb}',
                     priceNumb: ${prod.priceNumb},
                     img: '${prod.img}',
