@@ -71,11 +71,14 @@ section{
   pointer-events: none;
 }
 
+.warningDelivery {
+  margin: 1rem 0;
+}
+
 .btnConfirmShop{
   font-size: 1.5rem;
   padding:.7rem 4rem;
   border-radius: 5rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
   background:none;
