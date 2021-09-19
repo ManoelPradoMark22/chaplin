@@ -174,6 +174,10 @@ $(document).ready(function(){
   $('.boxAcaiSizes .acaiSizeInside').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
+
+  $('.boxMSSizes .msSizeInside').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 });
 
 /*swiper */
@@ -1152,7 +1156,7 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
       <div class="content">
           <div class="info">
               <h3 id="nameH3Acai"> <span>0${prod.number}.</span> ${prod.name}</h3>
-              <text id="idChangePriceAcai" class="priceCatalog">R$${prod.priceTotalAcai},00</text>
+              <text id="idChangePriceAcai" class="priceCatalog">${convertToReal(prod.priceTotalAcai)}</text>
               <p>${prod.description}</p>
               <div class="boxManyPrices boxAcaiSizes">
                 <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(1)">
@@ -1186,7 +1190,7 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
                   onclick="addAcaiToCart()">
                     <i class="fas fa-cart-plus"></i>
                     Adicionar item
-                </button>
+              </button>
           </div>
       </div>
     </div>
@@ -1198,45 +1202,128 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
   {
     id: '3tab2.1',
     number: 1,
-    name:"Milk-shake P (300ml)",
-    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
-    price:"R$5,00",
+    name:"Milk-shake (300ml)",
+    description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316; *Pergunte os sabores*",
+    priceOriginalMS: 5.00,
+    priceTotalMS: 5.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21",
     display: "display:flex"
   },
+]
+
+var additionalsMilkShake = [
   {
-    id: '3tab2.2',
-    number: 2,
-    name:"Milk-shake M (400ml)",
-    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
-    price:"R$7,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117317757309771_4209434100430702420_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=ve8VfyMCPnIAX_btUem&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=29fc7552e107937b052a0c5fbadd5e92&oe=6146950F",
-    display: "display:none"
+    id: 1,
+    name: 'Ovomaltine',
+    idAddName: 'addMSOvomaltine',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: false
   },
   {
-    id: '3tab2.3',
-    number: 3,
-    name:"Milk-shake G (500ml)",
-    description: "Milk-shake dasjd sad asl fas lfas lfasl fa",
-    price:"R$9,00",
-    img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239216709_117322060642674_3577494100427244924_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=6RHeG8kn1U0AX8LSPFv&_nc_ht=scontent.fvdc3-1.fna&oh=db16a535bc8f3db631d718f3fa852a78&oe=61469B06",
-    display: "display:none"
+    id: 2,
+    name: 'Nutella',
+    idAddName: 'addMSNutella',
+    available: true,
+    price: 'R$2,00',
+    value: 2.00,
+    selected: false
+  },
+  {
+    id: 3,
+    name: 'Paçoca',
+    idAddName: 'addMSPacoca',
+    available: true,
+    price: 'R$1,00',
+    value: 1.00,
+    selected: false
   }
 ]
+
+function changeSelectedSizeMS(sizeId) {
+  var priceSizeMS = 5.00;
+  var newNameMS = 'Milk-Shake';
+  var imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+
+  switch (sizeId) {
+    case 1:
+      priceSizeMS = 5.00;
+      newNameMS = 'Milk-Shake (300ml)';
+      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+      break;
+    case 2:
+      priceSizeMS = 7.00;
+      newNameMS = 'Milk-Shake (400ml)';
+      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/232702204_117317757309771_4209434100430702420_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=ve8VfyMCPnIAX_btUem&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=29fc7552e107937b052a0c5fbadd5e92&oe=6146950F";
+      break;
+    case 3:
+      priceSizeMS = 9.00;
+      newNameMS = 'Milk-Shake (500ml)';
+      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/239216709_117322060642674_3577494100427244924_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=6RHeG8kn1U0AX8LSPFv&_nc_ht=scontent.fvdc3-1.fna&oh=db16a535bc8f3db631d718f3fa852a78&oe=61469B06";
+      break;
+
+    default:
+      priceSizeMS = 5.00;
+      newNameMS = 'Milk-Shake';
+      imgPathMS = "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/238763486_117317710643109_4195831758721072596_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=69At4lcQjRYAX9nyipq&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc3-1.fna&oh=4a8f1a98f4df652d3cb94c2855426d51&oe=61450E21";
+      break;
+  }
+
+  var subtotalMS = catMilkShakes[0].priceOriginalMS;
+  var totalMS = catMilkShakes[0].priceTotalMS;
+  var newTotalMS = totalMS - subtotalMS + priceSizeMS;
+  catAcais[0].priceOriginalAcai = priceSizeMS;
+  catAcais[0].priceTotalAcai = newTotalMS;
+  catAcais[0].img = imgPathMS;
+  catAcais[0].name = newNameMS;
+  document.getElementById("idChangePriceMS").innerHTML = `R$${newTotalMS},00`;
+  document.getElementById("nameH3MS").innerHTML = `<span>0${sizeId}.</span> ${newNameMS}`;
+  document.getElementById("imgMS").src=imgPathMS;
+}
 
 document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod => 
   `<div>
     <div id="${prod.id}" class="row tabMilkShakes" data-aos="fade-right" style="${prod.display}">
       <div class="image" data-aos="fade-left">
-          <img src="${prod.img}" alt="${prod.name}">
+          <img id="imgMS" src="${prod.img}" alt="${prod.name}">
       </div>
 
       <div class="content">
-          <div class="info">
-              <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
-              <text class="priceCatalog">${prod.price}</text>
-              <p>${prod.description}</p>
+        <div class="info">
+          <h3 id="nameH3MS"> <span>0${prod.number}.</span> ${prod.name}</h3>
+          <text id="idChangePriceMS" class="priceCatalog">${convertToReal(prod.priceTotalMS)}</text>
+          <p>${prod.description}</p>
+          <div class="boxManyPrices boxMSSizes">
+            <div id="sizeMSP" class="manyPrices msSizeInside active" onclick="changeSelectedSizeMS(1)">
+              <h3 class="headerManyPrices">P</h3>
+              <div class="bodyManyPrices">300ml</div>
+            </div>
+            <div id="sizeMSM" class="manyPrices msSizeInside" onclick="changeSelectedSizeMS(2)">
+              <h3 class="headerManyPrices">M</h3>
+              <div class="bodyManyPrices">400ml</div>
+            </div>
+            <div id="sizeMSG" class="manyPrices msSizeInside" onclick="changeSelectedSizeMS(3)">
+              <h3 class="headerManyPrices">G</h3>
+              <div class="bodyManyPrices">500ml</div>
+            </div>
           </div>
+          <div class="boxAdittionals">
+            ${additionalsMilkShake.map(add =>
+              `
+                <button type="button" id=${add.idAddName} class="adittional ${add.selected ? 'active' : ''}" ${add.available ? '' : 'disabled'} onClick="changeSelectedMS(${add.id})">${add.name}</button>
+              `
+            ).join('')}
+          </div>
+          <button
+            class="btnCart btnCart-small addToCart"
+            data-product-id=${prod.id}
+            style="margin-top: 1rem"
+            onclick="addMSToCart()">
+              <i class="fas fa-cart-plus"></i>
+              Adicionar item
+          </button>
+        </div>
       </div>
     </div>
   </div>`
