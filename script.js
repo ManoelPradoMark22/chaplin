@@ -1396,7 +1396,7 @@ document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod =>
           </button>
           <p>
             <a
-            href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de sorvete para Milk-shake?"
+            href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de sorvete disponíveis para Milk-shake?"
             target="_blank"
             class="linkFlavors">
                 <button
@@ -1417,6 +1417,7 @@ var catSorvetes = [
   {
     id: '3tab3.1',
     number: 1,
+    categorySorvete: 'sorvete',
     name:"Bola de sorvete",
     description: "Delicioso sorvete SUUUUPER cremoso!!",
     price:"R$1,00",
@@ -1427,6 +1428,7 @@ var catSorvetes = [
   {
     id: '3tab3.2',
     number: 2,
+    categorySorvete: 'sorvete',
     name:"Sorvete na casquinha",
     description: "1 bola na casquinha desse sorvete maravilhoso e cremoso.",
     price:"R$1,00",
@@ -1437,6 +1439,7 @@ var catSorvetes = [
   {
     id: '3tab3.3',
     number: 3,
+    categorySorvete: 'sorvete',
     name:"Sorvete no cascão",
     description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
     price:"R$2,00",
@@ -1447,6 +1450,7 @@ var catSorvetes = [
   {
     id: '3tab3.4',
     number: 4,
+    categorySorvete: 'picolé',
     name:"Picolé cremoso",
     description: "Picolé super cremoso!",
     price:"R$1,50",
@@ -1457,6 +1461,7 @@ var catSorvetes = [
   {
     id: '3tab3.5',
     number: 5,
+    categorySorvete: 'picolé',
     name:"Picolé cristalizado",
     description: "Picolé cristalizado super refrescante!",
     price:"R$1,50",
@@ -1467,6 +1472,7 @@ var catSorvetes = [
   {
     id: '3tab3.6',
     number: 6,
+    categorySorvete: 'picolé',
     name:"Picolé SKIMO",
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
     price:"R$3,00",
@@ -1477,6 +1483,7 @@ var catSorvetes = [
   {
     id: '3tab3.7',
     number: 7,
+    categorySorvete: 'cremosinho',
     name:"Cremosinho",
     description: "Sorvete no saquinho super cremoso!",
     price:"R$1,00",
@@ -1512,7 +1519,19 @@ document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod =>
                   })">
                     <i class="fas fa-cart-plus"></i>
                     Adicionar item
-                </button>
+              </button>
+              <p>
+                <a
+                href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de *${prod.categorySorvete}* disponíveis?"
+                target="_blank"
+                class="linkFlavors">
+                    <button
+                    class="btn btnFlavors">
+                        <i class="fab fa-whatsapp"></i>
+                        Sabores
+                    </button>
+                </a>
+              </p>
           </div>
       </div>
     </div>
