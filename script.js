@@ -479,7 +479,7 @@ document.getElementById('catPorcoes').innerHTML = catPorcoes.map(prod =>
           <div class="info">
               <h3> <span>0${prod.number}.</span> ${prod.name}</h3>
               <text class="priceCatalog">${prod.price}</text>
-              <p>${prod.description}</p>
+              <p></p>
               <button
                   ${prod.available ? '' : 'disabled'}
                   class="btnCart btnCart-small addToCart"
@@ -577,7 +577,7 @@ var catSalgAssados = [
     id: '1tab3.8',
     number: "08",
     name:"Hamburgão",
-    description: "Esse acompanhado de um milk-shake... hummmmm&#128523;",
+    description: "Hambúrguer, queijo e tomate. Esse acompanhado de um milk-shake... hummmmm&#128523;",
     price:"R$4,00",
     priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/225534944_117294817312065_5737254042580129881_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=XK7lGA9uXygAX_lWhc9&_nc_ht=scontent.fvdc3-1.fna&oh=fcbd8837822269d5ba19ac836bbb66a0&oe=61461806",
@@ -587,7 +587,7 @@ var catSalgAssados = [
     id: '1tab3.9',
     number: "09",
     name:"Bauru",
-    description: "Perfeito! Muitos preferem chamá-lo de pão pizza.",
+    description: "Queijo, presunto, milho, tomate e orégano. Perfeito! Muitos preferem chamá-lo de pão pizza.",
     price:"R$4,00",
     priceNumb: 4.00,
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/240078676_117294217312125_9141162846575852765_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Q98xPl8Huk4AX8a3nns&_nc_ht=scontent.fvdc3-1.fna&oh=8f3ef5c590b2b440dfe777c8bd63a75d&oe=6145FEB6",
