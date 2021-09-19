@@ -49,7 +49,7 @@ var porcoesImages = {
 var sorveteriaImages = {
   imgMSP: 'https://i.ibb.co/jW57QPs/p.jpg',
   imgMSM: 'https://i.ibb.co/JrgQQcw/m.jpg',
-  imgMSG: 'https://i.ibb.co/H7L8y82/g.png',
+  imgMSG: 'https://i.ibb.co/hRbLcFp/mkg.png',
   imgBola: 'https://i.ibb.co/fdbq07c/bola.jpg',
   imgCasquinha: 'https://i.ibb.co/QNd0kT8/casquinha.jpg',
   imgCascao: 'https://i.ibb.co/94n6vXB/cascao.png',
