@@ -512,6 +512,7 @@ var catSalgAssados = [
     id: '1tab3.1',
     number: "01",
     name:"Esfirra de frango",
+    available: true,
     description: "Com frango desfiado delicioso!",
     price:"R$3,50",
     priceNumb: 3.50,
@@ -522,6 +523,7 @@ var catSalgAssados = [
     id: '1tab3.2',
     number: "02",
     name:"Esfirra de carne",
+    available: true,
     description: "Recheada com carne de dar água na boca!",
     price:"R$3,50",
     priceNumb: 3.50,
@@ -532,6 +534,7 @@ var catSalgAssados = [
     id: '1tab3.3',
     number: "03",
     name:"Esfirra de queijo e presunto",
+    available: true,
     description: "Irresistível!",
     price:"R$3,50",
     priceNumb: 3.50,
@@ -542,6 +545,7 @@ var catSalgAssados = [
     id: '1tab3.4',
     number: "04",
     name:"Esfirra de frango com catupiry",
+    available: true,
     description: "A queridinha da clientela!&#128525;",
     price:"R$4,00",
     priceNumb: 4.00,
@@ -552,6 +556,7 @@ var catSalgAssados = [
     id: '1tab3.5',
     number: "05",
     name:"Esfirra de frango com cheddar",
+    available: true,
     description: "Quem não gosta de cheddar né?&#129316;",
     price:"R$4,00",
     priceNumb: 4.00,
@@ -562,6 +567,7 @@ var catSalgAssados = [
     id: '1tab3.6',
     number: "06",
     name:"Esfirra de calabresa com queijo",
+    available: true,
     description: "Quero bis!&#128540;",
     price:"R$4,00",
     priceNumb: 4.00,
@@ -572,6 +578,7 @@ var catSalgAssados = [
     id: '1tab3.7',
     number: "07",
     name:"Esfirra de calabresa com queijo e cheddar",
+    available: true,
     description: "Alguém disse cheddar?&#128556;",
     price:"R$5,00",
     priceNumb: 5.00,
@@ -582,6 +589,7 @@ var catSalgAssados = [
     id: '1tab3.8',
     number: "08",
     name:"Hamburgão",
+    available: true,
     description: "Hambúrguer, queijo e tomate. Esse acompanhado de um milk-shake... hummmmm&#128523;",
     price:"R$4,00",
     priceNumb: 4.00,
@@ -592,6 +600,7 @@ var catSalgAssados = [
     id: '1tab3.9',
     number: "09",
     name:"Bauru",
+    available: true,
     description: "Queijo, presunto, milho, tomate e orégano. Perfeito! Muitos preferem chamá-lo de pão pizza.",
     price:"R$4,00",
     priceNumb: 4.00,
@@ -602,6 +611,7 @@ var catSalgAssados = [
     id: '1tab3.10',
     number: "10",
     name:"Enroladinho de Salsicha",
+    available: true,
     description: "Aquele tradicional salgado de salsicha!&#127789;",
     price:"R$3,00",
     priceNumb: 3.00,
@@ -612,6 +622,7 @@ var catSalgAssados = [
     id: '1tab3.11',
     number: "11",
     name:"Enroladinho de Salsicha Gourmet",
+    available: false,
     description: "Salsicha com queijo, combinação perfeita!&#127789;",
     price:"R$3,50",
     priceNumb: 3.50,
@@ -622,7 +633,7 @@ var catSalgAssados = [
 
 document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod => 
   `<div>
-    <div id="${prod.id}" class="row tabSalgAssados" data-aos="fade-right" style="${prod.display}">
+    <div id="${prod.id}" class="row tabSalgAssados ${prod.available ? '' : 'itemNotAvailable'}" data-aos="fade-right" style="${prod.display}">
       <div class="image" data-aos="fade-left">
           <img src="${prod.img}" alt="${prod.name}">
       </div>
@@ -633,6 +644,7 @@ document.getElementById('catSalgAssados').innerHTML = catSalgAssados.map(prod =>
               <text class="priceCatalog">${prod.price}</text>
               <p>${prod.description}</p>
               <button
+                  ${prod.available ? '' : 'disabled'}
                   class="btnCart btnCart-small addToCart"
                   data-product-id=${prod.id}
                   onclick="addItemToCart({
