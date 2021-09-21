@@ -709,7 +709,7 @@ var catSalgAssados = [
   {
     id: '1tab3.10',
     number: "10",
-    name:"Enroladinho de Salsicha",
+    name:"Enroladinho de salsicha assado",
     available: true,
     description: "Aquele tradicional salgado de salsicha!&#127789;",
     price:"R$3,00",
@@ -720,7 +720,7 @@ var catSalgAssados = [
   {
     id: '1tab3.11',
     number: "11",
-    name:"Enroladinho de Salsicha Gourmet",
+    name:"Enroladinho de salsicha gourmet",
     available: true,
     description: "Salsicha com queijo, combinação perfeita!&#127789;",
     price:"R$3,50",
@@ -798,7 +798,7 @@ var catSalgFritos = [
   {
     id: '1tab4.4',
     number: "04",
-    name:"Enroladinho de Salsicha",
+    name:"Enroladinho de salsicha frito",
     description: "Que tal optar pela deliciosa e tradicional salsicha?&#127789;",
     price:"R$ 3,50",
     priceNumb: 3.50,
@@ -808,7 +808,7 @@ var catSalgFritos = [
   {
     id: '1tab4.5',
     number: "05",
-    name:"Enroladinho de queijo e presunto",
+    name:"Enroladinho de queijo e presunto frito",
     description: "Mais um queridinho da galera!&#128525;",
     price:"R$ 3,50",
     priceNumb: 3.50,
