@@ -1,4 +1,4 @@
-let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
+let productsInCart = JSON.parse(sessionStorage.getItem('shoppingCart'));
 if(!productsInCart){
 	productsInCart = [];
 }
@@ -10,7 +10,7 @@ function convertToReal(value) {
   return valueConverted;
 }
 
-function clearlocalStorage() {
+function clearsessionStorage() {
   productsInCart = [];
   updateShoppingCartHTML();
 }
@@ -115,7 +115,7 @@ var salgadosFritosImages = {
 }
 
 const updateShoppingCartHTML = function () {  // 3
-	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
+	sessionStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
     let numberOfItens = 0;
 		let result = productsInCart.map(product => {
@@ -153,7 +153,7 @@ const updateShoppingCartHTML = function () {  // 3
 		document.querySelector('.checkout').classList.remove('hidden');
     document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
     document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+5577991998770&text=${encodeURI(stringItems)}`;
-    document.getElementById("cartSumTotal").innerHTML = `<i class="fas fa-trash-alt" title="Limpar Sacola" onclick="clearlocalStorage()"></i>${maskedSumTotal}`;
+    document.getElementById("cartSumTotal").innerHTML = `<i class="fas fa-trash-alt" title="Limpar Sacola" onclick="clearsessionStorage()"></i>${maskedSumTotal}`;
 	}
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
