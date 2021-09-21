@@ -72,7 +72,7 @@ section{
 }
 
 .warningDelivery {
-  margin: 1rem 0;
+  padding-bottom: .5rem;
   user-select: none;
 }
 
@@ -971,6 +971,7 @@ header #menu-bar{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: .5rem;
 }
 
 .producstOnCart .buyItem {
