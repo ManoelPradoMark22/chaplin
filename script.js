@@ -88,6 +88,8 @@ var padariaImages = {
   imgpaoqueijo: 'https://i.ibb.co/Gsh2JC8/paoqueijo.jpg',
   imgprima: 'https://i.ibb.co/ZTV65fW/prima.jpg',
   imgbolachinha: 'https://i.ibb.co/dp9FJgH/bolachinha.jpg',
+  imgSonho: 'https://i.ibb.co/gyp243X/sonho.jpg',
+  imgDonut: 'https://i.ibb.co/wNGzT0Y/donut.jpg'
 }
 
 var salgadosAssadosImages = {
@@ -1696,6 +1698,24 @@ var catPaes = [
     img: padariaImages.imgRosca,
     display: "display:none",
     offer: "3 por: R$2,00"
+  },
+  {
+    id: '4tab1.4',
+    number: 4,
+    name:"Sonho",
+    description: "Delicioso sonho recheado. É de dar água na boca!&#129316;",
+    price:"R$1,50",
+    img: padariaImages.imgSonho,
+    display: "display:none",
+  },
+  {
+    id: '4tab1.5',
+    number: 5,
+    name:"Donut",
+    description: "Impossível resistir a esse Donut coberto com brigadeiro!&#127849;",
+    price:"R$2,00",
+    img: padariaImages.imgDonut,
+    display: "display:none",
   },
 ]
 
