@@ -269,6 +269,23 @@ header #menu-bar{
   width:100%;
 }
 
+.chromeWarning{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.chromeWarning text{
+  font-size: 1.5rem;
+}
+
+.chromeWarning .chromeImg{
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-left: .2rem;
+}
+
 .home .content{
   flex:1 1 39rem;
 }
