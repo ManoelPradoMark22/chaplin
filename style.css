@@ -55,6 +55,40 @@ section{
   border-top: 10px dotted var(--yellow);
 }
 
+.chromeWarning {
+  color:#666;
+  font-size: 1.5rem;
+  padding:1rem 0;
+  width:auto;
+}
+
+.chromeWarning text{
+  font-size: 1.5;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnChrome {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0;
+  padding:.2rem 1rem;
+  background: none;
+  color: #666666;
+  border-radius: 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:.2rem solid var(--yellow);
+}
+
+.btnChrome .chromeImg{
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-left: .2rem;
+}
+
 .btn{
   font-size: 1.7rem;
   padding:.7rem 4rem;
@@ -267,16 +301,6 @@ header #menu-bar{
 
 .home .image img{
   width:100%;
-}
-
-.chromeWarning text{
-  font-size: 1.5rem;
-}
-
-.chromeWarning .chromeImg{
-  height: 1.4rem;
-  width: 1.4rem;
-  margin-left: .2rem;
 }
 
 .home .content{
@@ -1183,6 +1207,7 @@ header #menu-bar{
 }
 
 .dropdown,
+.dropdownChrome,
 .dropdown2,
 .dropdown3 {
   position: relative;
@@ -1190,6 +1215,7 @@ header #menu-bar{
 }
 
 .dropdown-content,
+.dropdown-contentChrome,
 .dropdown2-content,
 .dropdown3-content {
   display: none;
@@ -1200,6 +1226,19 @@ header #menu-bar{
   padding: 0.75rem 1rem;
   z-index: 1;
   text-align: center;
+}
+
+.dropdown-contentChrome div a{
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-contentChrome div a button i{
+  margin-right: .2rem;
+}
+
+.dropdown-contentChrome div a:hover{
+  text-decoration: none;
 }
 
 .dropdown2-content,
@@ -1227,6 +1266,7 @@ header #menu-bar{
 }
 
 .dropdown-content button,
+.dropdown-contentChrome div a button,
 .dropdown2-content button,
 .dropdown3-content button {
   cursor: pointer;
@@ -1242,12 +1282,14 @@ header #menu-bar{
 }
 
 .dropdown-content button:hover,
+.dropdown-contentChrome div a button:hover,
 .dropdown2-content button:hover,
 .dropdown3-content button:hover {
   background:var(--yellow);
 }
 
 .dropdown:hover .dropdown-content,
+.dropdownChrome:hover .dropdown-contentChrome,
 .dropdown2:hover .dropdown2-content,
 .dropdown3:hover .dropdown3-content {
   display: block;
