@@ -721,7 +721,7 @@ var catSalgAssados = [
     id: '1tab3.11',
     number: "11",
     name:"Enroladinho de Salsicha Gourmet",
-    available: false,
+    available: true,
     description: "Salsicha com queijo, combinação perfeita!&#127789;",
     price:"R$3,50",
     priceNumb: 3.50,
