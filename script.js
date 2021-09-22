@@ -453,7 +453,7 @@ var catLanches = [
     id: '1tab1.8',
     number: 8,
     name:"Mistão",
-    description: "Hambúrguer, queijo e molho.",
+    description: "Hambúrguer, queijo, presunto e molho.",
     price:"R$ 5,00",
     priceNumb: 5.00,
     img: lanchesImages.imgMistao,
