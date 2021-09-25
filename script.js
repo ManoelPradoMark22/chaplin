@@ -1123,7 +1123,7 @@ var additionals = [
     id: 2,
     name: 'Morango',
     idAddName: 'addMorango',
-    available: false,
+    available: true,
     price: 'R$1,00',
     value: 1.00,
     selected: false,
