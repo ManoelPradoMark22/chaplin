@@ -1569,7 +1569,7 @@ document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod =>
             target="_blank"
             class="linkFlavors">
                 <button
-                class="btn btnFlavors">
+                class="btnFlavors">
                     <i class="fab fa-whatsapp"></i>
                     Sabores
                 </button>
@@ -1695,7 +1695,7 @@ document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod =>
                 target="_blank"
                 class="linkFlavors">
                     <button
-                    class="btn btnFlavors">
+                    class="btnFlavors">
                         <i class="fab fa-whatsapp"></i>
                         Sabores
                     </button>

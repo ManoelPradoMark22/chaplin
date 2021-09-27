@@ -1130,9 +1130,19 @@ header #menu-bar{
 
 .btnFlavors {
   font-size: 1.1rem;
-  margin: 0;
   padding:.5rem 1.5rem;
-  background: var(--yellow);
+  border-radius: 5rem;
+  margin: 0;
+  background:none;
+  color:#333;
+  cursor: pointer;
+  user-select: none;
+  background-image: linear-gradient(to right, rgb(247, 202, 62, .4), rgb(247, 202, 62, 1));
+  border:.2rem solid var(--yellow);
+}
+
+.btnFlavors:hover {
+  background-image: linear-gradient(to right, rgb(247, 202, 62, 1), rgb(247, 202, 62, .4));
 }
 
 .linkFlavors button:hover {
@@ -1163,15 +1173,11 @@ header #menu-bar{
   font-size: 0.9rem;
   
   padding: 15px;
-  background-color: #Ffe28d;
+  background-color: var(--yellow);
   box-shadow: 2px 2px 2px rgba(0,0,0,.2);
   color: black;
   margin-bottom: 10px;
   cursor: pointer;
-}
-
-.btnCart:hover {
-  background-color: var(--yellow);
 }
 
 .hidden {
