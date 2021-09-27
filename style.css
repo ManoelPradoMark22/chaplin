@@ -1385,6 +1385,10 @@ header #menu-bar{
   }
 }
 
+#takeout{
+  accent-color: var(--yellow);
+}
+
 .containerCheckBoxPizza {
   display: flex;
 }
