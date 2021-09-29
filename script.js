@@ -1644,8 +1644,8 @@ var catSorvetes = [
     categorySorvete: 'picolé',
     name:"Picolé SKIMO",
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
-    price:"R$3,00",
-    priceNumb: 3.00,
+    price:"R$2,50",
+    priceNumb: 2.50,
     img: sorveteriaImages.imgpicCasquinha,
     display: "display:none"
   },
