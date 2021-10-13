@@ -57,14 +57,14 @@ function clearsessionStorage() {
 }
 
 var lanchesImages = {
-  imgMistao: 'https://i.ibb.co/p3Mrfhb/MISTAO.jpg',
-  imgAmericano: 'https://i.ibb.co/bR0rhLb/AMERICANO.jpg',
-  imgXburguer: 'https://i.ibb.co/nDVzL0j/X-BURGUER.jpg',
+  imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg',
   imgXcalabresa: 'https://i.ibb.co/XXLr1fc/X-CALABRESA.jpg',
   imgXegg: 'https://i.ibb.co/mhhhWPb/X-EGG.png',
+  imgAmericano: 'https://i.ibb.co/bR0rhLb/AMERICANO.jpg',
   imgXsalada: 'https://i.ibb.co/4j0Dzwc/X-SALADA.jpg',
   imgXfrango: 'https://i.ibb.co/RCF0P5T/X-FRANGO.png',
-  imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg'
+  imgXburguer: 'https://i.ibb.co/nDVzL0j/X-BURGUER.jpg',
+  imgMistao: 'https://i.ibb.co/p3Mrfhb/MISTAO.jpg'
 }
 
 var pizzasImages = {
@@ -79,12 +79,12 @@ var pizzasImages = {
 
 var porcoesImages = {
   imgCompletao: 'https://i.ibb.co/85pb2JB/completao.jpg',
-  imgBatata: 'https://i.ibb.co/0FQpF24/Batata-Frita-Crocante.jpg',
-  imgFrangoPass: 'https://i.ibb.co/BrN0ccQ/frango-a-passarinho.png',
   imgFrango: 'https://i.ibb.co/HggFKLk/frango.jpg',
   imgBatataChedBac: 'https://i.ibb.co/Csb51P2/batata-completa.jpg',
+  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png',
   imgBatataBacon: 'https://i.ibb.co/wRfCM6V/batata.jpg',
-  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png'
+  imgBatata: 'https://i.ibb.co/0FQpF24/Batata-Frita-Crocante.jpg',
+  imgFrangoPass: 'https://i.ibb.co/BrN0ccQ/frango-a-passarinho.png',
 }
 
 var sorveteriaImages = {
@@ -134,27 +134,27 @@ var padariaImages = {
 }
 
 var salgadosAssadosImages = {
-  imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
-  imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
+  imgEsfirraFrango: 'https://i.ibb.co/6bRSBw5/esf-Frango.jpg',
+  imgEsfCarne: 'https://i.ibb.co/c3k26pD/esfirra-de-carne.jpg',
+  imgEsfirraQueijo: 'https://i.ibb.co/X7gdqXd/esf-Queijo-Pres.jpg',
   imgEsfirraFrangoCatupiry: 'https://i.ibb.co/BjJmYKG/esf-Fran-Catup.jpg',
   imgEsfirraFrangoCheddar: 'https://i.ibb.co/V2tQBHM/Esf-Fran-Cheddar.jpg',
-  imgEsfirraFrango: 'https://i.ibb.co/6bRSBw5/esf-Frango.jpg',
-  imgEsfirraQueijo: 'https://i.ibb.co/X7gdqXd/esf-Queijo-Pres.jpg',
+  imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
+  imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
   imgHamburgao: 'https://i.ibb.co/ZLN8bPj/hamburgao.jpg',
-  imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
+  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg',
   imgEnrSals: 'https://i.ibb.co/Bjr972m/enro-Salsicha-Assado.jpg',
-  imgEsfCarne: 'https://i.ibb.co/c3k26pD/esfirra-de-carne.jpg',
-  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg'
+  imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
 }
 
 var salgadosFritosImages = {
+  imgCoxinha: 'https://i.ibb.co/bLJysvg/coxinha.jpg',
+  imgRisolesCarne: 'https://i.ibb.co/QD8c83J/carne.png',
   imgRisolesPizza: 'https://i.ibb.co/XsdLZZv/Risoles-de-presunto-e-queijo.jpg',
   imgEnrSalsichaFrito: 'https://i.ibb.co/3s26YBp/salsicha.jpg',
-  imgSteak: 'https://i.ibb.co/sw4b4B4/steak.png',
-  imgRisolesCarne: 'https://i.ibb.co/QD8c83J/carne.png',
-  imgCoxinha: 'https://i.ibb.co/bLJysvg/coxinha.jpg',
+  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png',
   imgKibe: 'https://i.ibb.co/NgRynqB/kibe.jpg',
-  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png'
+  imgSteak: 'https://i.ibb.co/sw4b4B4/steak.png',
 }
 
 const updateShoppingCartHTML = function () {  // 3
@@ -1644,8 +1644,8 @@ var catSorvetes = [
     categorySorvete: 'picolé',
     name:"Picolé SKIMO",
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
-    price:"R$3,00",
-    priceNumb: 3.00,
+    price:"R$2,50",
+    priceNumb: 2.50,
     img: sorveteriaImages.imgpicCasquinha,
     display: "display:none"
   },
