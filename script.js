@@ -141,7 +141,7 @@ var catLanches = [
     id: '1tab1.8',
     number: 8,
     name:"Mistão",
-    description: "Hambúrguer, queijo, presunto e molho.",
+    description: "Queijo e presunto.",
     price:"R$5,00",
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/235818218_116606420714238_3907036065709012017_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=3IehahWSg8QAX-IfhLY&_nc_ht=scontent.fvdc6-1.fna&oh=9449fa67d6c9548653493cce22ea87dd&oe=61439773",
     display: "display:none"
