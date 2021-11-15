@@ -132,7 +132,7 @@ var catLanches = [
     id: '1tab1.7',
     number: 7,
     name:"X-Burguer",
-    description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
+    description: "Hambúrguer, queijo, e molho.",
     price:"R$6,00",
     img: "https://scontent.fvdc6-1.fna.fbcdn.net/v/t1.6435-9/239448457_116605857380961_5138412958336672385_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=U5BKHUpdNroAX_Y_LOr&tn=woKc8C_y2t_tjE5g&_nc_ht=scontent.fvdc6-1.fna&oh=318bddf52d420bd29ecb9bdb3aa5ef9d&oe=614332D0",
     display: "display:none"
