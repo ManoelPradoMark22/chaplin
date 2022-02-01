@@ -114,7 +114,7 @@ var catLanches = [
     id: '1tab1.5',
     number: 5,
     name:"X-Salada",
-    description: "Hambúrguer, alface, tomate e milho.",
+    description: "Hambúrguer, queijo, alface, tomate e milho.",
     price:"R$7,00",
     img: "https://scontent.fvdc3-1.fna.fbcdn.net/v/t1.6435-9/229709333_116403054067908_1695209198032983876_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=4ekORxcHkf4AX8EfbUx&_nc_ht=scontent.fvdc3-1.fna&oh=0fc96348b594cb173199eb089e19ad28&oe=6142D6E7",
     display: "display:none"
@@ -1245,7 +1245,7 @@ var catDiversosPad = [
         size: '500g'
       },
       {
-        price: 'R$18,00',
+        price: 'R$17,00',
         size: '1Kg'
       }
     ],
