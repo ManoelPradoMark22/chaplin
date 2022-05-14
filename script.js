@@ -1,3 +1,5 @@
+//lembre-se de mudar manualmente no INDEX.HTML também!
+const PHONE = "77991092797";
 let productsInCart = JSON.parse(sessionStorage.getItem('shoppingCart'));
 if(!productsInCart){
 	productsInCart = [];
@@ -195,7 +197,7 @@ const updateShoppingCartHTML = function () {  // 3
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
     document.getElementById("badgeId").innerHTML = `${numberOfItens>99 ? '<i class="fas fa-infinity" style="font-size: 0.9rem"></i>' : numberOfItens}`;
-    document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+5577991998770&text=${encodeURI(stringItems)}`;
+    document.getElementById("buttonWhatsapp").href=`https://api.whatsapp.com/send?phone=+55${PHONE}&text=${encodeURI(stringItems)}`;
     document.getElementById("cartSumTotal").innerHTML = `<i class="fas fa-trash-alt" title="Limpar Sacola" onclick="clearsessionStorage()"></i>${maskedSumTotal}`;
 	}
 	else {
@@ -1565,7 +1567,7 @@ document.getElementById('catMilkShakes').innerHTML = catMilkShakes.map(prod =>
           </button>
           <p>
             <a
-            href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de sorvete disponíveis para Milk-shake?"
+            href="https://api.whatsapp.com/send?phone=+55${PHONE}&text=Olá, quais os sabores de sorvete disponíveis para Milk-shake?"
             target="_blank"
             class="linkFlavors">
                 <button
@@ -1691,7 +1693,7 @@ document.getElementById('catSorvetes').innerHTML = catSorvetes.map(prod =>
               </button>
               <p>
                 <a
-                href="https://api.whatsapp.com/send?phone=+5577991998770&text=Olá, quais os sabores de *${prod.categorySorvete}* disponíveis?"
+                href="https://api.whatsapp.com/send?phone=+55${PHONE}&text=Olá, quais os sabores de *${prod.categorySorvete}* disponíveis?"
                 target="_blank"
                 class="linkFlavors">
                     <button
