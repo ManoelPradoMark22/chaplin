@@ -1346,8 +1346,8 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
     number: 1,
     name:"Milk-shake (300ml)",
     description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316;",
-    priceOriginalMS: 5.00,
-    priceTotalMS: 5.00,
+    priceOriginalMS: 7.00,
+    priceTotalMS: 7.00,
     img: sorveteriaImages.imgMSP,
     display: "display:flex"
   },
@@ -1420,29 +1420,29 @@ function changeSelectedMS(id){
 }
 
 function changeSelectedSizeMS(sizeId) {
-  var priceSizeMS = 5.00;
+  var priceSizeMS = 7.00;
   var newNameMS = 'Milk-Shake';
   var imgPathMS = sorveteriaImages.imgMSP;
 
   switch (sizeId) {
     case 1:
-      priceSizeMS = 5.00;
+      priceSizeMS = 7.00;
       newNameMS = 'Milk-Shake (300ml)';
       imgPathMS = sorveteriaImages.imgMSP;
       break;
     case 2:
-      priceSizeMS = 7.00;
+      priceSizeMS = 10.00;
       newNameMS = 'Milk-Shake (400ml)';
       imgPathMS = sorveteriaImages.imgMSM;
       break;
     case 3:
-      priceSizeMS = 9.00;
+      priceSizeMS = 12.00;
       newNameMS = 'Milk-Shake (500ml)';
       imgPathMS = sorveteriaImages.imgMSG;
       break;
 
     default:
-      priceSizeMS = 5.00;
+      priceSizeMS = 7.00;
       newNameMS = 'Milk-Shake';
       imgPathMS = sorveteriaImages.imgMSP;
       break;
