@@ -1661,29 +1661,19 @@ var catPaes = [
     number: 3,
     name:"Rosca doce",
     description: "Pãozinho em forma de rosca, super fofo e coberto com leite condensado e coco.",
-    price:"R$0,75",
+    price:"R$1,00",
     img: padariaImages.imgRosca,
     display: "display:none",
-    offer: "3 por: R$2,00"
   },
   {
     id: '4tab1.4',
     number: 4,
     name:"Sonho",
     description: "Delicioso sonho recheado. É de dar água na boca!&#129316;",
-    price:"R$1,50",
+    price:"R$2,00",
     img: padariaImages.imgSonho,
     display: "display:none",
-  },
-  {
-    id: '4tab1.5',
-    number: 5,
-    name:"Donut",
-    description: "Impossível resistir a esse Donut coberto com brigadeiro!&#127849;",
-    price:"R$2,00",
-    img: padariaImages.imgDonut,
-    display: "display:none",
-  },
+  }
 ]
 
 document.getElementById('catPaes').innerHTML = catPaes.map(prod => 
@@ -1726,7 +1716,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '02',
     name:"Bolo de Formigueiro",
     description: "A delícia do bolo da prima com um plus: granulado de chocolate!",
-    price:"R$7,50",
+    price:"R$9,00",
     img: padariaImages.imgformigueiro,
     display: "display:none"
   },
@@ -1812,7 +1802,6 @@ var catDiversosPad = [
     name:"Chimango",
     description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
     price:"R$1,00",
-    offer: '4 por R$3,00',
     img: padariaImages.imgChimango,
     display: "display:flex"
   },
@@ -1854,15 +1843,6 @@ var catDiversosPad = [
       }
     ],
     img: padariaImages.imgDoceLeite,
-    display: "display:none"
-  },
-  {
-    id: '4tab3.5',
-    number: '05',
-    name:"Avoador",
-    description: "O tão conhecido biscoito de polvilho (avoador).",
-    price:"R$4,00",
-    img: padariaImages.imgavoador,
     display: "display:none"
   }
 ]
