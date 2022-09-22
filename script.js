@@ -100,8 +100,7 @@ var sorveteriaImages = {
   imgpicCristalizado: 'https://i.ibb.co/Hd0t7bw/pic-cristalizado.jpg',
   imgpicCasquinha: 'https://i.ibb.co/YtKBNq0/picole-skimo.jpg',
   imgCremosinho: 'https://i.ibb.co/hmpQCP2/cremosinho.jpg',
-  imgAcaiPP: 'https://i.ibb.co/ZWHjbvv/pp.jpg',
-  imgAcaiP: 'https://i.ibb.co/kXLSpQj/p.png',
+  imgAcaiP: 'https://i.ibb.co/ZWHjbvv/pp.jpg',
   imgAcaiM: 'https://i.ibb.co/rx7STdG/m.png',
   imgAcaiG: 'https://i.ibb.co/zFDsx6D/g.png'
 }
@@ -691,8 +690,8 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo e cheddar",
     available: true,
     description: "Alguém disse cheddar?&#128556;",
-    price:"R$6,00",
-    priceNumb: 6.00,
+    price:"R$5,00",
+    priceNumb: 5.00,
     img: salgadosAssadosImages.imgEsfCalabCheddar,
     display: "display:none"
   },
@@ -1078,11 +1077,11 @@ var catAcais = [
   {
     id: '3tab1.1',
     number: 1,
-    name:"Açaí (250ml)",
+    name:"Açaí (300ml)",
     description: "Aquele açaí delicioso e super cremoso! &#128523",
-    priceOriginalAcai: 5.00,
-    priceTotalAcai: 5.00,
-    img: sorveteriaImages.imgAcaiPP,
+    priceOriginalAcai: 7.50,
+    priceTotalAcai: 7.50,
+    img: sorveteriaImages.imgAcaiP,
     display: "display:flex"
   }
 ]
@@ -1163,8 +1162,8 @@ var additionals = [
     name: 'Nutella',
     idAddName: 'addNutella',
     available: true,
-    price: 'R$2,00',
-    value: 2.00,
+    price: 'R$2,50',
+    value: 2.50,
     selected: false,
     fourFree: false
   },
@@ -1173,8 +1172,8 @@ var additionals = [
     name: 'Ovomaltine',
     idAddName: 'addOvomaltine',
     available: true,
-    price: 'R$2,00',
-    value: 2.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false,
     fourFree: false
   }
@@ -1242,36 +1241,31 @@ function changeSelect(id) {
 }
 
 function changeSelectedSizeAcai(sizeId) {
-  var priceSize = 5.00;
+  var priceSize = 7.50;
   var newName = 'Açaí';
-  var imgPath = sorveteriaImages.imgAcaiPP;
+  var imgPath = sorveteriaImages.imgAcaiP;
 
   switch (sizeId) {
     case 1:
-      priceSize = 5.00;
-      newName = 'Açaí (250ml)';
-      imgPath = sorveteriaImages.imgAcaiPP;
-      break;
-    case 2:
-      priceSize = 7.00;
+      priceSize = 7.50;
       newName = 'Açaí (300ml)';
       imgPath = sorveteriaImages.imgAcaiP;
       break;
-    case 3:
+    case 2:
       priceSize = 10.00;
       newName = 'Açaí (400ml)';
       imgPath = sorveteriaImages.imgAcaiM;
       break;
-    case 4:
+    case 3:
       priceSize = 12.00;
       newName = 'Açaí (500ml)';
       imgPath = sorveteriaImages.imgAcaiG;
       break;
 
     default:
-      priceSize = 5.00;
-      newName = 'Açaí';
-      imgPath = sorveteriaImages.imgAcaiPP;
+      priceSize = 7.50;
+      newName = 'Açaí (300ml)';
+      imgPath = sorveteriaImages.imgAcaiP;
       break;
   }
 
@@ -1301,19 +1295,15 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
               <text id="idChangePriceAcai" class="priceCatalog">${convertToReal(prod.priceTotalAcai)}</text>
               <p>${prod.description}</p>
               <div class="boxManyPrices boxAcaiSizes">
-                <div id="sizeAcaiPP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(1)">
-                  <h3 class="headerManyPrices">PP</h3>
-                  <div class="bodyManyPrices">250ml</div>
-                </div>
-                <div id="sizeAcaiP" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(2)">
+                <div id="sizeAcaiP" class="manyPrices acaiSizeInside active" onclick="changeSelectedSizeAcai(1)">
                   <h3 class="headerManyPrices">P</h3>
                   <div class="bodyManyPrices">300ml</div>
                 </div>
-                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(3)">
+                <div id="sizeAcaiM" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(2)">
                   <h3 class="headerManyPrices">M</h3>
                   <div class="bodyManyPrices">400ml</div>
                 </div>
-                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(4)">
+                <div id="sizeAcaiG" class="manyPrices acaiSizeInside" onclick="changeSelectedSizeAcai(3)">
                   <h3 class="headerManyPrices">G</h3>
                   <div class="bodyManyPrices">500ml</div>
                 </div>
@@ -1359,8 +1349,8 @@ var additionalsMilkShake = [
     name: 'Ovomaltine',
     idAddName: 'addMSOvomaltine',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false
   },
   {
@@ -1368,8 +1358,8 @@ var additionalsMilkShake = [
     name: 'Nutella',
     idAddName: 'addMSNutella',
     available: true,
-    price: 'R$2,00',
-    value: 2.00,
+    price: 'R$2,50',
+    value: 2.50,
     selected: false
   },
   {
@@ -1655,8 +1645,7 @@ var catPaes = [
     description: "Pãozinho de doce caseiro, delicioso e fofinho.",
     price:"R$0,50",
     img: padariaImages.imgPaoDoce,
-    display: "display:flex",
-    offer: "5 por: R$2,00"
+    display: "display:flex"
   },
   {
     id: '4tab1.2',
@@ -1665,8 +1654,7 @@ var catPaes = [
     description: "Pãozinho de sal caseiro, delicioso e fofinho.",
     price:"R$0,50",
     img: padariaImages.imgPaoSal,
-    display: "display:none",
-    offer: "5 por: R$2,00"
+    display: "display:none"
   },
   {
     id: '4tab1.3',
@@ -1853,11 +1841,11 @@ var catDiversosPad = [
     description: "O maravilhoso doce de leite caseiro, super cremoso e delicioso.",
     manyPrices: [
       {
-        price: 'R$ 5,50',
+        price: 'R$ 6,00',
         size: '250g'
       },
       {
-        price: 'R$ 10,00',
+        price: 'R$ 11,00',
         size: '500g'
       },
       {
