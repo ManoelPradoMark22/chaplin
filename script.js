@@ -1729,7 +1729,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '01',
     name:"Bolo da prima",
     description: "O tradicional e queiridinho do café de todo dia: Bolo de trigo, super fofinho e saboroso!",
-    price:"R$7,00",
+    price:"R$8,00",
     img: padariaImages.imgprima,
     display: "display:flex"
   },
@@ -1747,7 +1747,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '03',
     name:"Bolo de Milho",
     description: "Delicioso bolo cremoso feito com fubá de milho e milho verde. Uma delícia!",
-    price:"R$6,00",
+    price:"R$7,00",
     img: padariaImages.imgmilho,
     display: "display:none"
   },
@@ -1756,7 +1756,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '04',
     name:"Bolo de Arroz (G)",
     description: "Delicioso bolo de arroz (tamanho normal).",
-    price:"R$6,00",
+    price:"R$7,00",
     img: padariaImages.imgarrozgrande,
     display: "display:none"
   },
@@ -1765,7 +1765,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '05',
     name:"Bolo de Arroz (P)",
     description: "Delicioso bolo de arroz (tamanho pequeno).",
-    price:"R$3,50",
+    price:"R$4,00",
     img: padariaImages.imgarrozpequeno,
     display: "display:none"
   },
@@ -1792,7 +1792,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '08',
     name:"Bolo de Cenoura",
     description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
-    price:"R$6,00",
+    price:"R$7,00",
     img: padariaImages.imgBoloCenoura,
     display: "display:none"
   }
@@ -1842,7 +1842,7 @@ var catDiversosPad = [
     number: '03',
     name:"Bolachinha de tapioca",
     description: "200g da famosa e deliciosa bolachinha de tapioca!",
-    price:"R$4,00",
+    price:"R$5,00",
     img: padariaImages.imgbolachinha,
     display: "display:none"
   },
@@ -1853,15 +1853,15 @@ var catDiversosPad = [
     description: "O maravilhoso doce de leite caseiro, super cremoso e delicioso.",
     manyPrices: [
       {
-        price: 'R$ 5,00',
+        price: 'R$ 5,50',
         size: '250g'
       },
       {
-        price: 'R$ 9,00',
+        price: 'R$ 10,00',
         size: '500g'
       },
       {
-        price: 'R$ 18,00',
+        price: 'R$ 20,00',
         size: '1Kg'
       }
     ],
