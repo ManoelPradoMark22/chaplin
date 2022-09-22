@@ -918,30 +918,30 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
 PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
   {
-    price: 6.00,
+    price: 8.00,
     size: 'Brotinho'
   },
   {
-    price: 9.00,
+    price: 10.00,
     size: 'Brot. Especial'
   },
   {
-    price: 17.00,
+    price: 20.00,
     size: 'P',
     slices: '(4 &#127829)'
   },
   {
-    price: 22.00,
+    price: 28.00,
     size: 'M',
     slices: '(6 &#127829)'
   },
   {
-    price: 28.00,
+    price: 34.00,
     size: 'G',
     slices: '(8 &#127829)'
   },
   {
-    price: 34.00,
+    price: 40.00,
     size: 'GG',
     slices: '(10 &#127829)'
   },
@@ -949,69 +949,7 @@ var pizzaPrices1 = [
 
 var pizzaPrices2 = [
   {
-    price: 7.00,
-    size: 'Brotinho'
-  },
-  {
-    price: 10.00,
-    size: 'Brot. Especial'
-  },
-  {
-    price: 19.00,
-    size: 'P',
-    slices: '(4 &#127829)'
-  },
-  {
-    price: 24.00,
-    size: 'M',
-    slices: '(6 &#127829)'
-  },
-  {
-    price: 30.00,
-    size: 'G',
-    slices: '(8 &#127829)'
-  },
-  {
-    price: 37.00,
-    size: 'GG',
-    slices: '(10 &#127829)'
-  },
-]
-
-var pizzaPrices3 = [
-  {
-    price: 10.00,
-    size: 'Brotinho'
-  },
-  {
-    price: 15.00,
-    size: 'Brot. Especial'
-  },
-  {
-    price: 27.00,
-    size: 'P',
-    slices: '(4 &#127829)'
-  },
-  {
-    price: 33.00,
-    size: 'M',
-    slices: '(6 &#127829)'
-  },
-  {
-    price: 40.00,
-    size: 'G',
-    slices: '(8 &#127829)'
-  },
-  {
-    price: 46.00,
-    size: 'GG',
-    slices: '(10 &#127829)'
-  },
-]
-
-var pizzaPrices4 = [
-  {
-    price: 8.00,
+    price: 9.00,
     size: 'Brotinho'
   },
   {
@@ -1019,22 +957,53 @@ var pizzaPrices4 = [
     size: 'Brot. Especial'
   },
   {
-    price: 22.00,
+    price: 24.00,
     size: 'P',
     slices: '(4 &#127829)'
   },
   {
-    price: 28.00,
+    price: 30.00,
     size: 'M',
     slices: '(6 &#127829)'
   },
   {
-    price: 34.00,
+    price: 36.00,
     size: 'G',
     slices: '(8 &#127829)'
   },
   {
-    price: 40.00,
+    price: 45.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
+  },
+]
+
+var pizzaPrices3 = [
+  {
+    price: 12.00,
+    size: 'Brotinho'
+  },
+  {
+    price: 18.00,
+    size: 'Brot. Especial'
+  },
+  {
+    price: 30.00,
+    size: 'P',
+    slices: '(4 &#127829)'
+  },
+  {
+    price: 38.00,
+    size: 'M',
+    slices: '(6 &#127829)'
+  },
+  {
+    price: 45.00,
+    size: 'G',
+    slices: '(8 &#127829)'
+  },
+  {
+    price: 50.00,
     size: 'GG',
     slices: '(10 &#127829)'
   },
@@ -1102,7 +1071,7 @@ var catPizzas = [
     description: "Atum, muçarela, azeitona e cebola.",
     img: pizzasImages.imgAtum,
     display: "display:none",
-    prices: pizzaPrices4
+    prices: pizzaPrices3
   },
 ]
 
@@ -1987,14 +1956,14 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
 let sizePizzaSelected = 'M';
 
 let flavorLeftPizzaSelected = 'Tradicional';
-let priceLeftPizzaSelected = 22.00;
+let priceLeftPizzaSelected = 28.00;
 let typeLeftPizzaSelected = 1;
 
 let flavorRightPizzaSelected = 'Frango Catupiry';
-let priceRightPizzaSelected = 24.00;
+let priceRightPizzaSelected = 30.00;
 let typeRightPizzaSelected = 2;
 
-let priceMakedPizza = 23.00;
+let priceMakedPizza = 29.00;
 
 let isToTakeOut = false;
 
@@ -2057,14 +2026,6 @@ function calculateMakedPizzaValueChangingSize(isEqual, isLeft){
 
     case 3:
       pizzaPrices3.map(price => {
-        if (price.size === sizePizzaSelected) {
-          changePricesByChangingSize(isEqual, isLeft, price.price);
-        }
-      });
-      break;
-
-    case 4:
-      pizzaPrices4.map(price => {
         if (price.size === sizePizzaSelected) {
           changePricesByChangingSize(isEqual, isLeft, price.price);
         }
