@@ -1527,8 +1527,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Bola de sorvete",
     description: "Delicioso sorvete SUUUUPER cremoso!!",
-    price:"R$1,00",
-    priceNumb: 1.00,
+    price:"R$1,50",
+    priceNumb: 1.50,
     img: sorveteriaImages.imgBola,
     display: "display:flex"
   },
@@ -1538,8 +1538,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Sorvete na casquinha",
     description: "1 bola na casquinha desse sorvete maravilhoso e cremoso.",
-    price:"R$1,00",
-    priceNumb: 1.00,
+    price:"R$1,50",
+    priceNumb: 1.50,
     img: sorveteriaImages.imgCasquinha,
     display: "display:none"
   },
@@ -1549,8 +1549,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Sorvete no cascão",
     description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
-    price:"R$2,00",
-    priceNumb: 2.00,
+    price:"R$3,00",
+    priceNumb: 3.00,
     img: sorveteriaImages.imgCascao,
     display: "display:none"
   },
@@ -1593,8 +1593,8 @@ var catSorvetes = [
     categorySorvete: 'cremosinho',
     name:"Cremosinho",
     description: "Sorvete no saquinho super cremoso!",
-    price:"R$1,00",
-    priceNumb: 1.00,
+    price:"R$1,50",
+    priceNumb: 1.50,
     img: sorveteriaImages.imgCremosinho,
     display: "display:none"
   }
