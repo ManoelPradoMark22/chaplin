@@ -544,8 +544,8 @@ var catPorcoes = [
     name:"Frango e Batata com Cheddar e Bacon",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 28,00",
-    priceNumb: 28.00,
+    price:"R$ 35,00",
+    priceNumb: 35.00,
     img: porcoesImages.imgCompletao,
     display: "display:flex"
   },
@@ -555,8 +555,8 @@ var catPorcoes = [
     name:"Frango",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 16,00",
-    priceNumb: 16.00,
+    price:"R$ 20,00",
+    priceNumb: 20.00,
     img: porcoesImages.imgFrango,
     display: "display:none"
   },
@@ -566,53 +566,20 @@ var catPorcoes = [
     name:"Batata com Cheddar e Bacon",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 12,00",
-    priceNumb: 12.00,
+    price:"R$ 15,00",
+    priceNumb: 15.00,
     img: porcoesImages.imgBatataChedBac,
     display: "display:none"
   },
   {
-    id: '1tab2.4',
-    number: 4,
-    name:"Batata com Cheddar",
-    available: true,
-    description: "sdk dask dajks k",
-    price:"R$ 10,00",
-    priceNumb: 10.00,
-    img: porcoesImages.imgBatataCheddar,
-    display: "display:none"
-  },
-  {
-    id: '1tab2.5',
-    number: 5,
-    name:"Batata com Bacon",
-    available: true,
-    description: "sdk dask dajks k",
-    price:"R$ 10,00",
-    priceNumb: 10.00,
-    img: porcoesImages.imgBatataBacon,
-    display: "display:none"
-  },
-  {
     id: '1tab2.6',
-    number: 6,
+    number: 4,
     name:"Batata Frita",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 8,00",
-    priceNumb: 8.00,
+    price:"R$ 10,00",
+    priceNumb: 10.00,
     img: porcoesImages.imgBatata,
-    display: "display:none"
-  },
-  {
-    id: '1tab2.7',
-    number: 7,
-    name:"Frango a passarinho",
-    available: false,
-    description: "sdk dask dajks k",
-    price:"R$ 22,00",
-    priceNumb: 22.00,
-    img: porcoesImages.imgFrangoPass,
     display: "display:none"
   }
 ]
