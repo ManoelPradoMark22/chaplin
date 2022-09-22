@@ -318,6 +318,11 @@ header #menu-bar{
   padding:1rem 0;
 }
 
+.home .begin{
+  display: flex;
+  flex-direction: column;
+}
+
 .about{
   display: flex;
   align-items: center;
@@ -1443,3 +1448,4 @@ header #menu-bar{
   }
 }
 */
+

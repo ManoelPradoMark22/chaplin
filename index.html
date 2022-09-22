@@ -17,6 +17,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 
 </head>
 <body>
@@ -32,6 +33,7 @@
     <nav class="navbar">
         <ul>
             <li><a class="active" href="#inicio">Início</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
             <li><a href="#lanchonete">Lanchonete</a></li>
             <li><a href="#pizzaria">Pizzaria</a></li>
             <li><a href="#sorveteria">Sorveteria</a></li>
@@ -91,7 +93,7 @@
 
 <section class="home" id="inicio">
 
-    <div class="content" data-aos="fade-right">
+    <div class="content begin" data-aos="fade-right">
         <h3>Um pouco de tudo!</h3>
         <p>Nós acreditamos que uma boa variedade e qualidade de comida é sempre responsável por um belo sorriso no rosto!</p>
         <div class="chromeWarning">Para melhor experiência do usuário, utilize o
@@ -122,6 +124,7 @@
                 </div>
             </div>
         </div>
+        <a href="#ofertas"><button class="btn">Melhores ofertas</button></a>
         <a href="#lanchonete"><button class="btn">Nosso Menu</button></a>
     </div>
 
@@ -132,6 +135,41 @@
 </section>
 
 <!-- home section ends -->
+
+<!--*************************-->
+
+<!-- ofertas section starts  -->
+
+<section class="menu carrouselSection" id="ofertas">
+
+    <h1 class="heading" data-aos="fade-down"><span><i class="fas fa-crown" style=" margin-right: 5px;"></i></span>Ofertas<span><i class="fas fa-crown" style=" margin-left: 5px;"></i></span></h1>
+    <br>
+    <br>
+    <div class="boxCarousel">
+        <div class="boxCarousel2">
+            <div class="container">
+                <input type="radio" class="inputCarousel" name="slider" id="item-1" checked>
+                <input type="radio" class="inputCarousel" name="slider" id="item-2">
+                <input type="radio" class="inputCarousel" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img class="imgCarousel" src="./images/promo1.jpg" alt="song">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img class="imgCarousel" src="./images/promo2.jpg" alt="song">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <img class="imgCarousel" src="./images/promo1.jpg" alt="song">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ofertas section ends  -->
+
+<!--*************************-->
 
 <!-- lanchonete section starts  -->
 
