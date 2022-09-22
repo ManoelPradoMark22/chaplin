@@ -93,3 +93,22 @@
 #item-3:checked ~ .player #test {
   transform: translateY(-80px);
 }
+
+/*ABAIXO DE 600*/
+@media (max-height: 600px) {
+  .imgCarousel {
+    height: 450px;
+  }
+}
+
+@media (max-height: 550px) {
+  .imgCarousel {
+    height: 400px;
+  }
+}
+
+@media (max-height: 500px) {
+  .imgCarousel {
+    height: 350px;
+  }
+}

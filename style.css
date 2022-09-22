@@ -972,6 +972,7 @@ header #menu-bar{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
+/*ACIMA DE 400*/
 @media (min-width: 400px) {
   .producstOnCart {
     width: 300px;
