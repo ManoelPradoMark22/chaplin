@@ -90,19 +90,19 @@ var porcoesImages = {
 }
 
 var sorveteriaImages = {
-  imgMSP: 'https://i.ibb.co/jW57QPs/p.jpg',
-  imgMSM: 'https://i.ibb.co/JrgQQcw/m.jpg',
-  imgMSG: 'https://i.ibb.co/hRbLcFp/mkg.png',
-  imgBola: 'https://i.ibb.co/fdbq07c/bola.jpg',
-  imgCasquinha: 'https://i.ibb.co/QNd0kT8/casquinha.jpg',
-  imgCascao: 'https://i.ibb.co/94n6vXB/cascao.png',
-  imgpicCremoso: 'https://i.ibb.co/jJbh7Pd/picole-cremoso.png',
-  imgpicCristalizado: 'https://i.ibb.co/Hd0t7bw/pic-cristalizado.jpg',
-  imgpicCasquinha: 'https://i.ibb.co/YtKBNq0/picole-skimo.jpg',
-  imgCremosinho: 'https://i.ibb.co/hmpQCP2/cremosinho.jpg',
-  imgAcaiP: 'https://i.ibb.co/ZWHjbvv/pp.jpg',
-  imgAcaiM: 'https://i.ibb.co/rx7STdG/m.png',
-  imgAcaiG: 'https://i.ibb.co/zFDsx6D/g.png'
+  imgMSP: '',
+  imgMSM: '',
+  imgMSG: '',
+  imgBola: '',
+  imgCasquinha: '',
+  imgCascao: '',
+  imgpicCremoso: '',
+  imgpicCristalizado: '',
+  imgpicCasquinha: '',
+  imgCremosinho: '',
+  imgAcaiP: '',
+  imgAcaiM: '',
+  imgAcaiG: '',
 }
 
 var muitoMaisImages = {
