@@ -59,34 +59,34 @@ function clearsessionStorage() {
 }
 
 var lanchesImages = {
-  imgXtudo: 'https://i.ibb.co/PMD1qP1/X-TUDO.jpg',
-  imgXcalabresa: 'https://i.ibb.co/XXLr1fc/X-CALABRESA.jpg',
-  imgXegg: 'https://i.ibb.co/mhhhWPb/X-EGG.png',
-  imgAmericano: 'https://i.ibb.co/bR0rhLb/AMERICANO.jpg',
-  imgXsalada: 'https://i.ibb.co/4j0Dzwc/X-SALADA.jpg',
-  imgXfrango: 'https://i.ibb.co/RCF0P5T/X-FRANGO.png',
-  imgXburguer: 'https://i.ibb.co/nDVzL0j/X-BURGUER.jpg',
-  imgMistao: 'https://i.ibb.co/p3Mrfhb/MISTAO.jpg'
+  imgXtudo: '',
+  imgXcalabresa: '',
+  imgXegg: '',
+  imgAmericano: '',
+  imgXsalada: '',
+  imgXfrango: '',
+  imgXburguer: '',
+  imgMistao: 'g'
 }
 
 var pizzasImages = {
-  imgCarneSeca: 'https://i.ibb.co/QkXsPkf/carne-seca-1.jpg',
-  imgFrangCatup: 'https://i.ibb.co/WBDKTTP/frangocat-1.jpg',
-  imgPortuguesa: 'https://i.ibb.co/1r6bfxp/portuguesa-1.png',
-  imgTradicional: 'https://i.ibb.co/jyFWrVw/tradicional-1.jpg',
-  imgAtum: 'https://i.ibb.co/26HhcjG/atum-1.jpg',
-  imgCaipira: 'https://i.ibb.co/6m0t23k/caipira-1.jpg',
-  imgCalabresa: 'https://i.ibb.co/q0wWqPP/calabresa-1.jpg'
+  imgCarneSeca: '',
+  imgFrangCatup: '',
+  imgPortuguesa: '',
+  imgTradicional: '',
+  imgAtum: '',
+  imgCaipira: '',
+  imgCalabresa: '',
 }
 
 var porcoesImages = {
-  imgCompletao: 'https://i.ibb.co/85pb2JB/completao.jpg',
-  imgFrango: 'https://i.ibb.co/HggFKLk/frango.jpg',
-  imgBatataChedBac: 'https://i.ibb.co/Csb51P2/batata-completa.jpg',
-  imgBatataCheddar: 'https://i.ibb.co/0D3MXRf/batata-e-cheddar.png',
-  imgBatataBacon: 'https://i.ibb.co/wRfCM6V/batata.jpg',
-  imgBatata: 'https://i.ibb.co/0FQpF24/Batata-Frita-Crocante.jpg',
-  imgFrangoPass: 'https://i.ibb.co/BrN0ccQ/frango-a-passarinho.png',
+  imgCompletao: '',
+  imgFrango: '',
+  imgBatataChedBac: '',
+  imgBatataCheddar: '',
+  imgBatataBacon: '',
+  imgBatata: '',
+  imgFrangoPass: '',
 }
 
 var sorveteriaImages = {
@@ -121,41 +121,41 @@ var padariaImages = {
   imgBoloCenoura: 'https://i.ibb.co/9vnGb0q/bolocenoura.jpg',
   imgDoceLeite: 'https://i.ibb.co/xLZT76F/doceleite.jpg',
   imgarrozpequeno: 'https://i.ibb.co/BVDc0mf/arroz-pequeno.jpg',
-  imgarrozgrande: 'https://i.ibb.co/S68BMGJ/arroz-grande.png',
+  imgarrozgrande: '',
   imgavoador: 'https://i.ibb.co/b5LpLF0/avoador.jpg',
-  imgbrevidadegrande: 'https://i.ibb.co/1nT10jg/brevidade-grande.jpg',
+  imgbrevidadegrande: '',
   imgbrevidadepequena: 'https://i.ibb.co/stqNnpN/brevidade-pequena.jpg',
-  imgformigueiro: 'https://i.ibb.co/Xj331wv/formigueiro.jpg',
+  imgformigueiro: '',
   imgmilho: 'https://i.ibb.co/7jwBhYK/milho.jpg',
   imgpaoqueijo: 'https://i.ibb.co/Gsh2JC8/paoqueijo.jpg',
-  imgprima: 'https://i.ibb.co/ZTV65fW/prima.jpg',
-  imgbolachinha: 'https://i.ibb.co/dp9FJgH/bolachinha.jpg',
+  imgprima: '',
+  imgbolachinha: '',
   imgSonho: 'https://i.ibb.co/gyp243X/sonho.jpg',
   imgDonut: 'https://i.ibb.co/wNGzT0Y/donut.jpg'
 }
 
 var salgadosAssadosImages = {
   imgEsfirraFrango: 'https://i.ibb.co/6bRSBw5/esf-Frango.jpg',
-  imgEsfCarne: 'https://i.ibb.co/c3k26pD/esfirra-de-carne.jpg',
+  imgEsfCarne: '',
   imgEsfirraQueijo: 'https://i.ibb.co/X7gdqXd/esf-Queijo-Pres.jpg',
   imgEsfirraFrangoCatupiry: 'https://i.ibb.co/BjJmYKG/esf-Fran-Catup.jpg',
   imgEsfirraFrangoCheddar: 'https://i.ibb.co/V2tQBHM/Esf-Fran-Cheddar.jpg',
   imgEsfirraCalabresa: 'https://i.ibb.co/FVRYfDc/esf-Calab-Queijo.jpg',
   imgEsfCalabCheddar: 'https://i.ibb.co/vBZSDC7/esf-Calab-Cheddar.jpg',
   imgHamburgao: 'https://i.ibb.co/ZLN8bPj/hamburgao.jpg',
-  imgBauru: 'https://i.ibb.co/Wf0QxR9/bauru.jpg',
+  imgBauru: '',
   imgEnrSals: 'https://i.ibb.co/Bjr972m/enro-Salsicha-Assado.jpg',
   imgEnrSalsGourmet: 'https://i.ibb.co/qYYk1GW/enrol-Sals-Gourmet.jpg',
 }
 
 var salgadosFritosImages = {
-  imgCoxinha: 'https://i.ibb.co/bLJysvg/coxinha.jpg',
-  imgRisolesCarne: 'https://i.ibb.co/QD8c83J/carne.png',
-  imgRisolesPizza: 'https://i.ibb.co/XsdLZZv/Risoles-de-presunto-e-queijo.jpg',
-  imgEnrSalsichaFrito: 'https://i.ibb.co/3s26YBp/salsicha.jpg',
-  imgEnrQueijoPres: 'https://i.ibb.co/mbQybk7/queijo-e-presunt.png',
-  imgKibe: 'https://i.ibb.co/NgRynqB/kibe.jpg',
-  imgSteak: 'https://i.ibb.co/sw4b4B4/steak.png',
+  imgCoxinha: '',
+  imgRisolesCarne: '',
+  imgRisolesPizza: '',
+  imgEnrSalsichaFrito: '',
+  imgEnrQueijoPres: '',
+  imgKibe: '',
+  imgSteak: '',
 }
 
 const updateShoppingCartHTML = function () {  // 3
