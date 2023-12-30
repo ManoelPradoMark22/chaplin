@@ -543,8 +543,8 @@ var catPorcoes = [
     name:"Frango e Batata com Cheddar e Bacon",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 35,00",
-    priceNumb: 35.00,
+    price:"R$ 40,00",
+    priceNumb: 40.00,
     img: porcoesImages.imgCompletao,
     display: "display:flex"
   },
@@ -565,8 +565,8 @@ var catPorcoes = [
     name:"Batata com Cheddar e Bacon",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 15,00",
-    priceNumb: 15.00,
+    price:"R$ 20,00",
+    priceNumb: 20.00,
     img: porcoesImages.imgBatataChedBac,
     display: "display:none"
   },
@@ -576,8 +576,8 @@ var catPorcoes = [
     name:"Batata Frita",
     available: true,
     description: "sdk dask dajks k",
-    price:"R$ 10,00",
-    priceNumb: 10.00,
+    price:"R$ 14,00",
+    priceNumb: 14.00,
     img: porcoesImages.imgBatata,
     display: "display:none"
   }
@@ -884,94 +884,136 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
 PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
   {
-    price: 8.00,
+    price: 'R$8,00',
     size: 'Brotinho'
   },
   {
-    price: 10.00,
+    price: 'R$10,00',
     size: 'Brot. Especial'
   },
   {
-    price: 20.00,
-    size: 'P',
-    slices: '(4 &#127829)'
+    price: 'R$20,00',
+    size: 'P'
   },
   {
-    price: 28.00,
-    size: 'M',
-    slices: '(6 &#127829)'
+    price: 'R$28,00',
+    size: 'M'
   },
   {
-    price: 34.00,
-    size: 'G',
-    slices: '(8 &#127829)'
+    price: 'R$34,00',
+    size: 'G'
   },
   {
-    price: 40.00,
-    size: 'GG',
-    slices: '(10 &#127829)'
+    price: 'R$40,00',
+    size: 'GG'
   },
 ]
 
 var pizzaPrices2 = [
   {
-    price: 9.00,
+    price: 'R$9,00',
     size: 'Brotinho'
   },
   {
-    price: 12.00,
+    price: 'R$12,00',
     size: 'Brot. Especial'
   },
   {
-    price: 24.00,
-    size: 'P',
-    slices: '(4 &#127829)'
+    price: 'R$24,00',
+    size: 'P'
   },
   {
-    price: 30.00,
-    size: 'M',
-    slices: '(6 &#127829)'
+    price: 'R$30,00',
+    size: 'M'
   },
   {
-    price: 36.00,
-    size: 'G',
-    slices: '(8 &#127829)'
+    price: 'R$36,00',
+    size: 'G'
   },
   {
-    price: 45.00,
-    size: 'GG',
-    slices: '(10 &#127829)'
+    price: 'R$45,00',
+    size: 'GG'
   },
 ]
 
 var pizzaPrices3 = [
   {
-    price: 12.00,
+    price: 'R$10,00',
     size: 'Brotinho'
   },
   {
-    price: 18.00,
+    price: 'R$14,00',
     size: 'Brot. Especial'
   },
   {
-    price: 30.00,
-    size: 'P',
-    slices: '(4 &#127829)'
+    price: 'R$27,00',
+    size: 'P'
   },
   {
-    price: 38.00,
-    size: 'M',
-    slices: '(6 &#127829)'
+    price: 'R$33,00',
+    size: 'M'
   },
   {
-    price: 45.00,
-    size: 'G',
-    slices: '(8 &#127829)'
+    price: 'R$40,00',
+    size: 'G'
   },
   {
-    price: 50.00,
-    size: 'GG',
-    slices: '(10 &#127829)'
+    price: 'R$50,00',
+    size: 'GG'
+  },
+]
+
+var pizzaPrices4 = [
+  {
+    price: 'R$12,00',
+    size: 'Brotinho'
+  },
+  {
+    price: 'R$18,00',
+    size: 'Brot. Especial'
+  },
+  {
+    price: 'R$30,00',
+    size: 'P'
+  },
+  {
+    price: 'R$38,00',
+    size: 'M'
+  },
+  {
+    price: 'R$45,00',
+    size: 'G'
+  },
+  {
+    price: 'R$50,00',
+    size: 'GG'
+  },
+]
+
+var pizzaPrices5 = [
+  {
+    price: 'R$14,00',
+    size: 'Brotinho'
+  },
+  {
+    price: 'R$20,00',
+    size: 'Brot. Especial'
+  },
+  {
+    price: 'R$33,00',
+    size: 'P'
+  },
+  {
+    price: 'R$40,00',
+    size: 'M'
+  },
+  {
+    price: 'R$50,00',
+    size: 'G'
+  },
+  {
+    price: 'R$55,00',
+    size: 'GG'
   },
 ]
 
@@ -1517,8 +1559,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Bola de sorvete",
     description: "Delicioso sorvete SUUUUPER cremoso!!",
-    price:"R$1,50",
-    priceNumb: 1.50,
+    price:"R$2,00",
+    priceNumb: 2.00,
     img: sorveteriaImages.imgBola,
     display: "display:flex"
   },
@@ -1528,8 +1570,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Sorvete na casquinha",
     description: "1 bola na casquinha desse sorvete maravilhoso e cremoso.",
-    price:"R$1,50",
-    priceNumb: 1.50,
+    price:"R$2,50",
+    priceNumb: 2.50,
     img: sorveteriaImages.imgCasquinha,
     display: "display:none"
   },
@@ -1539,8 +1581,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Sorvete no cascão",
     description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
-    price:"R$3,00",
-    priceNumb: 3.00,
+    price:"R$4,00",
+    priceNumb: 4.00,
     img: sorveteriaImages.imgCascao,
     display: "display:none"
   },
@@ -1550,8 +1592,8 @@ var catSorvetes = [
     categorySorvete: 'picolé',
     name:"Picolé cremoso",
     description: "Picolé super cremoso!",
-    price:"R$1,50",
-    priceNumb: 1.50,
+    price:"R$2,00",
+    priceNumb: 2.00,
     img: sorveteriaImages.imgpicCremoso,
     display: "display:none"
   },
@@ -1561,8 +1603,8 @@ var catSorvetes = [
     categorySorvete: 'picolé',
     name:"Picolé cristalizado",
     description: "Picolé cristalizado super refrescante!",
-    price:"R$1,50",
-    priceNumb: 1.50,
+    price:"R$2,00",
+    priceNumb: 2.00,
     img: sorveteriaImages.imgpicCristalizado,
     display: "display:none"
   },
@@ -1572,8 +1614,8 @@ var catSorvetes = [
     categorySorvete: 'picolé',
     name:"Picolé SKIMO",
     description: "Picolé super cremoso coberto com uma deliciosa casquinha de chocolate!",
-    price:"R$2,50",
-    priceNumb: 2.50,
+    price:"R$3,00",
+    priceNumb: 3.00,
     img: sorveteriaImages.imgpicCasquinha,
     display: "display:none"
   },
@@ -1583,8 +1625,8 @@ var catSorvetes = [
     categorySorvete: 'cremosinho',
     name:"Cremosinho",
     description: "Sorvete no saquinho super cremoso!",
-    price:"R$1,50",
-    priceNumb: 1.50,
+    price:"R$2,00",
+    priceNumb: 2.00,
     img: sorveteriaImages.imgCremosinho,
     display: "display:none"
   }
@@ -1707,7 +1749,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '01',
     name:"Bolo da prima",
     description: "O tradicional e queiridinho do café de todo dia: Bolo de trigo, super fofinho e saboroso!",
-    price:"R$8,00",
+    price:"R$10,00",
     img: padariaImages.imgprima,
     display: "display:flex"
   },
@@ -1716,7 +1758,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '02',
     name:"Bolo de Formigueiro",
     description: "A delícia do bolo da prima com um plus: granulado de chocolate!",
-    price:"R$9,00",
+    price:"R$12,00",
     img: padariaImages.imgformigueiro,
     display: "display:none"
   },
@@ -1725,7 +1767,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '03',
     name:"Bolo de Milho",
     description: "Delicioso bolo cremoso feito com fubá de milho e milho verde. Uma delícia!",
-    price:"R$7,00",
+    price:"R$8,00",
     img: padariaImages.imgmilho,
     display: "display:none"
   },
@@ -1734,7 +1776,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '04',
     name:"Bolo de Arroz (G)",
     description: "Delicioso bolo de arroz (tamanho normal).",
-    price:"R$7,00",
+    price:"R$8,00",
     img: padariaImages.imgarrozgrande,
     display: "display:none"
   },
@@ -1743,7 +1785,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '05',
     name:"Bolo de Arroz (P)",
     description: "Delicioso bolo de arroz (tamanho pequeno).",
-    price:"R$4,00",
+    price:"R$5,00",
     img: padariaImages.imgarrozpequeno,
     display: "display:none"
   },
@@ -1752,7 +1794,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '06',
     name:"Brevidade (G)",
     description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho normal).",
-    price:"R$7,00",
+    price:"R$9,00",
     img: padariaImages.imgbrevidadegrande,
     display: "display:none"
   },
@@ -1761,7 +1803,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '07',
     name:"Brevidade (P)",
     description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho pequeno).",
-    price:"R$4,00",
+    price:"R$6,00",
     img: padariaImages.imgbrevidadepequena,
     display: "display:none"
   },
@@ -1770,7 +1812,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '08',
     name:"Bolo de Cenoura",
     description: "Aquele maravilhoso bolo de cenoura com uma deliciosa e generosa cobertura de chocolate.",
-    price:"R$7,00",
+    price:"R$10,00",
     img: padariaImages.imgBoloCenoura,
     display: "display:none"
   }
@@ -1801,7 +1843,7 @@ var catDiversosPad = [
     number: '01',
     name:"Chimango",
     description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
-    price:"R$1,00",
+    price:"R$1,50",
     img: padariaImages.imgChimango,
     display: "display:flex"
   },
@@ -1810,7 +1852,7 @@ var catDiversosPad = [
     number: '02',
     name:"Pão de queijo",
     description: "Delicioso e fofinho pão de queijo. Vem sentir o gostinho de Minas na Bahia.",
-    price:"R$1,00",
+    price:"R$1,50",
     img: padariaImages.imgpaoqueijo,
     display: "display:none"
   },
@@ -1819,7 +1861,7 @@ var catDiversosPad = [
     number: '03',
     name:"Bolachinha de tapioca",
     description: "200g da famosa e deliciosa bolachinha de tapioca!",
-    price:"R$5,00",
+    price:"R$6,00",
     img: padariaImages.imgbolachinha,
     display: "display:none"
   },
