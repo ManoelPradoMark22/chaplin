@@ -1061,7 +1061,7 @@ var catPizzas = [
     description: "Queijo, frango e catupiry.",
     img: pizzasImages.imgFrangCatup,
     display: "display:none",
-    prices: pizzaPrices2
+    prices: pizzaPrices3
   },
   {
     id: '2tab1.6',
@@ -1070,7 +1070,7 @@ var catPizzas = [
     description: "Carne seca, azeitona, cebola + (muçarela ou catupiry ou cheddar)",
     img: pizzasImages.imgCarneSeca,
     display: "display:none",
-    prices: pizzaPrices3
+    prices: pizzaPrices4
   },
   {
     id: '2tab1.7',
@@ -1079,7 +1079,7 @@ var catPizzas = [
     description: "Atum, muçarela, azeitona e cebola.",
     img: pizzasImages.imgAtum,
     display: "display:none",
-    prices: pizzaPrices3
+    prices: pizzaPrices5
   },
 ]
 
