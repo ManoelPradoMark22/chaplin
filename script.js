@@ -1204,8 +1204,8 @@ var additionals = [
     name: 'Nutella',
     idAddName: 'addNutella',
     available: true,
-    price: 'R$2,50',
-    value: 2.50,
+    price: 'R$3,00',
+    value: 3.00,
     selected: false,
     fourFree: false
   },
@@ -1214,8 +1214,8 @@ var additionals = [
     name: 'Ovomaltine',
     idAddName: 'addOvomaltine',
     available: true,
-    price: 'R$1,50',
-    value: 1.50,
+    price: 'R$2,00',
+    value: 2.00,
     selected: false,
     fourFree: false
   }
