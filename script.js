@@ -880,6 +880,7 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
   </div>`
 ).join('')
 
+//EDIT PIZZA PRICE #3
 /* Sessão 2
 PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
@@ -1037,6 +1038,7 @@ var pizzaPrices5 = [
   },
 ]
 
+//EDIT PIZZA PRICE #4
 var catPizzas = [
   {
     id: '2tab1.1',
@@ -1952,12 +1954,14 @@ document.getElementById('catDiversosPad').innerHTML = catDiversosPad.map(prod =>
 
 let sizePizzaSelected = 'M';
 
+//EDIT PIZZA PRICE #1
 let flavorLeftPizzaSelected = 'Tradicional';
 let priceLeftPizzaSelected = 28.00;
 let typeLeftPizzaSelected = 1;
 
+//EDIT PIZZA PRICE #2
 let flavorRightPizzaSelected = 'Frango Catupiry';
-let priceRightPizzaSelected = 30.00;
+let priceRightPizzaSelected = 33.00;
 let typeRightPizzaSelected = 2;
 
 let priceMakedPizza = 29.00;
