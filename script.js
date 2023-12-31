@@ -2062,6 +2062,14 @@ function calculateMakedPizzaValue(type, isLeft, isJustOne){
         }
       });
       break;
+
+     case 5:
+      pizzaPrices5.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePrices(isLeft, price.price, isJustOne);
+        }
+      });
+      break;
   
     default:
       break;
