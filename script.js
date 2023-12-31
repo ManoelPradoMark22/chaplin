@@ -884,136 +884,156 @@ document.getElementById('catSalgFritos').innerHTML = catSalgFritos.map(prod =>
 PIZZARIA (2tab1)*/
 var pizzaPrices1 = [
   {
-    price: 'R$8,00',
+    price: 8.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$10,00',
+    price: 10.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$20,00',
-    size: 'P'
+    price: 20.00,
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
-    price: 'R$28,00',
-    size: 'M'
+    price: 28.00,
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
-    price: 'R$34,00',
-    size: 'G'
+    price: 34.00,
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
-    price: 'R$40,00',
-    size: 'GG'
+    price: 40.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
 var pizzaPrices2 = [
   {
-    price: 'R$9,00',
+    price: 9.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$12,00',
+    price: 12.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$24,00',
-    size: 'P'
+    price: 24.00,
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
-    price: 'R$30,00',
-    size: 'M'
+    price: 30.00,
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
-    price: 'R$36,00',
-    size: 'G'
+    price: 36.00,
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
-    price: 'R$45,00',
-    size: 'GG'
+    price: 45.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
 var pizzaPrices3 = [
   {
-    price: 'R$10,00',
+    price: 10.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$14,00',
+    price: 14.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$27,00',
-    size: 'P'
+    price: 27.00,
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
-    price: 'R$33,00',
-    size: 'M'
+    price: 33.00,
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
-    price: 'R$40,00',
-    size: 'G'
+    price: 40.00,
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
-    price: 'R$50,00',
-    size: 'GG'
+    price: 50.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
 var pizzaPrices4 = [
   {
-    price: 'R$12,00',
+    price: 12.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$18,00',
+    price: 18.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$30,00',
-    size: 'P'
+    price: 30.00,
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
-    price: 'R$38,00',
-    size: 'M'
+    price: 38.00,
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
-    price: 'R$45,00',
-    size: 'G'
+    price: 45.00,
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
-    price: 'R$50,00',
-    size: 'GG'
+    price: 50.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
 var pizzaPrices5 = [
   {
-    price: 'R$14,00',
+    price: 14.00,
     size: 'Brotinho'
   },
   {
-    price: 'R$20,00',
+    price: 20.00,
     size: 'Brot. Especial'
   },
   {
-    price: 'R$33,00',
-    size: 'P'
+    price: 33.00,
+    size: 'P',
+    slices: '(4 &#127829)'
   },
   {
-    price: 'R$40,00',
-    size: 'M'
+    price: 40.00,
+    size: 'M',
+    slices: '(6 &#127829)'
   },
   {
-    price: 'R$50,00',
-    size: 'G'
+    price: 50.00,
+    size: 'G',
+    slices: '(8 &#127829)'
   },
   {
-    price: 'R$55,00',
-    size: 'GG'
+    price: 55.00,
+    size: 'GG',
+    slices: '(10 &#127829)'
   },
 ]
 
@@ -2003,6 +2023,22 @@ function calculateMakedPizzaValueChangingSize(isEqual, isLeft){
 
     case 3:
       pizzaPrices3.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+
+    case 4:
+      pizzaPrices4.map(price => {
+        if (price.size === sizePizzaSelected) {
+          changePricesByChangingSize(isEqual, isLeft, price.price);
+        }
+      });
+      break;
+
+    case 5:
+      pizzaPrices5.map(price => {
         if (price.size === sizePizzaSelected) {
           changePricesByChangingSize(isEqual, isLeft, price.price);
         }
