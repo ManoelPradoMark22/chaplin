@@ -1089,7 +1089,7 @@ var catPizzas = [
     id: '2tab1.6',
     number: 6,
     name:"Carne Seca",
-    description: "Carne seca, azeitona, cebola + (muçarela ou catupiry ou cheddar)",
+    description: "Carne seca, azeitona, cebola e muçarela.",
     img: pizzasImages.imgCarneSeca,
     display: "display:none",
     prices: pizzaPrices4
@@ -1100,6 +1100,24 @@ var catPizzas = [
     name:"Atum",
     description: "Atum, muçarela, azeitona e cebola.",
     img: pizzasImages.imgAtum,
+    display: "display:none",
+    prices: pizzaPrices5
+  },
+  {
+    id: '2tab1.8',
+    number: 8,
+    name:"Carne Seca com catupiry",
+    description: "Carne seca, azeitona, cebola e catupiry.",
+    img: pizzasImages.imgCarneSeca,
+    display: "display:none",
+    prices: pizzaPrices5
+  },
+  {
+    id: '2tab1.9',
+    number: 9,
+    name:"Carne Seca com cheddar",
+    description: "Carne seca, azeitona, cebola e cheddar.",
+    img: pizzasImages.imgCarneSeca,
     display: "display:none",
     prices: pizzaPrices5
   },
