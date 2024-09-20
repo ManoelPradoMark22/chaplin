@@ -66,7 +66,7 @@ var lanchesImages = {
   imgXsalada: '',
   imgXfrango: '',
   imgXburguer: '',
-  imgMistao: 'g'
+  imgMistao: ''
 }
 
 var pizzasImages = {
@@ -211,8 +211,8 @@ function sentIce(){
   let objIce = {
     id: '5tab4',
     name: 'Gelo',
-    priceOne: 5.00,
-    priceNumb: 5.00,
+    priceOne: 7.00,
+    priceNumb: 7.00,
     img: 'https://i.ibb.co/JRGtpS8/icephoto.jpg',
     count: 1
   };
@@ -426,8 +426,8 @@ var catLanches = [
     number: 1,
     name:"X-Tudo",
     description: "Hambúrguer, bacon, salsicha, ovo, queijo, presunto, catupiry, alface, tomate, milho e molho.",
-    price:"R$ 13,00",
-    priceNumb: 13.00,
+    price:"R$ 15,00",
+    priceNumb: 15.00,
     img: lanchesImages.imgXtudo,
     display: "display:flex"
   },
@@ -436,8 +436,8 @@ var catLanches = [
     number: 2,
     name:"X-Calabresa",
     description: "Hambúrguer, calabresa, queijo, cebola, alface, tomate e molho.",
-    price:"R$ 10,00",
-    priceNumb: 10.00,
+    price:"R$ 12,00",
+    priceNumb: 12.00,
     img: lanchesImages.imgXcalabresa,
     display: "display:none"
   },
@@ -446,8 +446,8 @@ var catLanches = [
     number: 3,
     name:"X-Egg",
     description: "Hambúrguer, ovo, queijo, alface, tomate e molho.",
-    price:"R$ 9,00",
-    priceNumb: 9.00,
+    price:"R$ 10,00",
+    priceNumb: 10.00,
     img: lanchesImages.imgXegg,
     display: "display:none"
   },
@@ -456,8 +456,8 @@ var catLanches = [
     number: 4,
     name:"Americano",
     description: "Queijo, presunto, ovo, alface e tomate.",
-    price:"R$ 7,50",
-    priceNumb: 7.50,
+    price:"R$ 9,00",
+    priceNumb: 9.00,
     img: lanchesImages.imgAmericano,
     display: "display:none"
   },
@@ -466,8 +466,8 @@ var catLanches = [
     number: 5,
     name:"X-Salada",
     description: "Hambúrguer, alface, tomate e milho.",
-    price:"R$ 7,00",
-    priceNumb: 7.00,
+    price:"R$ 9,00",
+    priceNumb: 9.00,
     img: lanchesImages.imgXsalada,
     display: "display:none"
   },
@@ -476,8 +476,8 @@ var catLanches = [
     number: 6,
     name:"X-Frango",
     description: "Peito de frango, queijo, alface, tomate e molho.",
-    price:"R$ 7,00",
-    priceNumb: 7.00,
+    price:"R$ 9,00",
+    priceNumb: 9.00,
     img: lanchesImages.imgXfrango,
     display: "display:none"
   },
@@ -486,8 +486,8 @@ var catLanches = [
     number: 7,
     name:"X-Burguer",
     description: "Hambúrguer, queijo e molho.",
-    price:"R$ 6,00",
-    priceNumb: 6.00,
+    price:"R$ 8,00",
+    priceNumb: 8.00,
     img: lanchesImages.imgXburguer,
     display: "display:none"
   },
@@ -496,8 +496,8 @@ var catLanches = [
     number: 8,
     name:"Mistão",
     description: "Queijo e presunto.",
-    price:"R$ 5,00",
-    priceNumb: 5.00,
+    price:"R$ 6,00",
+    priceNumb: 6.00,
     img: lanchesImages.imgMistao,
     display: "display:none"
   }
@@ -657,8 +657,8 @@ var catSalgAssados = [
     name:"Esfirra de frango com catupiry",
     available: true,
     description: "A queridinha da clientela!&#128525;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgEsfirraFrangoCatupiry,
     display: "display:none"
   },
@@ -668,8 +668,8 @@ var catSalgAssados = [
     name:"Esfirra de frango com cheddar",
     available: true,
     description: "Quem não gosta de cheddar né?&#129316;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgEsfirraFrangoCheddar,
     display: "display:none"
   },
@@ -679,8 +679,8 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo",
     available: true,
     description: "Quero bis!&#128540;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgEsfirraCalabresa,
     display: "display:none"
   },
@@ -690,8 +690,8 @@ var catSalgAssados = [
     name:"Esfirra de calabresa com queijo e cheddar",
     available: true,
     description: "Alguém disse cheddar?&#128556;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgEsfCalabCheddar,
     display: "display:none"
   },
@@ -701,8 +701,8 @@ var catSalgAssados = [
     name:"Hamburgão",
     available: true,
     description: "Hambúrguer, queijo e tomate. Esse acompanhado de um milk-shake... hummmmm&#128523;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgHamburgao,
     display: "display:none"
   },
@@ -712,8 +712,8 @@ var catSalgAssados = [
     name:"Bauru",
     available: true,
     description: "Queijo, presunto, milho, tomate e orégano. Perfeito! Muitos preferem chamá-lo de pão pizza.",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgBauru,
     display: "display:none"
   },
@@ -734,8 +734,8 @@ var catSalgAssados = [
     name:"Enroladinho de salsicha gourmet",
     available: true,
     description: "Salsicha com queijo, combinação perfeita!&#127789;",
-    price:"R$5,00",
-    priceNumb: 5.00,
+    price:"R$6,00",
+    priceNumb: 6.00,
     img: salgadosAssadosImages.imgEnrSalsGourmet,
     display: "display:none"
   },
@@ -1161,8 +1161,8 @@ var catAcais = [
     number: 1,
     name:"Açaí (300ml)",
     description: "Aquele açaí delicioso e super cremoso! &#128523",
-    priceOriginalAcai: 7.50,
-    priceTotalAcai: 7.50,
+    priceOriginalAcai: 10.00,
+    priceTotalAcai: 10.00,
     img: sorveteriaImages.imgAcaiP,
     display: "display:flex"
   }
@@ -1174,8 +1174,8 @@ var additionals = [
     name: 'Banana',
     idAddName: 'addBanana',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: true,
     fourFree: true
   },
@@ -1184,8 +1184,8 @@ var additionals = [
     name: 'Morango',
     idAddName: 'addMorango',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false,
     fourFree: true
   },
@@ -1194,8 +1194,8 @@ var additionals = [
     name: 'Granola',
     idAddName: 'addGranola',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: true,
     fourFree: true
   },
@@ -1204,8 +1204,8 @@ var additionals = [
     name: 'Paçoca',
     idAddName: 'addPacoca',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false,
     fourFree: true
   },
@@ -1214,8 +1214,8 @@ var additionals = [
     name: 'Leite Cond.',
     idAddName: 'addLeiteCond',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: true,
     fourFree: true
   },
@@ -1224,8 +1224,8 @@ var additionals = [
     name: 'Leite em pó',
     idAddName: 'addLeitePo',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: true,
     fourFree: true
   },
@@ -1234,8 +1234,8 @@ var additionals = [
     name: 'Amendoim',
     idAddName: 'addAmendoim',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false,
     fourFree: true
   },
@@ -1254,8 +1254,8 @@ var additionals = [
     name: 'Ovomaltine',
     idAddName: 'addOvomaltine',
     available: true,
-    price: 'R$2,00',
-    value: 2.00,
+    price: 'R$3,00',
+    value: 3.00,
     selected: false,
     fourFree: false
   }
@@ -1323,29 +1323,29 @@ function changeSelect(id) {
 }
 
 function changeSelectedSizeAcai(sizeId) {
-  var priceSize = 7.50;
+  var priceSize = 10.00;
   var newName = 'Açaí';
   var imgPath = sorveteriaImages.imgAcaiP;
 
   switch (sizeId) {
     case 1:
-      priceSize = 7.50;
+      priceSize = 10.00;
       newName = 'Açaí (300ml)';
       imgPath = sorveteriaImages.imgAcaiP;
       break;
     case 2:
-      priceSize = 10.00;
+      priceSize = 12.00;
       newName = 'Açaí (400ml)';
       imgPath = sorveteriaImages.imgAcaiM;
       break;
     case 3:
-      priceSize = 12.00;
+      priceSize = 14.00;
       newName = 'Açaí (500ml)';
       imgPath = sorveteriaImages.imgAcaiG;
       break;
 
     default:
-      priceSize = 7.50;
+      priceSize = 10.00;
       newName = 'Açaí (300ml)';
       imgPath = sorveteriaImages.imgAcaiP;
       break;
@@ -1418,8 +1418,8 @@ document.getElementById('catAcais').innerHTML = catAcais.map(prod =>
     number: 1,
     name:"Milk-shake (300ml)",
     description: "Que tal aquele milk-shake super cremoso e delicioso?&#129316;",
-    priceOriginalMS: 7.00,
-    priceTotalMS: 7.00,
+    priceOriginalMS: 10.00,
+    priceTotalMS: 10.00,
     img: sorveteriaImages.imgMSP,
     display: "display:flex"
   },
@@ -1431,8 +1431,8 @@ var additionalsMilkShake = [
     name: 'Ovomaltine',
     idAddName: 'addMSOvomaltine',
     available: true,
-    price: 'R$1,50',
-    value: 1.50,
+    price: 'R$3,00',
+    value: 3.00,
     selected: false
   },
   {
@@ -1440,8 +1440,8 @@ var additionalsMilkShake = [
     name: 'Nutella',
     idAddName: 'addMSNutella',
     available: true,
-    price: 'R$2,50',
-    value: 2.50,
+    price: 'R$3,00',
+    value: 3.00,
     selected: false
   },
   {
@@ -1449,8 +1449,8 @@ var additionalsMilkShake = [
     name: 'Paçoca',
     idAddName: 'addMSPacoca',
     available: true,
-    price: 'R$1,00',
-    value: 1.00,
+    price: 'R$1,50',
+    value: 1.50,
     selected: false
   }
 ]
@@ -1492,29 +1492,29 @@ function changeSelectedMS(id){
 }
 
 function changeSelectedSizeMS(sizeId) {
-  var priceSizeMS = 7.00;
+  var priceSizeMS = 10.00;
   var newNameMS = 'Milk-Shake';
   var imgPathMS = sorveteriaImages.imgMSP;
 
   switch (sizeId) {
     case 1:
-      priceSizeMS = 7.00;
+      priceSizeMS = 10.00;
       newNameMS = 'Milk-Shake (300ml)';
       imgPathMS = sorveteriaImages.imgMSP;
       break;
     case 2:
-      priceSizeMS = 10.00;
+      priceSizeMS = 12.00;
       newNameMS = 'Milk-Shake (400ml)';
       imgPathMS = sorveteriaImages.imgMSM;
       break;
     case 3:
-      priceSizeMS = 12.00;
+      priceSizeMS = 14.00;
       newNameMS = 'Milk-Shake (500ml)';
       imgPathMS = sorveteriaImages.imgMSG;
       break;
 
     default:
-      priceSizeMS = 7.00;
+      priceSizeMS = 10.00;
       newNameMS = 'Milk-Shake';
       imgPathMS = sorveteriaImages.imgMSP;
       break;
@@ -1599,8 +1599,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Bola de sorvete",
     description: "Delicioso sorvete SUUUUPER cremoso!!",
-    price:"R$2,00",
-    priceNumb: 2.00,
+    price:"R$2,50",
+    priceNumb: 2.50,
     img: sorveteriaImages.imgBola,
     display: "display:flex"
   },
@@ -1621,8 +1621,8 @@ var catSorvetes = [
     categorySorvete: 'sorvete',
     name:"Sorvete no cascão",
     description: "2 bolas no cascão desse sorvete irresistível e cremoso!",
-    price:"R$4,00",
-    priceNumb: 4.00,
+    price:"R$5,00",
+    priceNumb: 5.00,
     img: sorveteriaImages.imgCascao,
     display: "display:none"
   },
@@ -1733,8 +1733,8 @@ var catPaes = [
     id: '4tab1.2',
     number: 2,
     name:"Pão de sal",
-    description: "Pãozinho de sal caseiro, delicioso e fofinho.",
-    price:"R$0,50",
+    description: "❗PROMOÇÃO❗ - 3 pães por R$2,00! Pãozinho de sal caseiro, delicioso e fofinho.",
+    price:"R$0,75",
     img: padariaImages.imgPaoSal,
     display: "display:none"
   },
@@ -1743,7 +1743,7 @@ var catPaes = [
     number: 3,
     name:"Rosca doce",
     description: "Pãozinho em forma de rosca, super fofo e coberto com leite condensado e coco.",
-    price:"R$1,00",
+    price:"R$2,00",
     img: padariaImages.imgRosca,
     display: "display:none",
   },
@@ -1752,7 +1752,7 @@ var catPaes = [
     number: 4,
     name:"Sonho",
     description: "Delicioso sonho recheado. É de dar água na boca!&#129316;",
-    price:"R$2,00",
+    price:"R$2,50",
     img: padariaImages.imgSonho,
     display: "display:none",
   }
@@ -1825,7 +1825,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '05',
     name:"Bolo de Arroz (P)",
     description: "Delicioso bolo de arroz (tamanho pequeno).",
-    price:"R$5,00",
+    price:"R$6,00",
     img: padariaImages.imgarrozpequeno,
     display: "display:none"
   },
@@ -1834,7 +1834,7 @@ document.getElementById('catPaes').innerHTML = catPaes.map(prod =>
     number: '06',
     name:"Brevidade (G)",
     description: "A famosa brevidade, delicioso bolo feito com tapioca e rapadura (tamanho normal).",
-    price:"R$9,00",
+    price:"R$10,00",
     img: padariaImages.imgbrevidadegrande,
     display: "display:none"
   },
@@ -1882,7 +1882,7 @@ var catDiversosPad = [
     id: '4tab3.1',
     number: '01',
     name:"Chimango",
-    description: "O tradicional e delicioso chimango (joão duro), feito com tapioca.",
+    description: "❗PROMOÇÃO❗ - 4 chimangos por R$5,00! O tradicional e delicioso chimango (joão duro), feito com tapioca.",
     price:"R$1,50",
     img: padariaImages.imgChimango,
     display: "display:flex"
@@ -1892,7 +1892,7 @@ var catDiversosPad = [
     number: '02',
     name:"Pão de queijo",
     description: "Delicioso e fofinho pão de queijo. Vem sentir o gostinho de Minas na Bahia.",
-    price:"R$1,50",
+    price:"R$2,00",
     img: padariaImages.imgpaoqueijo,
     display: "display:none"
   },
@@ -1912,15 +1912,15 @@ var catDiversosPad = [
     description: "O maravilhoso doce de leite caseiro, super cremoso e delicioso.",
     manyPrices: [
       {
-        price: 'R$ 6,00',
+        price: 'R$ 7,00',
         size: '250g'
       },
       {
-        price: 'R$ 11,00',
+        price: 'R$ 13,00',
         size: '500g'
       },
       {
-        price: 'R$ 20,00',
+        price: 'R$ 25,00',
         size: '1Kg'
       }
     ],
